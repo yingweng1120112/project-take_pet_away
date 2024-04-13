@@ -1,1 +1,139 @@
-/* 123 */
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 設定全域變數 */
+:root {
+  --primary-color: black; /* 定義主要顏色變數 */
+  --secondary-color: #895e3c; /* 定義次要顏色變數 */
+  --accent-color: #ffffff; /* 定義強調顏色變數 */
+  --border-color: #895e3c; /* 定義邊框顏色變數 */
+  --font-family: "Noto Sans TC", sans-serif; /* 定義字體變數 */
+  --font-size-h1: 2rem; /* h1 標題文字大小 ,32px*/
+  --font-size-h2: 1.8rem; /* h2 標題文字大小,28.8px */
+  --font-size-h3: 1.5rem; /* h3 標題文字大小,24px  */
+  --font-size-h4: 1.25rem; /* h4 標題文字大小,20px */
+  --font-size-p: 16px; /* 段落文字大小 */
+  --bg-color: #fdf7e4;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+p {
+  font-size: var(--font-size-p);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+/* 手機版 */
+body {
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Mukta", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+}
+.logo > a {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: block;
+}
+.navbar > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.navbar > ul > li {
+  padding: 10px;
+  text-align: center;
+}
+.navbar > ul > li > a {
+  display: block;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.menu-icon {
+  display: none;
+}
+/* header */
+.header {
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+img {
+  width: 80%;
+}
+.menu-icon {
+  display: flex;
+  padding: 5px;
+  display: flex;
+  color: var(--secondary-color);
+  font-family: "Dosis";
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+}
+.navbar > ul {
+  flex-direction: column;
+}
+.navbar > ul > li {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  flex: 1 1 0%;
+}
+/* 電腦版 */
+@media screen and (max-width: 1440px) {
+  /* 全域*/
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
