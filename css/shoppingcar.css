@@ -1,0 +1,33 @@
+section {
+  margin: 0 10%;
+}
+.roof {
+  margin: 0;
+  width: 100%;
+  height: 85px;
+  background-color: lightblue;
+}
+.step {
+  width: 700px;
+  height: 70px;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28.8px;
+  letter-spacing: 15px;
+  margin: 0 auto;
+}
+.step1 {
+  font-weight: 700;
+}
+.step2,
+.step3 {
+  color: white;
+}
+.carList {
+  width: 100%;
+  height: 500px;
+  background-color: lightblue;
+}
