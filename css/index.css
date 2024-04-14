@@ -40,86 +40,60 @@ p {
   font-size: var(--font-size-p);
 }
 
+a {
+  color: #747474;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: var(--font-family);
   background-color: var(--bg-color);
 }
 
-/* 手機版 */
-body {
-  margin: 0px;
-  font-size: 14px;
-  font-family: "Mukta", sans-serif;
+section {
+  margin-bottom: 10%;
 }
-.header {
+
+.container {
+  width: 90%;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-.logo {
-  width: 100px;
-  text-align: center;
-  padding: 10px;
-}
-.logo > a {
-  width: 100%;
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
 
-  display: block;
-}
-.navbar > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* 手機版 */
+
+/* footer */
+footer {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  width: 1440px;
+  height: 1046px;
+  padding: 45px 123px 77px 123px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  background-color: var(--secondary-color);
 }
-.navbar > ul > li {
-  padding: 10px;
-  text-align: center;
-}
-.navbar > ul > li > a {
-  display: block;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-.menu-icon {
-  display: none;
-}
-/* header */
-.header {
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-img {
-  width: 80%;
-}
-.menu-icon {
+footer > div {
   display: flex;
-  padding: 5px;
-  display: flex;
-  color: var(--secondary-color);
-  font-family: "Dosis";
+  width: 10%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.navbar {
-  width: 100%;
-}
-.navbar > ul {
-  flex-direction: column;
-}
-.navbar > ul > li {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #333;
-  flex: 1 1 0%;
+  gap: 10px;
+  flex-shrink: 0;
 }
 /* 電腦版 */
 @media screen and (max-width: 1440px) {
@@ -135,5 +109,34 @@ img {
   p {
     font-size: 1.2rem;
     padding: 1rem 0;
+  }
+
+  /* header */
+  .logo > img {
+    width: 20%;
+  }
+  .main-nav {
+    color: var(--border-color);
+  }
+  .main-nav a {
+    color: var(--primary-color);
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .main-nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-item:hover .sub-menu {
+    display: flex;
+  }
+  .sub-menu {
+    /* display: none; */
+    position: absolute;
+    display: flex;
+  }
+  .sub-menu-item > a {
+    display: block;
   }
 }
