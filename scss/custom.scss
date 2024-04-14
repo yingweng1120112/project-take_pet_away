@@ -1,0 +1,13 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+$primary: rgb(27, 158, 219);
+$body-secondary-bg: rgb(217, 238, 247);
+$accordion-button-active-bg: lavenderblush;
+
+// Include any default variable overrides here (though functions won't be available)
+
+//npm 專案管理 node package manager
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here
