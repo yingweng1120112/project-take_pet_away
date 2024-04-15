@@ -241,10 +241,14 @@ footer img {
 }
 
 .footerInfo {
+  width: 90%;
   margin: 2rem;
+  display: block;
+  flex-direction: column;
 }
 .footerItem {
-  height: auto;
+  width: 100%;
+  display: block;
   margin-bottom: 1rem;
 }
 
@@ -256,7 +260,6 @@ footer img {
   font-size: var(--font-size-p);
   text-align: center;
   padding: 0.3rem;
-  font-size: 0.8rem;
 }
 
 .footerItem > img {
@@ -265,7 +268,6 @@ footer img {
 
 .footerItem > ol {
   height: auto;
-  display: block;
   text-align: center;
   padding: 1rem;
 }
@@ -273,7 +275,7 @@ footer img {
   padding: 0.3rem;
 }
 
-.footerItem:nth-child(5) h4 {
+.footerItem:nth-child(3) h4 {
   margin-bottom: 1rem;
 }
 
@@ -284,9 +286,6 @@ footer img {
 }
 
 .icon > li {
-  /* display: flex;
-  align-items: center;  */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -314,6 +313,11 @@ footer img {
 .footerItem:nth-child(6) ol {
   display: flex;
   flex-direction: row;
+}
+
+.icon > li > img {
+  width: 35%;
+  margin-right: 20px;
 }
 
 /* copyright */
@@ -502,4 +506,17 @@ footer img {
   /* header 的icon end */
 
   /* footer */
+  .footerInfo {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  z .footerItem:nth-child(7) {
+    width: 100%;
+  }
+
+  .footerLink {
+    width: 70%;
+    align-items: center;
+  }
 }
