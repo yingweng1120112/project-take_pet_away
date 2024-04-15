@@ -7,17 +7,37 @@
 
 /* 設定全域變數 */
 :root {
-  --primary-color: black; /* 定義主要顏色變數 */
-  --secondary-color: #895e3c; /* 定義次要顏色變數 */
-  --accent-color: #ffffff; /* 定義強調顏色變數 */
-  --border-color: #895e3c; /* 定義邊框顏色變數 */
-  --font-family: "Noto Sans TC", sans-serif; /* 定義字體變數 */
+  --black:#000000;
+  --white:#FFFFFF;
+  --beige:#FEF9F2;
+  --brown:#967B4A;
+  --reddish-brown:#895E3C;
+  --khaki:#D7B67A;
+  --bean-paste :#D3AD9A;
+  --yellow:#FECC5F;
+  --light-yellow:#FAEED1;
+  --creamy-yellow:#FDF7E4;
+  --gray:#EBEBEB;
+  --dark-gray:#EBE6D4;
+  --bright-gary:#F5EBD9;
+  --light-gray:#DBD2C6;
+  --deep-gray:#89837C;
+  --light-pink:#FCE9D4;
+  --red:#E83D3D;
+  --light-blue:#B9D8EF;
+  --deep-blue:#292F36;
+  --dark-green:#018786;
+  --pink:#F29999;
+  --blue:#427D9D;
+  --green:#B6C12F;
+  --border-color: #895e3c;
+  --font-family: "Noto Sans TC", sans-serif;
   --font-size-h1: 2rem; /* h1 標題文字大小 ,32px*/
   --font-size-h2: 1.8rem; /* h2 標題文字大小,28.8px */
   --font-size-h3: 1.5rem; /* h3 標題文字大小,24px  */
   --font-size-h4: 1.25rem; /* h4 標題文字大小,20px */
   --font-size-p: 16px; /* 段落文字大小 */
-  --bg-color: #fdf7e4;
+  --bg-color: #FDF7E4;
 }
 
 h1 {
@@ -41,7 +61,7 @@ p {
 }
 
 a {
-  color: #747474;
+  color: #89837c;
   text-decoration: none;
 }
 
@@ -66,7 +86,7 @@ section {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -75,7 +95,143 @@ section {
 
 /* 手機版 */
 
+/* header */
+header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-icon {
+  padding: 0.8rem;
+  color: #cda274;
+  margin: 0.5rem;
+  font-size: 1rem;
+  display: none;
+}
+nav {
+  width: 50%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*
+選單線 begin
+.line {
+  width: 24px;
+  height: 24px;
+  background: #FFF;
+  cursor: pointer;
+  display: block;
+  padding: 16px;
+  position: fixed;
+  z-index: 2;
+}
+.line .menu,
+.line .menu::before,
+.line .menu::after {
+  background: #222;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  transition: background ease .15s, top ease .15s .15s, transform ease .15s;
+  width: 20px;
+}
+.line .menu {
+  left: 18px;
+  top: 27px;
+}
+
+.line .menu::before {
+  top: -6px;
+}
+
+.line .menu::after {
+  top: 6px;
+}
+選單線 end
+
+點選選單變叉叉 begin
+#menu:checked + .line .menu {
+  background: transparent;
+}
+
+#menu:checked + .line .menu::before {
+  transform: rotate(45deg);
+}
+
+#menu:checked + .line .menu::after {
+  transform: rotate(-45deg);
+}
+
+#menu:checked + .line .menu::before,
+#menu:checked + .line .menu::after {
+  top: 0;
+  transition: top ease .15s, transform ease .15s .15s;
+}
+點選選單變叉叉 end
+
+選單開合begin
+#menu:checked ~ .main-nav {
+  width: 200px;
+}
+
+.main-nav {
+  width: 60px;
+  height: 100vh;
+  background: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  padding-top: 60px;
+  position: fixed;
+  z-index: 1;
+  transition: all .3s;
+  overflow: hidden;
+}
+選單開合end 
+
+選單向外推 begin
+.main-nav ul {
+    list-style: none;
+    margin-left:70px;
+    padding: 0;
+}
+.main-nav ul>li{
+    display:block;
+    width:100px;
+}
+
+選單向外推 end
+
+*/
+.menu-item {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav {
+  flex-direction: row;
+  align-content: center;
+}
+
+.main-nav > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-item > a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /* footer */
+/*
 footer {
   display: flex;
   width: 1440px;
@@ -84,7 +240,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 22px;
-  background-color: var(--secondary-color);
+  background-color: var(--);
 }
 footer > div {
   display: flex;
@@ -95,6 +251,8 @@ footer > div {
   gap: 10px;
   flex-shrink: 0;
 }
+*/
+
 /* 電腦版 */
 @media screen and (max-width: 1440px) {
   /* 全域*/
@@ -110,33 +268,184 @@ footer > div {
     font-size: 1.2rem;
     padding: 1rem 0;
   }
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   /* header */
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .logo > img {
-    width: 20%;
+    width: 70%;
   }
-  .main-nav {
-    color: var(--border-color);
-  }
-  .main-nav a {
-    color: var(--primary-color);
+
+  /* .main-nav a {
+    color: var(--);
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-  }
-  .main-nav > ul {
+  } */
+
+  /* .main-nav > ul {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: right;
+  } */
+
+  .menu-item {
+    position: relative; /* 將 menu-item 設置為相對定位 */
+    display: flex;
+    pointer-events: all; /* 允許點擊事件穿過子元素 */
+    margin: 14px;
+    flex-direction: row;
+    align-content: center;
   }
+
+  .menu-item > a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    /* align-content: space-between; */
+  }
+
   .menu-item:hover .sub-menu {
     display: flex;
   }
   .sub-menu {
-    /* display: none; */
+    display: none;
     position: absolute;
-    display: flex;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    white-space: nowrap;
+    align-items: flex-start;
+    z-index: 1; /* 確保 sub-menu 在上方顯示 */
   }
+  .sub-menu-item {
+    display: block;
+  }
+  .sub-menu.show {
+    display: flex; /* 顯示 sub-menu */
+  }
+
   .sub-menu-item > a {
     display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .sub-menu-item > a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .sub-menu-item {
+    align-content: flex-start;
+  }
+
+  .sub-menu-item > p {
+    margin: 10px;
+  }
+
+  .item {
+    display: block;
+  }
+
+  .nav-icon {
+    display: flex;
+    height: 10%;
+    margin-left: 100px;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  /* header 的icon begin */
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .btn-icon::after {
+    content: "like";
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s linear;
+    top: 115%;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: 0.2s linear;
+  }
+
+  .icon path {
+    fill: black;
+    transition: 0.2s linear;
+  }
+
+  .btn-icon:hover > .icon {
+    transform: scale(1.2);
+  }
+
+  .btn-icon:hover > .icon path {
+    fill: rgb(177, 139, 189);
+  }
+
+  .btn-icon:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+  }
+
+  /* header 的icon end */
+
+  /* footer */
+
+  footer {
+    display: flex;
+    width: 1440px;
+    height: 1046px;
+    padding: 45px 123px 77px 123px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    background-color: var(--secondary-color);
+  }
+  footer > div {
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
   }
 }
