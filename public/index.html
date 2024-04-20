@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/index.css">
   <title>首頁</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
 
   </style>
@@ -17,133 +19,101 @@
 <body>
   <!-- header -->
   <header class="header">
-    <div class="logo">
-      <img src="../images/logo-removebg-preview.png" />
-    </div>
-    <div class="menu-icon">Menu</div>
-    <nav class="main-nav">
-      <!-- <input type="checkbox" id="menu"> -->
-      <label for="menu" class="line">
-        <div class="menu"></div>
-      </label>
-      <ul>
-        <li class="menu-item">
-          <a href="">關於我們</a>
-          <ul class="sub-menu">
-            <!-- <li class="sub-menu-item">
-              <p>關於我們</p>
-              <ul class="item">
-                <li>
-                  <a href="">組織故事</a>
-                </li>
-              </ul>
-            </li> -->
-          </ul>
-        </li>
-
-        <li class="menu-item">
-          <a href="">活動專區</a>
-          <ul class="sub-menu">
-            <!-- <li class="sub-menu-item">
-              <p>活動專區</p>
-              <ul class="item">
-                <li>
-                  <a href="">活動訊息</a>
-                </li>
-                <li>
-                  <a href="">公告事項</a>
-                </li>
-              </ul>
-            </li> -->
-          </ul>
-        </li>
-
-        <li class="menu-item">
-          <a href="">認養資訊</a>
-          <ul class="sub-menu">
-            <!-- <li class="sub-menu-item">
-              <p>認養資訊</p>
-              <ul class="item">
-                <li>
-                  <a href="">心理測驗</a>
-                </li>
-                <li>
-                  <a href="">認養流程</a>
-                </li>
-                <li>
-                  <a href="">注意事項</a>
-                </li>
-              </ul>
-            </li> -->
-          </ul>
-        </li>
-
-        <li class="menu-item">
-          <a href="">領養專區</a>
-          <ul class="sub-menu">
-            <!-- <li class="sub-menu-item">
-              <p>領養專區</p>
-              <ul class="item">
-                <li>
-                  <a href="">收容資訊</a>
-                </li>
-                <li>
-                  <a href="">動物之家</a>
-                </li>
-                <li>
-                  <a href="">定期追蹤</a>
-                </li>
-              </ul>
-            </li> -->
-          </ul>
-        </li>
-
-        <li class="menu-item">
-          <a href="">寵物商城</a>
-          <ul class="sub-menu">
-            <!-- <li class="sub-menu-item">
-              <p>寵物商城</p>
-            </li> -->
-          </ul>
-        </li>
-      </ul>
-      <div class="nav-icon">
-        <!-- shopping cart -->
-        <button class="btn-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M3.5 4.5H5.05848C5.7542 4.5 6.10206 4.5 6.36395 4.68876C6.62584 4.87752 6.73584 5.20753 6.95585 5.86754L7.5 7.5"
-              stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
-            <path
-              d="M17.5 17.5H8.05091C7.90471 17.5 7.83162 17.5 7.77616 17.4938C7.18857 17.428 6.78605 16.8695 6.90945 16.2913C6.92109 16.2367 6.94421 16.1674 6.99044 16.0287V16.0287C7.04177 15.8747 7.06743 15.7977 7.09579 15.7298C7.38607 15.0342 8.04277 14.5608 8.79448 14.5054C8.8679 14.5 8.94906 14.5 9.11137 14.5H14.5"
-              stroke="#895e3c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-            <path
-              d="M14.1787 14.5H11.1376C9.85836 14.5 9.21875 14.5 8.71781 14.1697C8.21687 13.8394 7.96492 13.2515 7.461 12.0757L7.29218 11.6818C6.48269 9.79294 6.07794 8.84853 6.52255 8.17426C6.96715 7.5 7.99464 7.5 10.0496 7.5H15.3305C17.6295 7.5 18.779 7.5 19.2126 8.24711C19.6462 8.99422 19.0758 9.99229 17.9352 11.9884L17.6517 12.4846C17.0897 13.4679 16.8088 13.9596 16.3432 14.2298C15.8776 14.5 15.3113 14.5 14.1787 14.5Z"
-              stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
-            <circle cx="17" cy="20" r="1" fill="#222222" stroke="#895e3c" stroke-width="1" />
-            <circle cx="9" cy="20" r="1" fill="#222222" stroke="#895e3c" stroke-width="1" />
-          </svg>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#"><img class="w-50" src="../images/logo-removebg-preview.png" /></a>
+        <button class="navbar-toggler border-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- heart -->
-        <button class="btn-icon">
-
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M4.45067 13.9082L11.4033 20.4395C11.6428 20.6644 11.7625 20.7769 11.9037 20.8046C11.9673 20.8171 12.0327 20.8171 12.0963 20.8046C12.2375 20.7769 12.3572 20.6644 12.5967 20.4395L19.5493 13.9082C21.5055 12.0706 21.743 9.0466 20.0978 6.92607L19.7885 6.52734C17.8203 3.99058 13.8696 4.41601 12.4867 7.31365C12.2913 7.72296 11.7087 7.72296 11.5133 7.31365C10.1304 4.41601 6.17972 3.99058 4.21154 6.52735L3.90219 6.92607C2.25695 9.0466 2.4945 12.0706 4.45067 13.9082Z"
-              stroke="#895e3c" stroke-width="1" />
-          </svg>
-
-
-        </button>
-        <!-- user -->
-        <button class="btn-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M19.7274 20.4471C19.2716 19.1713 18.2672 18.0439 16.8701 17.2399C15.4729 16.4358 13.7611 16 12 16C10.2389 16 8.52706 16.4358 7.12991 17.2399C5.73276 18.0439 4.72839 19.1713 4.27259 20.4471"
-              stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
-            <circle cx="12" cy="8" r="4" stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
-          </svg>
-        </button>
+        <div class="collapse navbar-collapse ms-lg-5 " id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button class="btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+                關於我們
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">關於我們</a></li>
+                <li><a class="dropdown-item" href="#">組織故事</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                活動專區
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">活動訊息</a></li>
+                <li><a class="dropdown-item" href="#">公告事項</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                認養資訊
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="#">心理測驗</a></li>
+                <li><a class="dropdown-item" href="#">認養流程</a></li>
+                <li><a class="dropdown-item" href="#">注意事項</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                領養專區
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">收容資訊</a></li>
+                <li><a class="dropdown-item" href="#">動物之家</a></li>
+                <li><a class="dropdown-item" href="#">定期追蹤</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                寵物商城
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">寵物商城</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav-icon col-sm-12 col-lg-3 text-center">
+            <!-- shopping cart -->
+            <button class="btn-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.5 4.5H5.05848C5.7542 4.5 6.10206 4.5 6.36395 4.68876C6.62584 4.87752 6.73584 5.20753 6.95585 5.86754L7.5 7.5"
+                  stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
+                <path
+                  d="M17.5 17.5H8.05091C7.90471 17.5 7.83162 17.5 7.77616 17.4938C7.18857 17.428 6.78605 16.8695 6.90945 16.2913C6.92109 16.2367 6.94421 16.1674 6.99044 16.0287V16.0287C7.04177 15.8747 7.06743 15.7977 7.09579 15.7298C7.38607 15.0342 8.04277 14.5608 8.79448 14.5054C8.8679 14.5 8.94906 14.5 9.11137 14.5H14.5"
+                  stroke="#895e3c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M14.1787 14.5H11.1376C9.85836 14.5 9.21875 14.5 8.71781 14.1697C8.21687 13.8394 7.96492 13.2515 7.461 12.0757L7.29218 11.6818C6.48269 9.79294 6.07794 8.84853 6.52255 8.17426C6.96715 7.5 7.99464 7.5 10.0496 7.5H15.3305C17.6295 7.5 18.779 7.5 19.2126 8.24711C19.6462 8.99422 19.0758 9.99229 17.9352 11.9884L17.6517 12.4846C17.0897 13.4679 16.8088 13.9596 16.3432 14.2298C15.8776 14.5 15.3113 14.5 14.1787 14.5Z"
+                  stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
+                <circle cx="17" cy="20" r="1" fill="#222222" stroke="#895e3c" stroke-width="1" />
+                <circle cx="9" cy="20" r="1" fill="#222222" stroke="#895e3c" stroke-width="1" />
+              </svg>
+            </button>
+            <!-- heart -->
+            <button class="btn-icon">
+  
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.45067 13.9082L11.4033 20.4395C11.6428 20.6644 11.7625 20.7769 11.9037 20.8046C11.9673 20.8171 12.0327 20.8171 12.0963 20.8046C12.2375 20.7769 12.3572 20.6644 12.5967 20.4395L19.5493 13.9082C21.5055 12.0706 21.743 9.0466 20.0978 6.92607L19.7885 6.52734C17.8203 3.99058 13.8696 4.41601 12.4867 7.31365C12.2913 7.72296 11.7087 7.72296 11.5133 7.31365C10.1304 4.41601 6.17972 3.99058 4.21154 6.52735L3.90219 6.92607C2.25695 9.0466 2.4945 12.0706 4.45067 13.9082Z"
+                  stroke="#895e3c" stroke-width="1" />
+              </svg>
+  
+  
+            </button>
+            <!-- user -->
+            <button class="btn-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.7274 20.4471C19.2716 19.1713 18.2672 18.0439 16.8701 17.2399C15.4729 16.4358 13.7611 16 12 16C10.2389 16 8.52706 16.4358 7.12991 17.2399C5.73276 18.0439 4.72839 19.1713 4.27259 20.4471"
+                  stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
+                <circle cx="12" cy="8" r="4" stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -159,49 +129,49 @@
   <footer>
     <div class="container">
       <div class="footerLogo">
-        <img src="../images/logo-removebg-preview.png" alt="">
+        <img class="w-50" src="../images/logo-removebg-preview.png" alt="">
       </div>
 
       <div class="footerInfo">
         <!-- 認養資訊 -->
-        <div class="footerItem">
+        <div class="footerItem flex-sm-column mt-2">
           <h4>認養資訊</h4>
           <hr class="footerHr">
           <ol>
-            <li><a href="">心理測驗</a></li>
-            <li><a href="">認養流程</a></li>
-            <li><a href="">注意事項</a></li>
+            <li><a class="dropdown-item" href="">心理測驗</a></li>
+            <li><a class="dropdown-item" href="">認養流程</a></li>
+            <li><a class="dropdown-item" href="">注意事項</a></li>
           </ol>
         </div>
         <!-- 顧客服務 -->
-        <div class="footerItem">
+        <div class="footerItem flex-sm-column mt-2">
           <h4>顧客服務</h4>
           <hr class="footerHr">
           <ol>
-            <li><a href="">會員中心</a></li>
-            <li><a href="">常見問題</a></li>
+            <li><a class="dropdown-item" href="">會員中心</a></li>
+            <li><a class="dropdown-item" href="">常見問題</a></li>
           </ol>
         </div>
         <!-- 領養專區 -->
-        <div class="footerItem">
+        <div class="footerItem flex-sm-column mt-2">
           <h4>領養專區</h4>
           <hr class="footerHr">
           <ol>
-            <li><a href="">收容資訊</a></li>
-            <li><a href="">動物之家</a></li>
-            <li><a href="">定期追蹤</a></li>
+            <li><a class="dropdown-item" href="">收容資訊</a></li>
+            <li><a class="dropdown-item" href="">動物之家</a></li>
+            <li><a class="dropdown-item" href="">定期追蹤</a></li>
           </ol>
         </div>
         <!-- 隱私政策 -->
-        <div class="footerItem">
+        <div class="footerItem flex-sm-column mt-2">
           <h4>隱私政策</h4>
           <hr class="footerHr">
           <ol>
-            <li><a href="">隱私條款</a></li>
+            <li><a class="dropdown-item" href="">隱私條款</a></li>
           </ol>
         </div>
         <!-- 聯絡我們 -->
-        <div class="footerItem">
+        <div class="footerItem flex-sm-column mt-2">
           <h4>聯絡我們</h4>
           <hr class="footerHr">
           <p class="desc">營業人名稱:袋寵物走股份有限公司</p>
@@ -211,12 +181,12 @@
           <p class="desc">地址:71005 台南市永康區南台街1號</p>
         </div>
         <!-- 社群連結 -->
-        <div class="footerItem">
+        <div class="footerItem flex-sm-column mt-2">
           <h4>社群連結</h4>
           <hr class="footerHr">
           <ol class="icon">
             <li>
-              <a href="" class="footerLink">
+              <a href="https://www.facebook.com/profile.php?id=100090898966387" class="footerLink">
                 <svg xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                   <path
@@ -225,7 +195,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="footerLink">
+              <a href="https://www.instagram.com/cookie_chocolate_0228/?hl=zh-tw" class="footerLink">
                 <svg xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                   <path
@@ -234,7 +204,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="footerLink">
+              <a href="https://store.line.me/stickershop/product/1043153/zh-Hant" class="footerLink">
                 <svg xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                   <path
@@ -246,7 +216,7 @@
         </div>
 
         <!-- 贊助方案 -->
-        <div class="footerItem">
+        <div class="footerItem  col-12 mt-2">
           <h4>贊助方案</h4>
           <hr class="footerHr">
           <div class="fosponsor">
@@ -269,6 +239,9 @@
       </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </body>
 
