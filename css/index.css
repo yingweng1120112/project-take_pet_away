@@ -94,9 +94,7 @@ section {
 }
 
 /* 手機版 */
-.dropdown-menu {
 
-}
 /* header */
 
 .navbar {
@@ -244,7 +242,7 @@ footer img {
 }
 
 /* 電腦版 */
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) {
   /* 全域*/
   h3 {
     font-size: 2rem;
