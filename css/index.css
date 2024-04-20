@@ -98,9 +98,7 @@ section {
 
 }
 /* header */
-header {
-  width: 100%;
-}
+
 .navbar {
   background-color: var(--creamy-yellow);
 }
@@ -115,113 +113,8 @@ header {
 .navbar-toggler-icon {
   background-color: var(--black);
 }
-/*banner*/
-.banner {
-  background-image: url(/images/banner.jpg);
-  background-size: cover;
-  width : 100%;
-  height: 20rem;
-  display: flex;
-  align-items: flex-end;
-}
-.menu-a {
-  margin: 0;
-  color: aliceblue;
-  font-size: 5rem;
-  margin: 0 20px;
-  line-height: 1.2;
-}
-.menu-b {
-  margin: 0;
-  color: aliceblue;
-  font-size: 2rem;
-  line-height: 1.8;
-}
-.left {
-  display: flex;
-  align-items: flex-end;
-  width: 40%;
-}
-.middle {
-  width: 20%;
-}
-.page-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-/* 搜尋的要刪除下面這個 */
-.middle-title {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  padding: 1rem 1.25rem;
-  background-color: white;
-}
-
-/* 服務項目 Service */
-.container_card {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  background-image: url("./is_imgs/serviceBgPhoto.jpg");
-}
-
-.service_banner ,.service_container{
-  display: block flex;
-  justify-content: center;
-}
-.service_banner{
-  margin: 20px 0px;
-}
-.service_card {
-  width: 1240px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  border-left: 2px solid black;
-  padding: 20px 0px;
-}
-
-.card {
-  background-color: #FFF;
-  display: inline-block;
-  border-radius: 20px;
-  height: 320px;
-  margin: 30px 40px;
-  cursor: pointer;
-}
-
-.card:hover,
-.card_body:hover,
-.card-title:hover {
-  background-color: #D3AD9A;
-  color: #FFF;
-}
-
-.card_body {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-}
-
-.card_body img {
-  width: 70px;
-}
-
-.card_body a {
-  text-decoration: none;
-  color: #895E3C;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.card-img-top {
-  border-radius: 20px 20px 0px 0px;
+.dropdown-toggle {
+  justify-content: end;
 }
 
 /* footer */

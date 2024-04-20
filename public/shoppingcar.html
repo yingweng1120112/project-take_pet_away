@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/shoppingcar.css" />
+  </head>
+  <body>
+    <header></header>
+    <!-- 背景樣式上 -->
+    <section id="roof">
+      <img src="/images/roof.webp" alt="" />
+    </section>
+    <!-- 流程 -->
+    <section>
+      <table class="step">
+        <td class="step1">購物車</td>
+        <td class="step2">填寫資料</td>
+        <td class="step3">訂單確認</td>
+      </table>
+    </section>
+
+    <!-- 購物車 -->
+    <section>
+      <div class="carList">
+        <table>
+          <caption>
+            購物車（3件）
+          </caption>
+          <thead>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>商品資料</td>
+              <td>優惠</td>
+              <td>單件價格</td>
+              <td>數量</td>
+              <td>小計</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item1.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item2.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item3.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </section>
+    <!-- 相關推薦 -->
+    <section>
+      <h4>您可能還有興趣</h4>
+    </section>
+
+    <!-- 送貨及付款方式 和 訂單資訊 -->
+    <section id="selectAndOrder">
+      <div class="carList carList1">
+        <table>
+          <caption>
+            選擇送貨及付款方式
+          </caption>
+          <tr>
+            <td>送貨方式</td>
+          </tr>
+          <td>
+            <select name="" id="">
+              <option>宅配</option>
+              <option>超商取貨</option>
+            </select>
+          </td>
+          <tr>
+            <td>付款方式</td>
+          </tr>
+          <td>
+            <select name="" id="">
+              <option>貨到付款</option>
+              <option>LINE PAY</option>
+            </select>
+          </td>
+        </table>
+      </div>
+      <div class="carList carList2">
+        <table>
+          <caption>
+            訂單資訊
+          </caption>
+          <tr>
+            <td>小計：</td>
+            <td>$270</td>
+          </tr>
+          <tr>
+            <td>運費：</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>優惠：</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>合計：</td>
+            <td>$350</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!-- 按鈕 -->
+    <section>
+      <div class="nextButton">
+        <button>前往結帳</button>
+      </div>
+    </section>
+    <!-- 背景樣式下 -->
+    <section id="wall">
+      <img src="/images/wall.png" alt="" />
+    </section>
+
+    <footer></footer>
+  </body>
+</html>
