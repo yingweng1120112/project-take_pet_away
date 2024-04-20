@@ -13,23 +13,17 @@
   .carousel .thumb-content p {
     padding: 0;
   }
-  .carousel .col-3 {
-    width: 100%;
-  }
 }
 
 /* 電腦版 */
 @media screen and (max-width: 1440px) {
   /* 產品推薦 */
-  .commendbody {
+  #commendbody {
     display: block;
   }
   #commend {
     background-image: url(/images/commendbg.png);
     background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
   }
   .carousel {
     margin: 30px auto 60px;
@@ -43,7 +37,6 @@
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 3px;
-    padding-top: 20px;
   }
   .carousel .carousel-item img {
     max-width: 100%;
@@ -100,11 +93,11 @@
   .carousel-control-prev,
   .carousel-control-next {
     height: 44px;
-    width: 44px !important;
-    background: none !important;
+    width: 44px;
+    background: none;
     margin: auto 0;
     border-radius: 50%;
-    border: 3px solid white !important;
+    border: 3px solid white;
   }
   .carousel-control-prev i,
   .carousel-control-next i {
@@ -127,7 +120,7 @@
     margin-right: -3px;
   }
   .carousel-indicators {
-    bottom: -50px !important;
+    bottom: -50px;
   }
   .carousel-indicators li,
   .carousel-indicators li.active {
