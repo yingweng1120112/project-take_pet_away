@@ -121,7 +121,7 @@ header {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-image: url("./is_imgs/serviceBgPhoto.jpg");
+  background-image: url("../images/serviceBgPhoto.jpg");
 }
 
 .service_banner ,.service_container{
