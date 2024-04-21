@@ -1,7 +1,11 @@
+table {
+  caption-side: top;
+}
 section {
   margin: 0 10%;
 }
 body {
+  display: initial;
   background-color: white;
 }
 header {
@@ -127,12 +131,34 @@ header {
   flex-direction: row;
 }
 .itemList div:nth-child(1) img {
-  width: 100px;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
+.itemList > div:nth-child(2) {
+  margin: auto 0;
+}
+
 .itemAmount {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+}
+/* 相關推薦 */
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
+}
+.carousel-item {
+  .col,
+  .col-sm,
+  .col-md {
+    margin: 8px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 /* 送貨及付款方式 和 訂單資訊 */

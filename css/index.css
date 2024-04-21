@@ -96,7 +96,6 @@ section {
 /* 手機版 */
 
 /* header */
-
 .navbar {
   background-color: var(--creamy-yellow);
 }
@@ -113,6 +112,12 @@ section {
 }
 .dropdown-toggle {
   justify-content: end;
+}
+.dropdown-menu {
+  text-align: center;
+}
+.dropdown-item {
+  text-align: center;
 }
 
 /* footer */
@@ -242,7 +247,7 @@ footer img {
 }
 
 /* 電腦版 */
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) {
   /* 全域*/
   h3 {
     font-size: 2rem;
@@ -265,7 +270,50 @@ footer img {
   }
 
   /* header */
-
+  /* banner */
+  .banner {
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  .menu-a {
+    margin: 0;
+    color: aliceblue;
+    font-size: 5rem;
+    margin: 0 20px;
+    line-height: 1.2;
+  }
+  .menu-b {
+    margin: 0;
+    color: aliceblue;
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+  .left {
+    display: flex;
+    align-items: flex-end;
+    width: 40%;
+  }
+  .middle {
+    width: 20%;
+  }
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .middle-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1rem 1.25rem;
+    background-color: white;
+  }
   /* footer */
   body {
     width: 100%;
