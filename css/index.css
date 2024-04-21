@@ -96,7 +96,6 @@ section {
 /* 手機版 */
 
 /* header */
-
 .navbar {
   background-color: var(--creamy-yellow);
 }
@@ -113,6 +112,12 @@ section {
 }
 .dropdown-toggle {
   justify-content: end;
+}
+.dropdown-menu {
+  text-align: center;
+}
+.dropdown-item {
+  text-align: center;
 }
 
 /* footer */
@@ -308,7 +313,7 @@ footer img {
     border-top-right-radius: 2rem;
     padding: 1rem 1.25rem;
     background-color: white;
-  } 
+  }
   /* footer */
   body {
     width: 100%;
