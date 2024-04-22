@@ -170,7 +170,12 @@ button {
 
   .carousel-h1 {
     margin-bottom: 0;
-    background-position-y: 60%;
+    /* background-position: 60% 50%; */
+  }
+
+  .carousel-p{
+    margin: 0;
+    line-height: 3rem;
   }
 
   #page1,
