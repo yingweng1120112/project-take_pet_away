@@ -20,22 +20,21 @@ function transitionPage(pageElement) {
   i++;
 }
 
-btnPage1Ele.addEventListener("click", function (event) {
-  transitionPage(page1Ele);
-});
+// btnPage1Ele.addEventListener("click", function (event) {
+//   transitionPage(page1Ele);
+// });
 
-btnPage2Ele.addEventListener("click", function (event) {
-  transitionPage(page2Ele);
-});
+// btnPage2Ele.addEventListener("click", function (event) {
+//   transitionPage(page2Ele);
+// });
 
-btnPage3Ele.addEventListener("click", function (event) {
-  transitionPage(page3Ele);
-});
+// btnPage3Ele.addEventListener("click", function (event) {
+//   transitionPage(page3Ele);
+// });
 
-setInterval(function () {
-  if (i >= 4) {
-    i = 1;
-  }
-  transitionPage(document.querySelector('.carousel-item.active'));
-}, 1000);
-
+// setInterval(function () {
+//   if (i >= 4) {
+//     i = 1;
+//   }
+//   transitionPage(document.querySelector(".carousel-item.active"));
+// }, 1000);

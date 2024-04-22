@@ -34,54 +34,43 @@
     <link rel="stylesheet" href="/css/index-banner.css" />
     <title>首頁</title>
     <style>
-      .accordion-button {
+      .container {
+        display: flex;
+        align-items: flex-start;
+      }
+      .a {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
       }
-
-      .accordion-body {
-        background-color: white;
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-        border: 1px solid #895e3c;
-        border-top: 0;
-        /* 搜尋物件的邊線 方便查看 */
-      }
-
-      .accordion-button::after {
-        margin: 0;
-      }
-
-      .accordion-button:not(.collapsed) {
-        background-color: white;
-      }
-
-      .accordion {
-        --bs-accordion-btn-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
-        --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
-      }
-      .life-container {
-      }
-      .container-list {
-        height: auto;
-        margin: auto;
-        overflow: hidden;
+      .b {
         display: flex;
-        flex-wrap: wrap;
+        text-align: left;
+      }
+      .c {
+        display: flex;
+        border-bottom: 1px solid black;
+      }
+      .d {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .e {
+        display: flex;
         justify-content: space-between;
       }
+      .f {
+        display: flex;
+        justify-content: flex-end;
+      }
+      h4 {
+        padding-top: 1rem;
+      }
+      h5 {
+        padding-top: 1rem;
+        line-height: 2.5rem;
+      }
 
-      .container-item {
-        width: 300px;
-        margin-right: 20px;
-        text-align: center;
-      }
-      .container-item > p {
-        padding: 0;
-      }
       .wp-pagenavi {
         margin: 40px auto;
         font-size: 14px;
@@ -123,56 +112,33 @@
       .wp-pagenavi .nextpostslink {
         display: none;
       }
-
-      .cta {
+      button {
+        background-color: #eee;
         border: none;
-        background: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 10em;
+        border-radius: 1rem;
+        color: lightcoral;
+        box-shadow: 0 0.4rem #dfd9d9;
         cursor: pointer;
       }
 
-      .cta span {
-        padding-bottom: 7px;
-        letter-spacing: 4px;
-        font-size: 14px;
-        padding-right: 15px;
-        text-transform: uppercase;
+      button:active {
+        color: white;
+        box-shadow: 0 0.2rem #dfd9d9;
+        transform: translateY(0.2rem);
       }
 
-      .cta svg {
-        transform: translateX(-8px);
-        transition: all 0.3s ease;
+      button:hover:not(:disabled) {
+        background: lightcoral;
+        color: white;
+        text-shadow: 0 0.1rem #bcb4b4;
       }
 
-      .cta:hover svg {
-        transform: translateX(0);
-      }
-
-      .cta:active svg {
-        transform: scale(0.9);
-      }
-
-      .hover-underline-animation {
-        position: relative;
-        color: black;
-        padding-bottom: 20px;
-      }
-
-      .hover-underline-animation:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000000;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-      }
-
-      .cta:hover .hover-underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
+      button:disabled {
+        cursor: auto;
+        color: grey;
       }
     </style>
   </head>
@@ -378,221 +344,91 @@
     </header>
 
     <!-- banner -->
-    <div class="banner" style="background-image: url(/images/banner-life.jpg)">
+    <div class="banner" style="background-image: url(/images/banner-blog.jpg)">
       <div class="left">
-        <p class="menu-a">LIFE</p>
-        <p class="menu-b">生活紀錄</p>
+        <p class="menu-a">BLOG</p>
+        <p class="menu-b">經歷分享</p>
       </div>
       <div class="middle">
-        <div class="accordion" id="accordionExample">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
-          >
-            <span class="middle-page-title">貓狗日誌</span>
-            <span>選擇寵物分類</span>
-          </button>
+        <div class="middle-title">
+          <span class="middle-page-title">毛孩論壇</span>
+          <span>pet Forum</span>
         </div>
       </div>
     </div>
-    <div
-      id="collapseOne"
-      class="accordion-collapse collapse show"
-      data-bs-parent="#accordionExample"
-      style="width: 100%"
-    >
-      <div class="accordion-body">
-        <div class="select">
-          <div class="select-item-a">
-            <p class="select-title">選擇年齡</p>
-            <label class="cl-checkbox">
-              <input checked="" type="checkbox" />
-              <span>幼年 0~1</span>
-            </label>
-            <label class="cl-checkbox">
-              <input checked="" type="checkbox" />
-              <span>青年 2~3</span>
-            </label>
-            <label class="cl-checkbox">
-              <input checked="" type="checkbox" />
-              <span>中年 4~7</span>
-            </label>
-            <label class="cl-checkbox">
-              <input checked="" type="checkbox" />
-              <span>老年 8以上</span>
-            </label>
-          </div>
-          <div class="select-item-a">
-            <p class="select-title">寵物體型</p>
-            <label class="cl-checkbox">
-              <input type="checkbox" />
-              <span>大型(20KG以上)</span>
-            </label>
-            <label class="cl-checkbox">
-              <input checked="" type="checkbox" />
-              <span>中型(8-20KG)</span>
-            </label>
-            <label class="cl-checkbox">
-              <input checked="" type="checkbox" />
-              <span>小型(8KG以下)</span>
-            </label>
-          </div>
-          <div class="select-item-a">
-            <p class="select-title">選擇物種</p>
-            <label class="cl-checkbox">
-              <input checked="" type="radio" name="a" />
-              <span>狗寶貝</span>
-            </label>
-            <label class="cl-checkbox">
-              <input checked="" type="radio" name="a" />
-              <span>貓寶貝</span>
-            </label>
-          </div>
+    <div class="container">
+      <div class="b">
+        <img src="./images/貓貓6 1.jpg" alt="" style="margin: 1rem" />
+        <div style="margin-top: 1rem">
+          <h1>
+            <span
+              style="
+                border-bottom: 1px solid black;
+                font-size: 3rem;
+                letter-spacing: 1rem;
+              "
+              >寵物資訊
+            </span>
+          </h1>
+          <h4>寵物名稱 : 斑斑</h4>
+          <h4>品種 : 米克斯</h4>
+          <h4>年紀 : 5歲</h4>
+          <h4>性別 : 女生</h4>
+          <h5 style="width: 90%">
+            我的故事 :<br />
+            嗨！我是一隻五歲的虎斑貓，
+            我是一個活潑親人的貓咪，喜歡和人互動，享受陽光浴和撒嬌時間。我的毛柔軟，身體溫暖，喜歡追逐玩具、午睡和抱抱。我對新朋友友善親近，願意與他們分享我的愛和快樂。
+          </h5>
+        </div>
+      </div>
+      <img class="g" src="./images/Frame 51.svg" alt="" />
 
-          <div class="select-item-b" style="align-items: center">
-            <p class="select-title">姓別</p>
-            <label class="cl-checkbox">
-              <input checked="" type="radio" name="a" />
-              <span>男生</span>
-            </label>
-            <label class="cl-checkbox">
-              <input checked="" type="radio" name="a" />
-              <span>女生</span>
-            </label>
-            <p class="select-title">毛孩搜尋</p>
-            <div class="mb-3" style="display: flex; justify-content: center">
-              <input
-                type="text"
-                class="form-control shop-select"
-                id="exampleFormControlInput1"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- container  -->
-    <div class="life-container">
-      <div class="container-main" style="background-color: #9cccf3">
-        <h1 style="font-size: 4rem; color: white">
-          這裡是大家細心照料的<br />孩子們，要來看看嗎 ?
-        </h1>
-      </div>
-      <div class="container">
-        <div class="container-list">
-          <div class="card" style="width: 18rem">
-            <img src="./images/test-img.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="wp-pagenavi" role="navigation">
-        <a class="first" aria-label="First Page" href="#">« </a>
-        <a class="previouspostslink" rel="prev">&lt;</a>
-        <a class="page smaller">3</a>
-        <a class="page smaller">4</a>
-        <span aria-current="page" class="current">5</span>
-        <a class="page larger">6</a>
-        <a class="page larger">7</a>
-        <a class="nextpostslink" rel="next" aria-label="次のページ" href="#"
-          >&gt;
-        </a>
-        <a class="last" aria-label="Last Page" href="#"> »</a>
-      </div>
-      <div
-        class="container-main"
-        style="
-          background-color: #9cccf3;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          margin-bottom: 1rem;
-        "
-      >
-        <h1 style="font-size: 4rem; color: white">
-          有了狗狗和貓貓<br />那是不是就可以買一些他們的東西呢
-        </h1>
-        <button
-          class="cta"
-          style="
-            padding: 1rem;
-            background-color: #d7b67a;
-            border: 0.5rem solid white;
-            border-radius: 2rem;
-          "
-        >
-          <span class="hover-underline-animation"> 來去看看 </span>
-          <svg
-            id="arrow-horizontal"
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="10"
-            viewBox="0 0 46 16"
+      <div class="c">
+        <img src="./images/貓貓6 1.jpg" alt="" / style="margin: 1rem;
+        border-radius: 50%; width: 15%;">
+        <div class="d">
+          <p
+            style="padding: 1rem; background-color: white; border-radius: 3rem"
           >
-            <path
-              id="Path_10"
-              data-name="Path 10"
-              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-              transform="translate(30)"
-            ></path>
-          </svg>
-        </button>
+            今天抓到一隻老鼠，我感到充滿成就和驕傲！追逐過程中，充滿了興奮和挑戰，最終的成功讓我感到無比的興奮。這不僅是一次獲得美食的冒險，更是對我的獵食本能的展示。我看到它躲藏的小角落，發揮了我的靈敏和技巧，最終成功地捕獲了它。現在，我可以自豪地展示我的成就給我的主人，展現我作為家中捕鼠專家的地位！
+          </p>
+          <div class="e">
+            <button>上傳圖片</button>
+            <button>發布訊息</button>
+          </div>
+        </div>
+      </div>
+      <div class="c">
+        <img src="./images/貓貓6 1.jpg" alt="" / style="margin: 1rem;
+        border-radius: 50%; width: 15%;">
+        <div class="d">
+          <p
+            style="padding: 1rem; background-color: white; border-radius: 3rem"
+          >
+            今天抓到一隻老鼠，我感到充滿成就和驕傲！追逐過程中，充滿了興奮和挑戰，最終的成功讓我感到無比的興奮。這不僅是一次獲得美食的冒險，更是對我的獵食本能的展示。我看到它躲藏的小角落，發揮了我的靈敏和技巧，最終成功地捕獲了它。現在，我可以自豪地展示我的成就給我的主人，展現我作為家中捕鼠專家的地位！
+          </p>
+          <div class="f">
+            <p style="margin: 0; padding: 0">2024/02/14 9:53pm</p>
+            <img src="/images/Edit_1.svg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
-    <!-- shop  -->
-    <div class="life-shop"></div>
+
+    <div class="wp-pagenavi" role="navigation">
+      <a class="first" aria-label="First Page" href="#">« </a>
+      <a class="previouspostslink" rel="prev">&lt;</a>
+      <a class="page smaller">3</a>
+      <a class="page smaller">4</a>
+      <span aria-current="page" class="current">5</span>
+      <a class="page larger">6</a>
+      <a class="page larger">7</a>
+      <a class="nextpostslink" rel="next" aria-label="次のページ" href="#"
+        >&gt;
+      </a>
+      <a class="last" aria-label="Last Page" href="#"> »</a>
+    </div>
+
     <!-- footer -->
     <footer>
       <div class="container">
