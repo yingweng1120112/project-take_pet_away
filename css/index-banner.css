@@ -8,32 +8,29 @@
     display: flex;
     align-items: flex-end;
   }
-  .menu-a {
+  .banner > .left {
+    display: flex;
+    align-items: flex-end;
+    width: 40%;
+  }
+  .banner > .middle {
+    width: 20%;
+  }
+  .left > .menu-a {
     margin: 0;
     color: aliceblue;
     font-size: 5rem;
     margin: 0 20px;
     line-height: 1.2;
   }
-  .menu-b {
+  .left > .menu-b {
     margin: 0;
     color: aliceblue;
     font-size: 2rem;
     line-height: 1.8;
   }
-  .left {
-    display: flex;
-    align-items: flex-end;
-    width: 40%;
-  }
-  .middle {
-    width: 20%;
-  }
-  .page-title {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
+
+
   .middle-title {
     width: 100%;
     display: flex;
@@ -44,10 +41,14 @@
     padding: 1rem 1.25rem;
     background-color: white;
   } 
+  .middle-page-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
   .select {
     display: flex;
     padding: 1rem;
-;
     justify-content: space-around;
   }
   .select-title {
@@ -66,7 +67,12 @@
     flex-direction: column;
     width: 20%;
   }
-
+  .shop-select{
+    padding-right: 25px;
+    background: url(/images/search.svg) no-repeat right;
+    background-size: 20px;
+    width: 80%;
+  }
 
   .cl-checkbox {
     position: relative;
