@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 2rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#page1,
+#page2,
+#page3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #FDF7E4;
+}
+
+.pet-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.gender {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+button {
+  line-height: 3em;
+  background-color: #D7B67A;
+  font-size: 1rem;
+}
+
+/* 手機版 */
+@media screen and (max-width: 414px) {
+  .pet-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
+  #page1,
+  #page2,
+  #page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10%; */
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    width: 100% !important;
+    padding: 30px;
+  }
+
+  .box1,
+  .box2 {
+    display: none !important;
+  }
+
+}
