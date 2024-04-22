@@ -25,6 +25,7 @@ header {
 /* 步驟 */
 #step {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .stepbg {
@@ -40,12 +41,12 @@ header {
 .everystep {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   letter-spacing: 8px;
   border-collapse: collapse;
-  text-align: center;
-  width: 70%;
-  margin-left: 40px;
+  width: 50%;
+  text-align: start;
+  margin-left: 250px;
 }
 #step .nextto {
   display: flex;
