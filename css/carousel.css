@@ -3,14 +3,58 @@
   margin: 0;
 }
 
-h1 {
-  font-weight: 600;
+.carousel-h1 {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  line-height: 80px;
   letter-spacing: 2rem;
+  text-align: center;
+  color: white;
+  background-position: 52% 50%;
+  background-size: contain;
+  background-image: url("../images/titlebg.png");
+  background-repeat: no-repeat;
 }
 
-p {
-  margin: 0;
+.carousel-indicators{
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
   padding: 0;
+  margin: 0;
+}
+
+.carousel{
+  padding: 0;
+  margin: 0;
+}
+
+#myCarousel{
+  width: 80%;
+  padding: 0;
+}
+
+.carousel-p {
+  line-height: 2rem;
+  text-align: left;
+}
+
+.carousel-span {
+  font-size: 1.2rem;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 30% !important;
+  /* padding: 30px; */
+}
+
+.box-txt{
+  height: 100%;
+  /* background-color: #D7B67A; */
 }
 
 #page1,
@@ -35,9 +79,84 @@ p {
 }
 
 button {
-  line-height: 3em;
+  line-height: 3rem;
   background-color: #D7B67A;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+}
+
+/* btn */
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.pet-btn {
+  /* border: 1px solid black; */
+  width: 48%;
+  border-radius: 50px;
+  line-height: 4.375rem;
+  align-items: center;
+  text-align: center;
+  color: white;
+  /* font-size: 24px; */
+  background-color: var(--khaki);
+}
+
+.pet-btn:hover {
+  /* border: 1px solid black; */
+  background-color: var(--deep-blue);
+}
+
+.pet-btn > span{
+  /* border: 1px solid black; */
+  color: white;
+  /* font-size: 20px; */
 }
 
 /* 手機版 */
@@ -47,6 +166,11 @@ button {
     height: 130px;
     border-radius: 30px;
     object-fit: cover;
+  }
+
+  .carousel-h1 {
+    margin-bottom: 0;
+    background-position-y: 60%;
   }
 
   #page1,
@@ -63,7 +187,7 @@ button {
   .box2,
   .box3 {
     width: 100% !important;
-    padding: 30px;
+    /* padding: 30px; */
   }
 
   .box1,
