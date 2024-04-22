@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車 - 填寫資料</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/shoppingcar_p2.css" />
+  </head>
+  <body class="commendbody">
+    <header></header>
+    <!-- 背景樣式上 -->
+    <section id="roof">
+      <img src="/images/roof.png" alt="" />
+    </section>
+
+    <!-- 步驟 -->
+    <section id="step">
+      <div class="stepbg">
+        <div class="everystep">
+          <div class="nextto">
+            <h1>1</h1>
+            <h2>購物車</h2>
+          </div>
+          <div class="nextto">
+            <h1>2</h1>
+            <h2>填寫資料</h2>
+          </div>
+          <div class="nextto">
+            <h1>3</h1>
+            <h2>訂單確認</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 會員資料 和 送貨資料 -->
+    <section id="memberAndDelivery">
+      <!-- 會員資料 -->
+      <div class="member carList carList1">
+        <table>
+          <caption>
+            會員資料
+          </caption>
+          <tbody>
+            <tr>
+              <td>會員姓名</td>
+              <td><input value="王小明" readonly /></td>
+            </tr>
+            <tr>
+              <td>電子郵件</td>
+              <td><input value="a123456789@gmail.com" readonly /></td>
+            </tr>
+            <tr>
+              <td>電話號碼</td>
+              <td><input value="0912345678" readonly /></td>
+            </tr>
+            <tr>
+              <td>地址</td>
+              <td><input value="台南市中西區健康路一段1號" readonly /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 送貨資料 -->
+      <div class="carList carList2">
+        <table>
+          <caption>
+            送貨資料
+          </caption>
+          <tbody>
+            <tr>
+              <td>已選擇送貨方式：宅配</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa-solid fa-square-check"></i>
+                收件人資料與會員資料相同
+              </td>
+            </tr>
+            <td>
+              <div class="personwrite">
+                <div class="divleft">
+                  <div>電子郵件</div>
+                  <div>電話號碼</div>
+                  <div>寄送地址</div>
+                </div>
+                <div class="divright">
+                  <div>
+                    <input placeholder="請輸入名字（請填入真實姓名以利收件）" />
+                  </div>
+                  <div>
+                    <input placeholder="請輸入號碼（0912345678）" />
+                  </div>
+                  <div>
+                    <select name="" id="">
+                      <option>縣市</option>
+                    </select>
+                    <select name="" id="">
+                      <option>鄉鎮市區</option>
+                    </select>
+                    <input placeholder="請輸入詳細地址" />
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 下半部 -->
+    <section id="bottomsection">
+      <!-- 付款資料 和 訂單備註 -->
+      <div class="left">
+        <!-- 付款資料 -->
+        <div class="pay carList carList1">
+          <table>
+            <caption>
+              付款資料
+            </caption>
+            <tbody>
+              <tr>
+                <td>已選擇付款方式：貨到付款</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 訂單備註 -->
+        <div class="message carList carList2">
+          <table>
+            <caption>
+              送貨資料
+            </caption>
+            <tbody>
+              <tr>
+                <td><textarea placeholder="請備註您的特殊需求"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 發票索取方式 -->
+      <div class="right">
+        <div class="bill carList carList1">
+          <table>
+            <caption>
+              發票索取方式
+            </caption>
+            <tbody>
+              <tr>
+                <td>發票類型</td>
+                <td>
+                  <select name="" id="">
+                    <option>紙本發票</option>
+                    <option>手機載具</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>手機條碼</td>
+                <td><input value="" placeholder="請輸入手機條碼（/ABC1234）" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 按鈕 -->
+    <section id="button">
+      <div class="nextButton">
+        <button>回上一步</button>
+      </div>
+      <div class="nextButton">
+        <button>提交訂單</button>
+      </div>
+    </section>
+    <!-- 背景樣式下 -->
+    <section id="wall">
+      <img src="/images/wall2.png" alt="" />
+    </section>
+
+    <footer></footer>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
