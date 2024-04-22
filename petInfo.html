@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/petAdoptInfo.css">
+  <link rel="stylesheet" href="./css/petInfo.css">
   <title>收容資訊</title>
 </head>
 
-<body>
+<body class="commendbody">
   <header></header>
   <nav></nav>
   <section id="pet-desc">
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div id="pet-info">
-      <p class="pet-hashtag">#描述寵物的文字</p>
+      <p class="pet-hashtag"># 描述寵物的文字</p>
       <div class="pet-name">
         <p>寵物名</p>
         <img src="./images/icon_girl.png" alt="">
@@ -59,7 +59,7 @@
     <table>
       <tr>
         <th colspan="5">
-          <h1><img src="./images/icon_pet-health.png" alt="">健康狀態</h1>
+          <h1><img src="./images/icon_pet-pill.png" alt="">健康狀態</h1>
         </th>
       </tr>
       <tr>
@@ -80,7 +80,7 @@
             <input checked="" type="checkbox">
             <span>疫苗</span>
           </label>
-          </td>
+        </td>
         <td>
           <label class="cl-checkbox">
             <input checked="" type="checkbox">
@@ -127,15 +127,145 @@
         </td>
       </tr>
     </table>
+    <div class="health-underline"></div>
   </section>
 
   <section id="pet-habit">
     <div>
       <h1>MY HABIT</h1>
       <h2>可能我也非常適合你的生活習慣 要不要考慮看看</h2>
-      <p>愛默生在不經意間這樣說過，藝術家一開始總是業餘愛好者。這句話改變了我的人生。這必定是個前衛大膽的想法。需要考慮周詳生活習慣的影響及因應對策。高士其曾經提到過，知識猶如人體的血液一樣寶貴。這激勵了我。動機，可以說是最單純的力量。</p>
+      <p>
+        愛默生在不經意間這樣說過，藝術家一開始總是業餘愛好者。這句話改變了我的人生。這必定是個前衛大膽的想法。需要考慮周詳生活習慣的影響及因應對策。高士其曾經提到過，知識猶如人體的血液一樣寶貴。這激勵了我。動機，可以說是最單純的力量。
+      </p>
     </div>
   </section>
+
+  <section id="pet-skill">
+    <img src="./images/cat_hero2.jpg" alt="">
+    <table>
+      <tr>
+        <th colspan="5">
+          <h1>我的技能</h1>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>呼叫</span>
+          </label>
+        </td>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>趴下</span>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>等等</span>
+          </label>
+        </td>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>隨行</span>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>坐下</span>
+          </label>
+        </td>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>握手</span>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>定點尿尿</span>
+          </label>
+        </td>
+        <td>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox">
+            <span>不亂吠叫</span>
+          </label>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="pet-score">
+    <h1>綜合評分</h1>
+    <ul>
+      <li>
+        <span class="skill-name">活動力</span>
+        <span class="skill-bar">
+          <span class="skill-level skill-energy">80%</span>
+        </span>
+      </li>
+      <li>
+        <span class="skill-name">適應力</span>
+        <span class="skill-bar">
+          <span class="skill-level skill-adapt">80%</span>
+        </span>
+      </li>
+      <li>
+        <span class="skill-name">活潑度</span>
+        <span class="skill-bar">
+          <span class="skill-level skill-lively">80%</span>
+        </span>
+      </li>
+      <li>
+        <span class="skill-name">親人度</span>
+        <span class="skill-bar">
+          <span class="skill-level skill-affectionate">80%</span>
+        </span>
+      </li>
+    </ul>
+    <div class="score-btn">
+      <button class="cta">
+        <span class="hover-underline-animation"> 預約賞寵 </span>
+        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+          <path id="Path_10" data-name="Path 10"
+            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+        </svg>
+      </button>
+      <button class="cta">
+        <span class="hover-underline-animation"> 線上認養 </span>
+        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+          <path id="Path_10" data-name="Path 10"
+            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+        </svg>
+      </button>
+      <button class="cta">
+        <img src="./images/question.svg"></img>
+        <span class="hover-underline-animation"> 領養流程 </span>
+        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+          <path id="Path_10" data-name="Path 10"
+            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <img src="./images/paws.png" class="paws1" alt="">
+  <img src="./images/paws.png" class="paws2" alt="">
+  <img src="./images/paws.png" class="paws3" alt="">
+  <img src="./images/background-paws.png" class="background-paws1" alt="">
+  <img src="./images/background-paws.png" class="background-paws2" alt="">
 
 </body>
 
