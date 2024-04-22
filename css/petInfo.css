@@ -213,8 +213,9 @@
 
 #img-big>img {
   border-radius: 20px;
-  width: 100%;
-  object-fit: contain;
+  width: 550px;
+  height: 550px;
+  object-fit: cover;
 }
 
 #img-small {
@@ -227,8 +228,9 @@
 
 #img-small>img {
   border-radius: 10px;
-  object-fit: contain;
-  width: 20%;
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
 }
 
 #pet-info {
@@ -288,19 +290,32 @@
 
 .pet-btn {
   margin-top: 50px;
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-between;
 }
 
 .pet-btn>button {
-  line-height: 50px;
-  width: 45%;
-  border: 0px;
+  /* border: 1px solid black; */
+  width: 48%;
   border-radius: 50px;
+  line-height: 4.375rem;
+  align-items: center;
+  text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 24px;
   background-color: var(--khaki);
+}
+
+.pet-btn>button:hover {
+  /* border: 1px solid black; */
+  background-color: var(--deep-blue);
+}
+
+.pet-btn > button > span{
+  /* border: 1px solid black; */
+  color: white;
+  font-size: 20px;
 }
 
 /* 我的故事 */
@@ -466,7 +481,8 @@
 
 #pet-skill>img {
   width: 45%;
-  object-fit: contain;
+  height: 45%;
+  object-fit: cover;
 }
 
 #pet-skill>table {
@@ -543,7 +559,7 @@
   font-size: 20px;
 }
 
-.skill-name{
+.score-name{
   width: 150px;
   display: inline-block;
   line-height: 50px;
@@ -552,7 +568,7 @@
   /* border: 1px solid black; */
 }
 
-.skill-bar{
+.score-bar{
   width: 60%;
   height: 25px;
   display: inline-block;
@@ -565,7 +581,7 @@
   /* border: 1px solid black; */
 }
 
-.skill-level{
+.score-level{
   height: 90%;
   display: flex;
   justify-content: center;
@@ -579,39 +595,39 @@
   left: 0.5%;
 }
 
-.skill-energy{
-  animation: skill80;
+.score-energy{
+  animation: score80;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   background-color: var(--bean-paste);
   width: 80%;
 }
 
-.skill-adapt{
-  animation: skill80;
+.score-adapt{
+  animation: score80;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   background-color: var(--bean-paste);
   width: 80%;
 }
 
-.skill-lively{
-  animation: skill80;
+.score-lively{
+  animation: score80;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   background-color: var(--bean-paste);
   width: 80%;
 }
 
-.skill-affectionate{
-  animation: skill80;
+.score-affectionate{
+  animation: score80;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   background-color: var(--bean-paste);
   width: 80%;
 }
 
-@keyframes skill80{
+@keyframes score80{
   from {
       width: 15%;
   }
@@ -637,6 +653,11 @@
   color: white;
   font-size: 24px;
   background-color: var(--khaki);
+}
+
+.score-btn > button:hover {
+  /* border: 1px solid black; */
+  background-color: var(--deep-blue);
 }
 
 .score-btn > button > span{
