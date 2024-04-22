@@ -96,6 +96,9 @@ section {
 /* 手機版 */
 
 /* header */
+header{
+  height:auto;
+}
 .navbar {
   background-color: var(--creamy-yellow);
 }
