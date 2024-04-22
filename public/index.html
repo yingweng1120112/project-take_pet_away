@@ -4,43 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/carousel.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/index-bullentin.css">
-  <link rel="stylesheet" href="/css/index-commend.css">
-
-  <title>首頁</title>
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="/css/index-bullentin.css">
+  <link rel="stylesheet" href="/css/index-commend.css">
+  <link rel="stylesheet" href="../css/index_service.css">
+  <title>首頁</title>
 </head>
 
 <body class="commendbody">
   <!-- header -->
-  <header class="header w-100">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="container-fluid">
-        <a class="navbar-brand " href="#"><img class="w-50" src="../images/logo-removebg-preview.png" /></a>
+  <header class="header w-100 h-lg-100">
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+      <div class="container-fluid m-lg-3 ">
+        <a class="navbar-brand " href="./index.html"><img class="w-lg-55 w-sm-30" src="../images/logo-removebg-preview.png" /></a>
+        <div class="col-lg-1"></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
           aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse  " id="navbarNavDarkDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
           <ul class="navbar-nav col-lg-9">
-            <li class="nav-item dropdown-toggle-split dropdown-menu-sm-end w-100 ">
+            <li class="nav-item dropdown w-100 ">
               <button class="btn dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">
                 關於我們
               </button>
               <ul class="dropdown-menu ">
-                <li ><a class="dropdown-item" href="#">關於我們</a></li>
+                <li><a class="dropdown-item" href="#">關於我們</a></li>
                 <li><a class="dropdown-item" href="#">組織故事</a></li>
               </ul>
             </li>
@@ -82,11 +84,11 @@
               </ul>
             </li>
           </ul>
-          <!-- <div class="col-1"></div> -->
+          <div class="col-lg-1"></div>
           <!-- icon -->
-          <div class="nav-icon col-sm-12 col-lg-3 d-flex justify-content-center align-items-center ">
+          <div class="nav-icon col-lg-2 col-sm-12 col-lg-2 d-flex align-items-center ">
             <!-- shopping cart -->
-            <ul class="nav-item dropdown list-unstyled col-lg-3 d-flex align-items-lg-center m-lg-auto">
+            <ul class="nav-item dropdown list-unstyled col-lg-3 d-flex align-items-lg-center m-lg-auto w-lg-25">
               <button class="btn-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -102,19 +104,15 @@
                   <circle cx="9" cy="20" r="1" fill="#222222" stroke="#895e3c" stroke-width="1" />
                 </svg>
               </button>
-            </ul>
-            <!-- heart -->
-            <ul class="nav-item dropdown list-unstyled col-lg-3 d-flex align-items-lg-center m-lg-auto">
-              <button class="btn-icon">
+              <!-- heart -->
+              <button class="btn-icon ms-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M4.45067 13.9082L11.4033 20.4395C11.6428 20.6644 11.7625 20.7769 11.9037 20.8046C11.9673 20.8171 12.0327 20.8171 12.0963 20.8046C12.2375 20.7769 12.3572 20.6644 12.5967 20.4395L19.5493 13.9082C21.5055 12.0706 21.743 9.0466 20.0978 6.92607L19.7885 6.52734C17.8203 3.99058 13.8696 4.41601 12.4867 7.31365C12.2913 7.72296 11.7087 7.72296 11.5133 7.31365C10.1304 4.41601 6.17972 3.99058 4.21154 6.52735L3.90219 6.92607C2.25695 9.0466 2.4945 12.0706 4.45067 13.9082Z"
                     stroke="#895e3c" stroke-width="1" />
                 </svg>
               </button>
-            </ul>
-            <!-- 包含下拉選單的 SVG 按鈕 -->
-            <ul class="nav-item dropdown list-unstyled col-lg-3 d-flex align-items-lg-center m-lg-auto">
+              <!-- user -->
               <button class="btn btn-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -123,7 +121,8 @@
                   <circle cx="12" cy="8" r="4" stroke="#895e3c" stroke-width="1" stroke-linecap="round" />
                 </svg>
               </button>
-              <ul class="dropdown-menu ">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./login-register.html">會員中心</a></li>
                 <li><a class="dropdown-item" href="#">註冊</a></li>
                 <li><a class="dropdown-item" href="#">登入</a></li>
                 <li><a class="dropdown-item" href="#">登出</a></li>
@@ -135,7 +134,114 @@
       </div>
     </nav>
   </header>
-
+ <!-- 輪播carousel-->
+ <div id="myCarousel" class="carousel slide myCarousel w-auto carousel-img p-0" data-interval="false" data-ride="carousel">
+  <ol class="carousel-indicators ">
+    <li data-target="#myCarousel" data-slide-to="0" class="active first"></li>
+    <li data-target="#myCarousel" class="first" data-slide-to="1"></li>
+    <li data-target="#myCarousel"  class="first" data-slide-to="2"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <!--put img inside itens like this-->
+      <img src="../images/Rectangle 4491.jpg" alt="...">
+      <div class="container">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/Rectangle 4491.jpg" alt="...">
+      <div class="container">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/Rectangle 4491.jpg" alt="...">
+      <div class="container">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="transition-timer-carousel-progress-bar" />
+  <a class="bar-left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <!-- 服務項目 Service-->
+  <section>
+    <div class="container_card">
+      <div class="service_banner">
+        <img class="serviceCat" src="../images/serviceButton.png" alt="">
+      </div>
+      <div class="service_container">
+        <div class="service_card">
+          <div class="card">
+            <img src="../images/serviceCard1.jpg" class="card-img-top" alt="...">
+            <div class="card_body">
+              <a href="#">
+                <h3 class="card-title">汪汪領養特區</h3>
+              </a>
+              <img src="../images/dogPrint1.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img src="../images/serviceCard2.jpg" class="card-img-top" alt="...">
+            <div class="card_body">
+              <a href="#">
+                <h3 class="card-title">喵喵認養特區</h3>
+              </a>
+              <img src="../images/dogPrint1.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img src="../images/serviceCard3.jpg" class="card-img-top" alt="...">
+            <div class="card_body">
+              <a href="#">
+                <h3 class="card-title">寵物商城</h3>
+              </a>
+              <img src="../images/dogPrint1.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img src="../images/serviceCard4.jpg" class="card-img-top" alt="...">
+            <div class="card_body">
+              <a href="#">
+                <h3 class="card-title">認養流程</h3>
+              </a>
+              <img src="../images/dogPrint1.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img src="../images/serviceCard5.jpg" class="card-img-top" alt="...">
+            <div class="card_body">
+              <a href="#">
+                <h3 class="card-title">心理測驗</h3>
+              </a>
+              <img src="../images/dogPrint1.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <img src="../images/serviceCard6.jpg" class="card-img-top" alt="...">
+            <div class="card_body">
+              <a href="#">
+                <h3 class="card-title">定期追蹤</h3>
+              </a>
+              <img src="../images/dogPrint1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- 寵物認養 -->
   <section class="p-3 m-0 border-0 bd-example m-0 border-0">
@@ -151,7 +257,7 @@
           aria-label="Slide 3" class=""></button>
       </div>
 
-  
+
       <div class="carousel-inner w-100">
         <!-- 第一頁 -->
         <div id="page1" class="carousel-item active d-flex justify-content-around align-items-center"
@@ -171,7 +277,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -194,7 +301,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -217,7 +325,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -245,7 +354,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -268,7 +378,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -291,7 +402,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -317,7 +429,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -340,7 +453,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -363,7 +477,8 @@
               <button class="cta mt-2 w-100 rounded-pill border-0"
                 style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
                 <span class="me-3">前往頁面</span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                  viewBox="0 0 46 16">
                   <path id="Path_10" data-name="Path 10"
                     d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)">
                   </path>
@@ -376,294 +491,226 @@
     </div>
   </section>
 
-
-<!-- 公告欄 -->
-<section id="bulletin">
-  <div class="bulletintop">
-    <div class="titlebg">
-      <h2>公告欄</h2>
-    </div>
-  </div>
-  <div class="bulletinbot">
-    <div class="switch-button">
-      <input class="switch-button-checkbox" type="checkbox"></input>
-      <label class="switch-button-label" for=""><span class="switch-button-label-span">公告事項</span></label>
-    </div>
-    <div class="content">
-      <div class="contentpic">
-        <img src="/images/cat_cookie2.jpg" alt="">
+  <!-- 公告欄 -->
+  <section id="bulletin">
+    <div class="bulletintop">
+      <div class="titlebg">
+        <h2>公告欄</h2>
       </div>
-      <div class="contentright">
-        <ul class="everycontent">
-          <div>
-            <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
-            <img src="/images/underline.png" alt="">
-          </div>
-          <div>
-            <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
-            <img src="/images/underline.png" alt="">
-          </div>
-          <div>
-            <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
-            <img src="/images/underline.png" alt="">
-          </div>
-          <div>
-            <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
-            <img src="/images/underline.png" alt="">
-          </div>
-          <div>
-            <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
-            <img src="/images/underline.png" alt="">
-          </div>
-          <div>
-            <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
-            <img src="/images/underline.png" alt="">
-          </div>
-          <div>更多<i class="fa-solid fa-play"></i></div>
+    </div>
+    <div class="bulletinbot">
+      <div class="switch-button">
+        <input class="switch-button-checkbox" type="checkbox"></input>
+        <label class="switch-button-label" for=""><span class="switch-button-label-span">公告事項</span></label>
+      </div>
+      <div class="content">
+        <div class="contentpic">
+          <img src="/images/cat_cookie2.jpg" alt="">
+        </div>
+        <div class="contentright">
+          <ul class="everycontent">
+            <div>
+              <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
+              <img src="/images/underline.png" alt="">
+            </div>
+            <div>
+              <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
+              <img src="/images/underline.png" alt="">
+            </div>
+            <div>
+              <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
+              <img src="/images/underline.png" alt="">
+            </div>
+            <div>
+              <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
+              <img src="/images/underline.png" alt="">
+            </div>
+            <div>
+              <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
+              <img src="/images/underline.png" alt="">
+            </div>
+            <div>
+              <li>一 · 112年度臺北市市售寵物食品稽查及抽驗合格產品名單... </li>
+              <img src="/images/underline.png" alt="">
+            </div>
+            <div>更多<i class="fa-solid fa-play"></i></div>
           </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 產品推薦 -->
-<section id="commend">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-10 mx-auto">
-        <div
-          id="myCarousel"
-          class="carousel slide"
-          data-ride="carousel"
-          data-interval="0"
-        >
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
-            <li
-              data-target="#myCarousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Wrapper for carousel items -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img
-                        src="/images/car-item1.png"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <div class="thumb-content">
-                      <h4>鮮肉無穀犬糧</h4>
-                      <p>$299</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Carousel controls -->
-          <a
-            class="carousel-control-prev"
-            href="#myCarousel"
-            data-slide="prev"
-          >
-            <i class="fa fa-angle-left"></i>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#myCarousel"
-            data-slide="next"
-          >
-            <i class="fa fa-angle-right"></i>
-          </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
+  <!-- 產品推薦 -->
+  <section id="commend">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="/images/car-item1.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="thumb-content">
+                        <h4>鮮肉無穀犬糧</h4>
+                        <p>$299</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- footer -->
   <footer>
@@ -683,15 +730,6 @@
             <li><a class="dropdown-item" href="">注意事項</a></li>
           </ol>
         </div>
-        <!-- 顧客服務 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h4>顧客服務</h4>
-          <hr class="footerHr">
-          <ol>
-            <li><a class="dropdown-item" href="">會員中心</a></li>
-            <li><a class="dropdown-item" href="">常見問題</a></li>
-          </ol>
-        </div>
         <!-- 領養專區 -->
         <div class="footerItem flex-sm-column mt-2">
           <h4>領養專區</h4>
@@ -700,14 +738,6 @@
             <li><a class="dropdown-item" href="">收容資訊</a></li>
             <li><a class="dropdown-item" href="">動物之家</a></li>
             <li><a class="dropdown-item" href="">定期追蹤</a></li>
-          </ol>
-        </div>
-        <!-- 隱私政策 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h4>隱私政策</h4>
-          <hr class="footerHr">
-          <ol>
-            <li><a class="dropdown-item" href="">隱私條款</a></li>
           </ol>
         </div>
         <!-- 聯絡我們 -->
@@ -720,11 +750,30 @@
           <p class="desc">信箱:xinpetfood@gmail.com</p>
           <p class="desc">地址:71005 台南市永康區南台街1號</p>
         </div>
-        <!-- 社群連結 -->
+        <!-- 顧客服務 -->
         <div class="footerItem flex-sm-column mt-2">
+          <h4>顧客服務</h4>
+          <hr class="footerHr">
+          <ol>
+            <li><a class="dropdown-item" href="">會員中心</a></li>
+            <li><a class="dropdown-item" href="">常見問題</a></li>
+          </ol>
+        </div>
+
+        <!-- 隱私政策 -->
+        <div class="footerItem flex-sm-column mt-2">
+          <h4>隱私政策</h4>
+          <hr class="footerHr">
+          <ol>
+            <li><a class="dropdown-item" href="">隱私條款</a></li>
+          </ol>
+        </div>
+
+        <!-- 社群連結 -->
+        <div class="footerItem flex-sm-column mt-2 ">
           <h4>社群連結</h4>
           <hr class="footerHr">
-          <ol class="icon">
+          <ol class="icon ">
             <li>
               <a href="https://www.facebook.com/profile.php?id=100090898966387" class="footerLink">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -764,7 +813,7 @@
               <img src="../images/footer_linepay.jpg" alt="">
               <img src="../images/footer_lineQR.jpg" alt="">
             </div>
-            <div>
+            <div class="mt-4">
               <p class="desc">戶名:汪喵星球</p>
               <p class="desc">銀行：喵汪銀行-熊熊分行</p>
               <p class="desc">帳號：059-004-167249</p>
@@ -777,8 +826,12 @@
         </div>
 
       </div>
+    </div>
   </footer>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+  <script src="../js/carousel.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

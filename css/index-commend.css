@@ -16,124 +16,124 @@
 }
 
 /* 電腦版 */
-@media screen and (max-width: 1440px) {
-  /* 產品推薦 */
-  #commendbody {
-    display: block;
-  }
-  #commend {
-    background-image: url(/images/commendbg.png);
-    background-size: cover;
-  }
-  .carousel {
-    margin: 30px auto 60px;
-    padding: 0 80px;
-  }
-  .carousel .carousel-item {
-    text-align: center;
-    overflow: hidden;
-  }
-  .carousel .carousel-item h4 {
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 3px;
-  }
-  .carousel .carousel-item img {
-    max-width: 100%;
-    display: inline-block;
-  }
-  .carousel .carousel-item .btn {
-    border-radius: 0;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    background: #000000;
-    padding: 6px 15px;
-    margin-top: 5px;
-  }
-  .carousel .carousel-item .btn:hover {
-    background: #8c5bff;
-  }
-  .carousel .carousel-item .btn i {
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 5px;
-  }
-  .carousel .thumb-wrapper {
-    margin: 5px;
-    text-align: left;
-  }
-  .carousel-item .img-box {
-    display: flex;
-    justify-content: center;
-    background-image: url(/images/itemborder.png);
-    background-repeat: no-repeat;
-    background-size: 100% 180px;
-    background-position: center;
-    height: 180px;
-  }
-  .carousel .thumb-content {
-    border: 2px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background: #fff;
-    position: relative;
-    top: -30px;
-  }
-  .carousel .thumb-content p {
-    margin-bottom: 0;
-    color: #fecc5f;
-    font-weight: 700;
-    font-size: 20px;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    height: 44px;
-    width: 44px;
-    background: none;
-    margin: auto 0;
-    border-radius: 50%;
-    border: 3px solid white;
-  }
-  .carousel-control-prev i,
-  .carousel-control-next i {
-    font-size: 36px;
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    margin: -19px 0 0 0;
-    z-index: 5;
-    left: 0;
-    right: 0;
-    color: grey;
-    text-shadow: none;
-    font-weight: bold;
-  }
-  .carousel-control-prev i {
-    margin-left: -3px;
-  }
-  .carousel-control-next i {
-    margin-right: -3px;
-  }
-  .carousel-indicators {
-    bottom: -50px;
-  }
-  .carousel-indicators li,
-  .carousel-indicators li.active {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 4px;
-    border: none;
-  }
-  .carousel-indicators li {
-    background: #ffffff;
-  }
-  .carousel-indicators li.active {
-    background: #858383;
-  }
+
+/* 產品推薦 */
+#commendbody {
+  display: block;
+}
+#commend {
+  background-image: url(/images/commendbg.png);
+  background-size: cover;
+  width: 100%;
+}
+.carousel {
+  margin: 30px auto 60px;
+  padding: 0 80px;
+}
+.carousel .carousel-item {
+  text-align: center;
+  overflow: hidden;
+}
+.carousel .carousel-item h4 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.carousel .carousel-item img {
+  max-width: 100%;
+  display: inline-block;
+}
+.carousel .carousel-item .btn {
+  border-radius: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  background: #000000;
+  padding: 6px 15px;
+  margin-top: 5px;
+}
+.carousel .carousel-item .btn:hover {
+  background: #8c5bff;
+}
+.carousel .carousel-item .btn i {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+  margin: 5px;
+  text-align: left;
+}
+.carousel-item .img-box {
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/itemborder.png);
+  background-repeat: no-repeat;
+  background-size: 100% 180px;
+  background-position: center;
+  height: 180px;
+}
+.carousel .thumb-content {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: #fff;
+  position: relative;
+  top: -30px;
+}
+.carousel .thumb-content p {
+  margin-bottom: 0;
+  color: #fecc5f;
+  font-weight: 700;
+  font-size: 20px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  height: 44px;
+  width: 44px;
+  background: none;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin: -19px 0 0 0;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  color: grey;
+  text-shadow: none;
+  font-weight: bold;
+}
+.carousel-control-prev i {
+  margin-left: -3px;
+}
+.carousel-control-next i {
+  margin-right: -3px;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 4px;
+  border: none;
+}
+.carousel-indicators li {
+  background: #ffffff;
+}
+.carousel-indicators li.active {
+  background: #858383;
 }

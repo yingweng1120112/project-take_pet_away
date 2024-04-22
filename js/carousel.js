@@ -1,4 +1,3 @@
-
     // // TODO: 自動翻頁
     // const btnPage1Ele = document.getElementById("btnPage1");
     // const page1Ele = document.getElementById("page1");
