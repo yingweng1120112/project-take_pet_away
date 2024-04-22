@@ -72,8 +72,28 @@ header {
 }
 
 /* 購物車 */
-.carList {
+#shoppingcar {
+  display: flex;
+  flex-direction: row;
+  margin: auto 10%;
+  justify-content: space-between;
+}
+#shoppingcar .left {
+  width: 65%;
+}
+#shoppingcar .right {
+  width: 30%;
+  height: auto;
+  position: relative;
+}
+#shoppingcar .right .divfixed{
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: var(--);
+}
+.carList3{}
+.carList {
   border-radius: 20px 20px 0 0;
   background-color: var(--creamy-yellow);
   margin-bottom: 50px;
@@ -151,11 +171,7 @@ header {
   align-items: center;
 }
 
-/* 送貨及付款方式 和 訂單資訊 */
-#selectAndOrder {
-  display: flex;
-  justify-content: space-between;
-}
+/* 訂單資訊 */
 .carList1 {
   width: 50%;
   height: 340px;
@@ -320,10 +336,10 @@ header {
   background: #858383;
 }
 
-
 /* 按鈕 */
 button {
-  width: 250px;
+  width: 100%;
+  margin-top: 20px;
   letter-spacing: 10px;
   font-size: var(--font-size-h4);
   font-weight: 600;

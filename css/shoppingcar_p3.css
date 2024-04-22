@@ -151,43 +151,6 @@ header {
   align-items: center;
 }
 
-/* 送貨及付款方式 和 訂單資訊 */
-#selectAndOrder {
-  display: flex;
-  justify-content: space-between;
-}
-.carList1 {
-  width: 50%;
-  height: 340px;
-}
-.carList1 td,
-.carList2 td {
-  padding-left: 20px;
-  font-size: var(--font-size-p);
-  height: 50px;
-}
-
-.carList select {
-  font-size: 14px;
-  width: 97%;
-  height: 35px;
-  border: none;
-  border-radius: 5px;
-  text-indent: 5px;
-}
-.carList2 {
-  width: 40%;
-}
-.carList2 tr {
-  padding-top: 15px;
-  width: 97%;
-  display: flex;
-  justify-content: space-between;
-}
-.carList2 tr:nth-child(4) {
-  font-weight: 600;
-}
-
 /* 產品推薦 */
 #commendbody {
   display: flex;
@@ -320,7 +283,42 @@ header {
   background: #858383;
 }
 
+/* 送貨及付款方式 和 訂單資訊 */
+#selectAndOrder {
+  display: flex;
+  justify-content: space-between;
+}
+.carList1 {
+  width: 50%;
+  height: 340px;
+}
+.carList1 td,
+.carList2 td {
+  padding-left: 20px;
+  font-size: var(--font-size-p);
+  height: 50px;
+}
 
+.carList select {
+  font-size: 14px;
+  width: 97%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  text-indent: 5px;
+}
+.carList2 {
+  width: 40%;
+}
+.carList2 tr {
+  padding-top: 15px;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+}
+.carList2 tr:nth-child(4) {
+  font-weight: 600;
+}
 /* 按鈕 */
 button {
   width: 250px;

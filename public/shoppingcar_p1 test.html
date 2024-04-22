@@ -22,7 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/shoppingcar_p1.css" />
+    <link rel="stylesheet" href="/css/shoppingcar_p1 test.css" />
   </head>
   <body class="commendbody">
     <header></header>
@@ -52,8 +52,8 @@
     </section>
 
     <!-- 購物車 -->
-    <section>
-      <div class="carList">
+    <div id="shoppingcar">
+      <div class="carList left">
         <table>
           <caption>
             購物車（3件）
@@ -66,6 +66,101 @@
               <td>單件價格</td>
               <td>數量</td>
               <td>小計</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item1.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item1.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item1.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item1.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-square-check"></i></td>
+              <td>
+                <div class="itemList">
+                  <div><img src="/images/car-item1.png" alt="" /></div>
+                  <div>牛肉風味棒 耐嚼型潔牙棒85克 [牛肉風味]</div>
+                </div>
+              </td>
+              <td>0</td>
+              <td>$45</td>
+              <td>
+                <div class="itemAmount">
+                  <i class="fa-solid fa-square-minus"></i>
+                  <div>2</div>
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </td>
+              <td>$90</td>
             </tr>
             <tr>
               <td><i class="fa-solid fa-square-check"></i></td>
@@ -127,59 +222,36 @@
           </thead>
         </table>
       </div>
-    </section>
 
-    <!-- 送貨及付款方式 和 訂單資訊 -->
-    <section id="selectAndOrder">
-      <div class="carList carList1">
-        <table>
-          <caption>
-            選擇送貨及付款方式
-          </caption>
-          <tr>
-            <td>送貨方式</td>
-          </tr>
-          <td>
-            <select name="" id="">
-              <option>宅配</option>
-              <option>超商取貨</option>
-            </select>
-          </td>
-          <tr>
-            <td>付款方式</td>
-          </tr>
-          <td>
-            <select name="" id="">
-              <option>貨到付款</option>
-              <option>LINE PAY</option>
-            </select>
-          </td>
-        </table>
+      <div class="carList carList2  right">
+        <div class="divfixed">
+          <table>
+            <caption>
+              訂單資訊
+            </caption>
+            <tr>
+              <td>小計：</td>
+              <td>$270</td>
+            </tr>
+            <tr>
+              <td>運費：</td>
+              <td>$80</td>
+            </tr>
+            <tr>
+              <td>優惠：</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>合計：</td>
+              <td>$350</td>
+            </tr>
+          </table>
+          <div class="nextButton">
+            <button>前往結帳</button>
+          </div>
+        </div>
       </div>
-      <div class="carList carList2">
-        <table>
-          <caption>
-            訂單資訊
-          </caption>
-          <tr>
-            <td>小計：</td>
-            <td>$270</td>
-          </tr>
-          <tr>
-            <td>運費：</td>
-            <td>$80</td>
-          </tr>
-          <tr>
-            <td>優惠：</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>合計：</td>
-            <td>$350</td>
-          </tr>
-        </table>
-      </div>
-    </section>
+    </div>
 
     <!-- 相關推薦 -->
     <section id="commend">
@@ -419,12 +491,6 @@
       </div>
     </section>
 
-    <!-- 按鈕 -->
-    <section>
-      <div class="nextButton">
-        <button>前往結帳</button>
-      </div>
-    </section>
     <!-- 背景樣式下 -->
     <section id="wall">
       <img src="/images/wall.png" alt="" />
