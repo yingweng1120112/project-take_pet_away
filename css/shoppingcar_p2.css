@@ -25,6 +25,7 @@ header {
 /* 步驟 */
 #step {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .stepbg {
@@ -40,12 +41,12 @@ header {
 .everystep {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   letter-spacing: 8px;
   border-collapse: collapse;
-  text-align: center;
-  width: 70%;
-  margin-left: 40px;
+  width: 50%;
+  text-align: start;
+  margin-left: 250px;
 }
 #step .nextto {
   display: flex;
@@ -174,17 +175,16 @@ header {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
 /* 下半部 */
 #bottomsection {
-  background-color: #89837c;
   display: flex;
   width: 80%;
 }
-#bottomsection caption{
+#bottomsection caption {
   margin-bottom: 20px;
 }
 #bottomsection > div {
-  border: red 1px solid;
   width: 50%;
 }
 #bottomsection .left {
@@ -193,7 +193,7 @@ header {
   align-items: start;
   width: 50%;
 }
-#bottomsection .left div{
+#bottomsection .left div {
   width: 90%;
 }
 #bottomsection .left .pay {
@@ -203,13 +203,13 @@ header {
   width: 100%;
   height: 250px;
 }
-#bottomsection .carList{
+#bottomsection .carList {
   margin-top: 0;
 }
-#bottomsection .message{
+#bottomsection .message {
   height: 230px;
 }
-#bottomsection td{
+#bottomsection td {
   height: 0px;
 }
 .carList textarea {
@@ -221,12 +221,12 @@ header {
   text-indent: 5px;
   resize: none;
 }
-#bottomsection .bill select{
+#bottomsection .bill select {
   width: 90%;
 }
 
 /* 按鈕 */
-#button{
+#button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -245,10 +245,13 @@ button {
   cursor: pointer;
   margin-bottom: 40px;
 }
-.nextButton {
+.nextButton1 {
   width: 20%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: start;
+}
+.nextButton2 {
+  justify-content: end;
 }
 
 button:active {
