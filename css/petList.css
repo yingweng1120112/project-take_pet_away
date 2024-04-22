@@ -1,0 +1,194 @@
+#title {
+  margin-top: 6.25rem;
+  width: 80%;
+}
+
+#title>h1 {
+  font-size: 3.9375rem;
+  color: white;
+}
+
+#pet-card {
+  width: 80%;
+  /* display: flex; */
+  display: grid;
+  /* justify-content: center; */
+  justify-items: center;
+  /* align-items: center; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6.25rem;
+}
+
+.card {
+  display: grid;
+  flex-wrap: wrap;
+}
+
+.card>img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px;
+}
+
+.card>div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgba(24, 39, 71, 0.5);
+}
+
+.card>div>p {
+  padding: 0;
+  letter-spacing: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--brown);
+}
+
+.pet-name {
+  /* border: 1px solid black; */
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pet-name>img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  opacity: 50%;
+}
+
+/* 頁碼 */
+.wp-pagenavi {
+  margin: 40px auto;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.wp-pagenavi a {
+  color: #333;
+}
+
+.wp-pagenavi a:hover {
+  color: #77a0d1;
+}
+
+.wp-pagenavi span.current,
+.wp-pagenavi a.page {
+  margin: 0 10px;
+  line-height: 2;
+  padding: 0 12px;
+  transition: .03s;
+  display: block;
+  border-bottom: 4px solid transparent;
+}
+
+.wp-pagenavi span.current {
+  border-bottom: 4px solid #77a0d1;
+}
+
+.wp-pagenavi a.page {
+  background: none;
+}
+
+.wp-pagenavi a.page:hover {
+  border-bottom: 4px solid #77a0d1;
+}
+
+.wp-pagenavi .first,
+.wp-pagenavi .extend {
+  margin-right: 15px;
+}
+
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+  display: none;
+}
+
+
+
+/* btn */
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#ending > button{
+  /* border: 1px solid black; */
+  margin-top: 30px;
+  /* width: 25%; */
+  border-radius: 50px;
+  line-height: 4.375rem;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  background-color: var(--khaki);
+}
+
+#ending > button > span{
+  /* border: 1px solid black; */
+  color: white;
+  font-size: 20px;
+}
