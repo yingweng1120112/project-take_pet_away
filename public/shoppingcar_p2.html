@@ -53,6 +53,7 @@
 
     <!-- 會員資料 和 送貨資料 -->
     <section id="memberAndDelivery">
+      <!-- 會員資料 -->
       <div class="member carList carList1">
         <table>
           <caption>
@@ -125,8 +126,66 @@
       </div>
     </section>
 
+    <!-- 下半部 -->
+    <section id="bottomsection">
+      <!-- 付款資料 和 訂單備註 -->
+      <div class="left">
+        <!-- 付款資料 -->
+        <div class="pay carList carList1">
+          <table>
+            <caption>
+              付款資料
+            </caption>
+            <tbody>
+              <tr>
+                <td>已選擇付款方式：貨到付款</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 訂單備註 -->
+        <div class="message carList carList2">
+          <table>
+            <caption>
+              送貨資料
+            </caption>
+            <tbody>
+              <tr>
+                <td><textarea placeholder="請備註您的特殊需求"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 發票索取方式 -->
+      <div class="right">
+        <div class="bill carList carList1">
+          <table>
+            <caption>
+              發票索取方式
+            </caption>
+            <tbody>
+              <tr>
+                <td>發票類型</td>
+                <td>
+                  <select name="" id="">
+                    <option>紙本發票</option>
+                    <option>手機載具</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>手機條碼</td>
+                <td><input value="" placeholder="請輸入手機條碼（/ABC1234）" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- 按鈕 -->
-    <section>
+    <section id="button">
       <div class="nextButton">
         <button>回上一步</button>
       </div>
