@@ -12,6 +12,8 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 /* banner區域 */
 #banner {
@@ -82,9 +84,9 @@ p{
   flex-direction: column-reverse;
   flex-wrap: wrap;
 }
+
 .mallcard-left {
   width: 100%;
-  /* height: 18rem; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -99,6 +101,69 @@ p{
 .mallcard-right > img {
   width: 100%;
   border-radius: 1.875rem;
+}
+/* 背景狗掌區 */
+.dog-palm{
+  position: absolute;
+  top:950px;
+  right:200px;
+  z-index: 1;
+  transform: rotate(75deg) scale(0.5);
+}
+.dog-palm2{
+  position: absolute;
+  top:1530px;
+  left:170px;
+  z-index: 1;
+  transform: scale(0.5);
+}
+.dog-palm3{
+  position: absolute;
+  top:2080px;
+  right:180px;
+  z-index: 1;
+  transform: rotate(260deg) scale(0.5);
+}
+.dog-palm4{
+  position: absolute;
+  top:2830px;
+  left:120px;
+  z-index: 1;
+  transform: scale(0.4);
+}
+.dog-palm5{
+  position: absolute;
+  top:1330px;
+  right:200px;
+  z-index: 1;
+  transform: rotate(75deg) scale(0.5);
+  animation: fade-out 1.5s ease infinite;
+}
+.dog-palm6{
+  position: absolute;
+  top:410px;
+  right:215px;
+  z-index: 1;
+  transform: rotate(75deg) scale(0.3);
+  animation: fade-out 2.5s ease infinite;
+}
+@keyframes fade-out {
+  0% {
+      opacity: 1; /* 初始不透明度为 1 */
+  }
+  50% {
+      opacity: 0.5; /* 末尾不透明度为 0 */
+  }
+  100% {
+      opacity: 0; /* 末尾不透明度为 0 */
+  }
+}
+.dog-footprints{
+  position: absolute;
+  top:2395px;
+  left:115px;
+  z-index: 1;
+  transform: scale(0.4);
 }
 
 /* 寵物用品 */
@@ -118,10 +183,11 @@ p{
   width: 100%;
 }
 
-#section4  img {
+#section4 img {
   width: 100%;
+  
 }
-#section4  img:nth-child(2) {
+.section4-bg2 {
   display: none;
 }
 
@@ -129,6 +195,8 @@ p{
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .section4-text-left{
   display: none;
@@ -211,6 +279,47 @@ p{
   .mallcard-info{
     line-height: 2.1rem;
   }
+  /* 背景狗掌區 */
+  .dog-palm{
+    top:950px;
+    right:100px;
+    transform: scale(1.5);
+  }
+  .dog-palm2{
+    top:1200px;
+    left:100px;
+    transform: rotate(75deg) scale(2);
+  }
+  .dog-palm3{
+    position: absolute;
+    top:1700px;
+    right:100px;
+    z-index: 1;
+    transform: rotate(330deg) scale(1);
+  }
+  .dog-palm4{
+    top:1800px;
+    left:700px;
+    transform: rotate(260deg);
+    transform: scale(0.3);
+  }
+  .dog-palm5{
+    position: absolute;
+    top:1330px;
+    right:200px;
+    z-index: 1;
+    transform: rotate(75deg) scale(0.5);
+  }
+  .dog-palm6{
+    top:800px;
+    right:1600px;
+    transform: scale(0.6);
+  }
+  .dog-footprints{
+    top: 1110px;
+    left: -700px;
+    transform: scale(0.3);
+  }
   /* 寵物罐頭 */
   #can-card .mall-card {
     flex-direction: row-reverse;
@@ -235,10 +344,13 @@ p{
   #section4 > img:first-child {
     display: none;
   }
-  #section4 > img:nth-child(2) {
+  .section4-bg2 {
     display: block;
     width: 100%;
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    top: 2150px;
+    z-index: 1
   }
   .section4-text-left{
   display: flex;
@@ -262,11 +374,6 @@ p{
   }
   .section4-text3{
     margin-left: 100%;
-  }
-
-  .section4-content{
-    position: absolute;
-    top: 2250px;
   }
 
   .section4-text1, .section4-text2{
