@@ -8,22 +8,8 @@
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <title>Bootstrap Example</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-
-    h1 {
-      font-weight: 600;
-      letter-spacing: 2rem;
-    }
-
-    p {
-      margin: 0;
-      padding: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <!-- 參考https://codepen.io/davidbiek/pen/bMrQKN -->
@@ -44,21 +30,20 @@
     <div class="carousel-inner w-100">
       <!-- 第一頁 -->
       <div id="page1" class="carousel-item active d-flex justify-content-around align-items-center"
-        style="height: 300px; background-color: #FDF7E4;" data-bs-interval="1000">
+        data-bs-interval="1000">
         <!-- 第一頁 第1格 -->
-        <div class="d-inline-block w-25">
+        <div class="d-inline-block w-25 box1">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_cookie1.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥1</h5>
+            <h4 class="text-center">狗狗叫啥1</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_girl.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -69,19 +54,18 @@
           </div>
         </div>
         <!-- 第一頁 第2格 -->
-        <div class="d-inline-block w-25">
+        <div class="d-inline-block w-25 box2">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_cookie1.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥2</h5>
+            <h4 class="text-center">狗狗叫啥2</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_boy.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -92,19 +76,18 @@
           </div>
         </div>
         <!-- 第一頁 第3格 -->
-        <div class="d-inline-block w-25">
+        <div class="d-inline-block w-25 box3">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_cookie1.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥3</h5>
+            <h4 class="text-center">狗狗叫啥3</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_boy.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -122,20 +105,19 @@
       <!-- 第二頁 第1格 -->
       <!-- <div class="carousel-item active d-flex justify-content-around align-items-center" style="height: 300px;"> -->
       <div id="page2" class="carousel-item active d-flex justify-content-around align-items-center"
-        data-bs-interval="2000" style="height: 300px; background-color: #FDF7E4;">
-        <div class="d-inline-block w-25">
+        data-bs-interval="2000">
+        <div class="d-inline-block w-25 box1">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_cookie1.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥4</h5>
+            <h4 class="text-center">狗狗叫啥4</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_boy.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -146,19 +128,18 @@
           </div>
         </div>
         <!-- 第二頁 第2格 -->
-        <div class="d-inline-block w-25">
+        <div class="d-inline-block w-25 box2">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_cookie1.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥5</h5>
+            <h4 class="text-center">狗狗叫啥5</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_boy.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -169,19 +150,18 @@
           </div>
         </div>
         <!-- 第二頁 第3格 -->
-        <div class="d-inline-block w-25">
+        <div class="d-inline-block w-25 box3">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_cookie1.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥6</h5>
+            <h4 class="text-center">狗狗叫啥6</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_boy.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -195,20 +175,19 @@
 
       <!-- 第三頁 -->
       <div id="page3" class="carousel-item active d-flex justify-content-around align-items-center"
-        data-bs-interval="2000" style="height: 300px; background-color: #FDF7E4;">
-        <div class="d-inline-block w-25">
+        data-bs-interval="2000">
+        <div class="d-inline-block w-25 box1">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_chocolate2.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥7</h5>
+            <h4 class="text-center">狗狗叫啥7</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_boy.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -219,19 +198,18 @@
           </div>
         </div>
         <!-- 第三頁 第2格 -->
-        <div class="d-inline-block w-25">
+        <div class="d-inline-block w-25 box2">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_chocolate2.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥8</h5>
+            <h4 class="text-center">狗狗叫啥8</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_boy.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -242,19 +220,18 @@
           </div>
         </div>
         <!-- 第三頁 第3格 -->
-        <div class="d-inline-block w-25">
+        <div class="d-inline-block w-25 box3">
           <!-- <div class="carousel-item active" data-bs-interval="10000"> -->
-          <img src="https://placehold.jp/200x200.png" class="d-inline-block rounded-4" alt="...">
+          <img src="../images/cat_chocolate2.jpg" class="d-inline-block rounded-4 pet-img" alt="...">
           <!-- </div> -->
           <div class="d-inline-block align-middle ms-3 w-50" style="line-height: 2em;">
-            <h5 class="text-center">狗狗叫啥9</h5>
+            <h4 class="text-center">狗狗叫啥9</h4>
             <p>年紀</p>
             <div class="d-flex align-items-center w-100 d-flex justify-content-between pe-3">
               <p>體重</p>
-              <img src="https://placehold.jp/3d4070/ffffff/40x40.png" style="object-fit: contain;" alt="">
+              <img src="../images/icon_girl.png" class="gender" alt="">
             </div>
-            <button class="cta mt-2 w-100 rounded-pill border-0"
-              style="line-height: 3em; background-color: #D7B67A; font-size: 16px ;">
+            <button class="cta mt-2 w-100 rounded-pill border-0">
               <span class="me-3">前往頁面</span>
               <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
                 <path id="Path_10" data-name="Path 10"
@@ -267,116 +244,7 @@
       </div>
     </div>
   </div>
-  <script>
-    // // TODO: 自動翻頁
-    // const btnPage1Ele = document.getElementById("btnPage1");
-    // const page1Ele = document.getElementById("page1");
-    // const btnPage2Ele = document.getElementById("btnPage2");
-    // const page2Ele = document.getElementById("page2");
-    // const btnPage3Ele = document.getElementById("btnPage3");
-    // const page3Ele = document.getElementById("page3");
-    // const indicatorsEle = document.getElementById("indicators");
-
-    // // 處理覆蓋
-    // let i = 1;
-
-    // // 每個按鈕加事件監聽器
-    // btnPage1Ele.addEventListener("click", function (event) {
-    //   if (i >= 4) {
-    //     i = 1;
-    //     console.log(`判斷T ${i}`);
-    //     page1Ele.style.zIndex = `${i}`;
-    //     page2Ele.style.zIndex = 0;
-    //     page3Ele.style.zIndex = 0;
-    //     indicatorsEle.style.zIndex = `${i}+1`;
-    //   } else {
-    //     console.log(`判斷F ${i}`);
-    //   }
-    //   // 重置 z-index 和 i
-    //   page1Ele.style.zIndex = `${i}`;
-    //   i++;
-    //   indicatorsEle.style.zIndex = `${i}+1`;
-    // });
-
-    // btnPage2Ele.addEventListener("click", function (event) {
-    //   if (i >= 4) {
-    //     i = 1;
-    //     console.log(`判斷T ${i}`);
-    //     page1Ele.style.zIndex = 0;
-    //     page2Ele.style.zIndex = `${i}`;
-    //     page3Ele.style.zIndex = 0;
-    //     indicatorsEle.style.zIndex = `${i}+1`;
-    //   } else {
-    //     console.log(`判斷F ${i}`);
-    //   }
-    //   // 重置 z-index 和 i
-    //   page2Ele.style.zIndex = `${i}`;
-    //   i++;
-    //   indicatorsEle.style.zIndex = `${i}+1`;
-    // });
-
-    // btnPage3Ele.addEventListener("click", function (event) {
-    //   if (i >= 4) {
-    //     i = 1;
-    //     console.log(`判斷T ${i}`);
-    //     page1Ele.style.zIndex = 0;
-    //     page2Ele.style.zIndex = 0;
-    //     page3Ele.style.zIndex = `${i}`;
-    //     indicatorsEle.style.zIndex = `${i}+1`;
-    //   } else {
-    //     console.log(`判斷F ${i}`);
-    //   }
-    //   // 重置 z-index 和 i
-    //   page3Ele.style.zIndex = `${i}`;
-    //   i++;
-    //   indicatorsEle.style.zIndex = `${i}+1`;
-    // });
-
-    // 初始化 Carousel 元件
-    // let myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleDark'), {
-    //   interval: 100 // 可以自定義輪播的時間間隔
-    // });
-
-    const btnPage1Ele = document.getElementById("btnPage1");
-    const page1Ele = document.getElementById("page1");
-    const btnPage2Ele = document.getElementById("btnPage2");
-    const page2Ele = document.getElementById("page2");
-    const btnPage3Ele = document.getElementById("btnPage3");
-    const page3Ele = document.getElementById("page3");
-    const indicatorsEle = document.getElementById("indicators");
-
-    let i = 1;
-
-    function transitionPage(pageElement) {
-      page1Ele.style.zIndex = 0;
-      page2Ele.style.zIndex = -1;
-      page3Ele.style.zIndex = -1;
-
-      pageElement.style.zIndex = i;
-      i++;
-    }
-
-    btnPage1Ele.addEventListener("click", function (event) {
-      transitionPage(page1Ele);
-    });
-
-    btnPage2Ele.addEventListener("click", function (event) {
-      transitionPage(page2Ele);
-    });
-
-    btnPage3Ele.addEventListener("click", function (event) {
-      transitionPage(page3Ele);
-    });
-
-    setInterval(function () {
-      if (i >= 4) {
-        i = 1;
-      }
-      transitionPage(document.querySelector('.carousel-item.active'));
-    }, 1000);
-
-
-  </script>
+  <script src="../js/carousel.js"></script>
 </body>
 
 </html>
