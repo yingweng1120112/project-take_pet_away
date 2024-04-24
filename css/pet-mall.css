@@ -259,7 +259,7 @@ p{
   }
   /* 寵物飼料 */
   .mall-card {
-    width: 60%;
+    width: 70%;
     justify-content: space-between;
     flex-direction: initial;
   }
@@ -349,7 +349,7 @@ p{
     width: 100%;
     /* position: relative; */
     position: absolute;
-    top: 134.375rem;
+    top: 137rem;
     z-index: 1
   }
   .section4-text-left{
