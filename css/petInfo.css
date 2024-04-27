@@ -188,6 +188,13 @@
   transform-origin: bottom left;
 }
 
+/* banner */
+.banner {
+  background-image: url(/images/background_petinfo-navbar.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
 
 /* 寵物主頁 */
 #pet-desc {
@@ -208,6 +215,7 @@
 
 #pet-img {
   width: 45%;
+  /* z-index: 1; */
   /* border: 1px solid black; */
 }
 
@@ -235,6 +243,7 @@
 
 #pet-info {
   /* border: 1px solid black; */
+  /* z-index: 1; */
   width: 45%;
   padding: 50px;
   display: flex;
@@ -331,6 +340,7 @@
 }
 
 .story-desc {
+  z-index: 1;
   width: 45%;
   padding-left: 50px;
   padding-right: 50px;
@@ -387,6 +397,7 @@
 
 #pet-health>table>tbody>tr>th {
   /* border: 1px solid black; */
+  height: 100px;
   line-height: 100px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -483,6 +494,7 @@
   width: 45%;
   height: 45%;
   object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 10px;
 }
 
 #pet-skill>table {
@@ -525,7 +537,7 @@
   justify-content: center;
   text-align: center;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 10px;
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -688,52 +700,106 @@
 .paws1{
   position: absolute;
   /* z-index: -1; */
-  /* animation-name: paws;
+  animation-name: paws;
   animation-duration: 10s;
   animation-direction: ease-in;
-  animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
   transform: rotate(200deg);
   left: 80%;
-  top: 15%;
+  top: 55%;
 }
-/* 
+
 @keyframes paws{
   0%{
     left: 80%;
-    top: 10%;
+    top: 55%;
   }
   50%{
-    left: 60%;
-    top: -10%;
+    left: 70%;
+    top: 30%;
+    transform: rotate(100deg);
   }
   75%{
-    left: 60%;
-    top: -10%;
+    /* left: 70%;
+    top: 30%;
+    transform: rotate(100deg); */
   }
   100%{
     left: 80%;
-    top: 10%;
+    top: 55%;
   }
-} */
+}
 
 .paws2{
   position: absolute;
   /* z-index: -1; */
+  animation-name: paws2;
+  animation-duration: 5s;
+  animation-direction: ease-in;
+  animation-iteration-count: infinite;
   transform: rotate(-45deg);
   height: 150px;
   object-fit: contain;
   left: 50%;
-  top: 95%;
+  top: 140%;
 }
 
+@keyframes paws2{
+  0%{
+  transform: rotate(-45deg);
+  /* left: 50%;
+    top: 95%; */
+  }
+  /* 20%{
+    left: 10%;
+    top: 60%;
+    transform: rotate(90deg);
+  } */
+  50%{
+    /* left: 0%;
+    top: 120%; */
+    transform: rotate(45deg);
+  }
+  /* 100%{
+  transform: rotate(-45deg);
+  left: 50%;
+    top: 95%;
+  } */
+}
 .paws3{
   position: absolute;
   /* z-index: -1; */
+  animation-name: paws3;
+  animation-duration: 10s;
+  animation-direction: ease-in;
+  animation-iteration-count: infinite;
   transform: rotate(45deg);
   height: 300px;
   object-fit: contain;
   left: -5%;
   top: 180%;
+}
+@keyframes paws3{
+  0%{
+    transform: rotate(45deg);
+    left: -5%;
+    top: 150%;
+  }
+  20%{
+    left: 10%;
+    top: 230%;
+    transform: rotate(90deg);
+  }
+  60%{
+    left: -20%;
+    top: 230%;
+    transform: rotate(-70deg);
+  }
+  100%{
+    transform: rotate(45deg);
+    left: -5%;
+    top: 150%;
+  }
 }
 
 .background-paws1{
@@ -743,7 +809,7 @@
   height: 500px;
   object-fit: contain;
   left: -5%;
-  top: 350%;
+  top: 390%;
 }
 
 .background-paws2{
@@ -753,5 +819,5 @@
   height: 550px;
   object-fit: contain;
   right: 2%;
-  top: 430%;
+  top: 460%;
 }
