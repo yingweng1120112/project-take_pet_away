@@ -23,6 +23,8 @@
 .card {
   display: grid;
   flex-wrap: wrap;
+  --bs-card-bg: none;
+  --bs-card-border-width: 0px;
 }
 
 .card>img {
@@ -45,6 +47,7 @@
 
 .card>div>p {
   padding: 0;
+  margin: 0;
   letter-spacing: 20px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -71,6 +74,7 @@
 
 /* 頁碼 */
 .wp-pagenavi {
+  width: 100%;
   margin: 40px auto;
   font-size: 14px;
   text-align: center;
@@ -184,6 +188,8 @@
   text-align: center;
   color: white;
   font-size: 24px;
+  width: 20%;
+  height: 80px;
   background-color: var(--khaki);
 }
 
@@ -191,4 +197,17 @@
   /* border: 1px solid black; */
   color: white;
   font-size: 20px;
+  width: 100px;
+}
+
+#ending {
+  width: 80%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+#ending > h1{
+  font-size: 3.9375rem;
+  color: white;
 }
