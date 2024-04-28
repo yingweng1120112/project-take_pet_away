@@ -69,7 +69,7 @@
   align-items: center;
   justify-content: center;
 }
-.bookInfo {
+.bookContainer {
   background-color: #fff;
 }
 
@@ -96,4 +96,19 @@
   font-size: var(--font-size-h3);
   background-color: var(--khaki);
   border-radius: 80px;
+}
+
+/* 設定 .w-20 的高度與 .bookInfo 相同 */
+.w-20 {
+  height: 100%; /* 與父元素同高 */
+}
+
+/* 設定 .rope 的背景圖像屬性 */
+.rope {
+  width: 3%;
+  height: 100%;
+  margin-bottom: 3px;
+  background-image: url("../images/user-rope.png");
+  background-repeat: repeat-y;
+  justify-content: flex-end;
 }
