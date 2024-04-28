@@ -112,15 +112,15 @@ hr {
   margin-top: 0rem;
   margin-bottom: 0px;
 }
-.product-reviews-info p{
+.product-reviews-info p {
   margin-top: 0.9rem;
   width: 100%;
 }
-.reviews-date{
+.reviews-date {
   text-align: right;
   border-bottom: 3px dashed var(--bs-border-color);
   margin-bottom: 10px;
-  border-top: var(--bs-border-width)
+  border-top: var(--bs-border-width);
 }
 /* 我的評論 */
 .product-my-comment {
@@ -134,55 +134,112 @@ hr {
 .product-my-comment img {
   width: 80%;
 }
-.product-my-comment hr{
+.product-my-comment hr {
   margin-top: 1rem;
 }
-.my-comment-form{
+.my-comment-form {
   width: 100%;
   margin-top: 1.2rem;
 }
-.fs-6{
+.fs-6 {
   font-size: 1.2rem !important;
 }
-.form-control {
+.my-comment-form .form-control {
   border-width: 0 0 2px 0;
   border-color: var(--bs-border-color);
   border-radius: 0;
   font-size: 1.2rem;
 }
-.product-my-comment textarea{
+.product-my-comment textarea {
   resize: none;
 }
-.product-my-comment .cta{
+.product-my-comment .cta {
   width: 100%;
   background: var(--khaki);
   margin-top: 1.2rem;
 }
 /* 裝飾字 */
-.decorative-words{
+body section:nth-child(4) {
+  background: var(--light-blue);
+  border-top: 0.625rem solid var(--white);
+  border-bottom: 0.625rem solid var(--white);
+}
+.decorative-words {
   width: 100%;
   height: auto;
   text-align: center;
 }
-section .decorative-words-img{
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 2200px
+section .decorative-words-img {
+  display: none;
 }
-.decorative-words-info{
+.decorative-words-info {
   background: none;
   box-shadow: none;
   flex-direction: column;
   align-items: center;
 }
-.decorative-words-info p:nth-child(1){
+.decorative-words-info p:nth-child(1) {
   color: var(--white);
-  font-size: 100px
+  font-size: 40px;
 }
-.decorative-words-info p:nth-child(2){
+.decorative-words-info p:nth-child(2) {
   color: var(--white);
-  font-size: 50px
+  font-size: 25px;
+  text-align: center;
+}
+/* 相關商品 */
+body section:nth-child(5){
+    background: var(--yellow);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    border-top: 25px solid var(--yellow);
+    border-bottom: 25px solid var(--yellow);
+}
+.swiper {
+  width: 80%;
+  height: 850px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--light-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.related-products-card{
+  width: 50%;
+  background: var(--beige)
+}
+.related-products-card img{
+  width: 100%;
+}
+.related-products-card p:nth-child(2){
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.related-products-card p:nth-child(3){
+  width: 100%;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+.swiper-button-next {
+  right: 20px;
+  transform: rotate(0deg);
+}
+
+.swiper-button-prev {
+  left: 20px;
+  transform: rotate(0deg);
 }
 /* 電腦版 */
 @media screen and (min-width: 1025px) {
@@ -281,18 +338,18 @@ section .decorative-words-img{
     background-color: black;
     margin-top: 0.5rem;
   }
-  .product-reviews-info{
+  .product-reviews-info {
     width: 100%;
   }
-  .product-reviews-info p{
+  .product-reviews-info p {
     margin-top: 0.9rem;
     width: 100%;
   }
-  .reviews-date{
+  .reviews-date {
     text-align: right;
     border-bottom: 3px dashed var(--bs-border-color);
     margin-bottom: 10px;
-    border-top: var(--bs-border-width)
+    border-top: var(--bs-border-width);
   }
   /* 我的評論 */
   .product-my-comment {
@@ -305,11 +362,38 @@ section .decorative-words-img{
   .product-my-comment img {
     width: 30%;
   }
-  .product-my-comment hr{
+  .product-my-comment hr {
     margin-top: 1rem;
   }
-  .product-my-comment .cta{
+  .product-my-comment .cta {
     width: 25%;
     margin-top: 2rem;
+  }
+  /* 裝飾字 */
+  body section:nth-child(4) {
+    background: none;
+    border-top: 0rem solid var(--white);
+    border-bottom: 0rem solid var(--white);
+  }
+  section .decorative-words-img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 137.5rem;
+    display: inline;
+  }
+  .decorative-words-info {
+    margin-bottom: 1.25rem;
+  }
+  .decorative-words-info p:nth-child(1) {
+    font-size: 100px;
+  }
+  .decorative-words-info p:nth-child(2) {
+    font-size: 50px;
+  }
+  /* 相關商品 */
+  .swiper {
+    width: 100%;
+    height: 100%;
   }
 }

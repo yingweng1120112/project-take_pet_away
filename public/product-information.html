@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>產品資訊</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/product-information.css" />
@@ -266,7 +267,7 @@
           <img src="../images/product-description-title.svg" alt="" />
           <p>
             動物醫院合作營養顧問監製，符合並超越NRC&AAFCO標準，
-            不再煩惱鮮食營養不均的問題！黃金營養比例人用等級高品質新鮮食材 滿滿肉塊+鮮美湯汁+剛剛好的蔬食 
+            不再煩惱鮮食營養不均的問題！黃金營養比例人用等級高品質新鮮食材，滿滿肉塊+鮮美湯汁+剛剛好的蔬食
             獨家奢華添加來自日本北海道稀少珍貴的“野生鮭魚鼻軟骨萃取”，為寶貝補充人用同款的頂級保健品『蛋白聚醣』，從日常保養牠的關節與皮毛！
             動物醫院合作營養顧問監製，符合並超越NRC&AAFCO標準，不再煩惱鮮食營養不均的問題！
             ✓ 黃金營養比例 ✓ 人用等級高品質新鮮食材 ✓
@@ -359,6 +360,7 @@
       </div>
       <img class="decorative-words-img" src="../images/Productpage-decorative-words.png" alt="">
     </section>
+    <!-- 裝飾字 -->
     <section>
         <div class="content decorative-words-info">
           <p>Other Products</p>
@@ -366,12 +368,66 @@
         </div>
       </div>
     </section>
+    <!-- 相關商品 -->
+    <section>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+            <img src="../images/related-products.jpg" alt="">
+              <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
+              <p>$207</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+            <img src="../images/related-products.jpg" alt="">
+              <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
+              <p>$207</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+            <img src="../images/related-products.jpg" alt="">
+              <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
+              <p>$207</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+            <img src="../images/related-products.jpg" alt="">
+              <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
+              <p>$207</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+            <img src="../images/related-products.jpg" alt="">
+              <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
+              <p>$207</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+            <img src="../images/related-products.jpg" alt="">
+              <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
+              <p>$207</p>
+            </a>
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/9b9b3d46e0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      // 商品數量增減
       document
         .getElementById("minusBtn")
         .addEventListener("click", function () {
@@ -387,6 +443,28 @@
         var value = parseInt(input.value);
         input.value = value + 1;
       });
+
+
+      var swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
     </script>
   </body>
 </html>
