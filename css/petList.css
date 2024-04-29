@@ -1,6 +1,19 @@
+.banner {
+  background-image: url("../images/background_petlist-navbar.png") !important;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
 #title {
   margin-top: 6.25rem;
-  width: 80%;
+  /* width: 80%; */
+  width: 100%;
+  background-image: url("../images/background-list.png");
+  background-size: 100%;
+  background-position: bottom;
+  padding: 5% 10% 25% 10%;
+  margin: 0 0 -20% 0;
 }
 
 #title>h1 {
@@ -75,6 +88,7 @@
 /* 頁碼 */
 .wp-pagenavi {
   width: 100%;
+  z-index: 1;
   margin: 40px auto;
   font-size: 14px;
   text-align: center;
@@ -178,7 +192,7 @@
   transform-origin: bottom left;
 }
 
-#ending > button{
+#ending>button {
   /* border: 1px solid black; */
   margin-top: 30px;
   /* width: 25%; */
@@ -193,7 +207,7 @@
   background-color: var(--khaki);
 }
 
-#ending > button > span{
+#ending>button>span {
   /* border: 1px solid black; */
   color: white;
   font-size: 20px;
@@ -201,13 +215,122 @@
 }
 
 #ending {
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   align-items: end;
   justify-content: space-between;
+  width: 100%;
+  background-image: url("../images/background-list.png");
+  background-size: 150%;
+  background-position: top;
+  padding: 30% 10% 25% 10%;
+  margin: -20% 0 -20% 0;
 }
 
-#ending > h1{
+#ending>h1 {
   font-size: 3.9375rem;
   color: white;
+}
+
+.ending-bg {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* 商品跑馬燈 */
+/* Marquee styles */
+.marquee {
+  --gap: 4rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* Pause animation when reduced-motion is set */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__content {
+    animation-play-state: paused !important;
+  }
+}
+
+/* Enable animation */
+.enable-animation .marquee__content {
+  animation: scroll 10s linear infinite;
+}
+
+/* Reverse animation */
+.marquee--reverse .marquee__content {
+  animation-direction: reverse;
+}
+
+/* Pause on hover */
+.marquee--hover-pause:hover .marquee__content {
+  animation-play-state: paused;
+}
+
+/* Attempt to size parent based on content. Keep in mind that the parent width is equal to both content containers that stretch to fill the parent. */
+.marquee--fit-content {
+  max-width: fit-content;
+}
+
+/* A fit-content sizing fix: Absolute position the duplicate container. This will set the size of the parent wrapper to a single child container. Shout out to Olavi's article that had this solution 👏 @link: https://olavihaapala.fi/2021/02/23/modern-marquee.html  */
+.marquee--pos-absolute .marquee__content:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Enable position absolute animation on the duplicate content (last-child) */
+.enable-animation .marquee--pos-absolute .marquee__content:last-child {
+  animation-name: scroll-abs;
+}
+
+@keyframes scroll-abs {
+  from {
+    transform: translateX(calc(100% + var(--gap)));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+#marquee {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../images/bg_marquee.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 0px;
+}
+
+.marquee__content>li>img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
 }

@@ -163,15 +163,15 @@
   <!-- banner -->
   <div class="banner">
     <div class="left">
-      <p class="menu-a">MENU</p>
-      <p class="menu-b">商品一覽</p>
+      <p class="menu-a">PETS</p>
+      <p class="menu-b">汪汪喵喵</p>
     </div>
     <div class="middle">
       <div class="accordion" id="accordionExample">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
           aria-expanded="true" aria-controls="collapseOne">
-          <span class="page-title">寵物商品</span>
-          <span>選擇商品</span>
+          <span class="page-title">收容資訊</span>
+          <span>選擇寵物</span>
         </button>
       </div>
     </div>
@@ -180,66 +180,99 @@
     <div class="accordion-body">
       <div class="select">
         <div class="select-item-a">
-          <p class="select-title">商品總類</p>
+          <p class="select-title">選擇年齡</p>
           <label class="cl-checkbox">
             <input checked="" type="checkbox" />
-            <span>寵物罐頭</span>
+            <span>幼年 0 ~ 1歲</span>
           </label>
           <label class="cl-checkbox">
             <input checked="" type="checkbox" />
-            <span>寵物零食</span>
+            <span>青年 2 ~ 3歲</span>
           </label>
           <label class="cl-checkbox">
             <input checked="" type="checkbox" />
-            <span>寵物用品</span>
+            <span>中年 4 ~ 7歲</span>
           </label>
           <label class="cl-checkbox">
             <input checked="" type="checkbox" />
-            <span>寵物保健</span>
-          </label>
-          <label class="cl-checkbox">
-            <input checked="" type="checkbox" />
-            <span>心理測驗</span>
+            <span>老年 8歲以上</span>
           </label>
         </div>
         <div class="select-item-a">
-          <p class="select-title">適用物種</p>
+          <p class="select-title">寵物體型</p>
           <label class="cl-checkbox">
             <input type="checkbox" />
-            <span>狗寶貝</span>
+            <span>大型 20KG以上</span>
           </label>
           <label class="cl-checkbox">
             <input checked="" type="checkbox" />
-            <span>貓寶貝</span>
+            <span>中型 8 ~ 20KG</span>
+          </label>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>小型 8KG以下</span>
           </label>
         </div>
         <div class="select-item-a">
-          <p class="select-title">排列方法</p>
+          <p class="select-title">選擇物種</p>
           <label class="cl-checkbox">
-            <input checked="" type="radio" name="a" />
-            <span>價格由低至高</span>
+            <input checked="" type="radio" name="type" />
+            <span>狗狗寶貝</span>
           </label>
           <label class="cl-checkbox">
-            <input checked="" type="radio" name="a" />
-            <span>價格由高至低</span>
+            <input checked="" type="radio" name="type" />
+            <span>貓貓寶貝</span>
+          </label>
+        </div>
+        <div class="select-item-a">
+          <p class="select-title">選擇地區</p>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>北部</span>
           </label>
           <label class="cl-checkbox">
-            <input checked="" type="radio" name="a" />
-            <span>評價最高</span>
+            <input checked="" type="checkbox" />
+            <span>中部</span>
+          </label>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>南部</span>
+          </label>
+        </div>
+        <div class="select-item-a">
+          <p class="select-title">測驗類別</p>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>敏感型</span>
+          </label>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>樂天型</span>
+          </label>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>獨立型</span>
+          </label>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>自信型</span>
+          </label>
+          <label class="cl-checkbox">
+            <input checked="" type="checkbox" />
+            <span>適應型</span>
           </label>
         </div>
         <div class="select-item-b">
-          <p class="select-title">價格區間</p>
-          <div style="display: flex; align-items: baseline">
-            <span style="margin: 0 10px">從</span>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="exampleFormControlInput1" />
-            </div>
-            <span style="margin: 0 10px">-</span>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="exampleFormControlInput1" />
-            </div>
-            <span style="margin: 0 10px">元</span>
+          <div class="select-item-a">
+            <p class="select-title">性別</p>
+            <label class="cl-checkbox">
+              <input checked="" type="radio" name="geder" />
+              <span>男生</span>
+            </label>
+            <label class="cl-checkbox">
+              <input checked="" type="radio" name="geder" />
+              <span>女生</span>
+            </label>
           </div>
           <p class="select-title">商品搜尋</p>
           <div class="mb-3" style="display: flex; justify-content: center">
@@ -386,9 +419,28 @@
         </svg>
       </button>
     </section>
+    <!-- <img class="ending-bg" src="../images/background-list.png" alt=""> -->
 
-    <section>
-      
+    <section id="marquee">
+      <div class="marquee marquee--hover-pause enable-animation">
+        <ul class="marquee__content">
+          <li><img src="../images/product1.png" alt=""></li>
+          <li><img src="../images/product2.png" alt=""></li>
+          <li><img src="../images/product1.png" alt=""></li>
+          <li><img src="../images/product2.png" alt=""></li>
+          <li><img src="../images/product1.png" alt=""></li>
+          <li><img src="../images/product2.png" alt=""></li>
+        </ul>
+
+        <ul aria-hidden="true" class="marquee__content">
+          <li><img src="../images/product1.png" alt=""></li>
+          <li><img src="../images/product2.png" alt=""></li>
+          <li><img src="../images/product1.png" alt=""></li>
+          <li><img src="../images/product2.png" alt=""></li>
+          <li><img src="../images/product1.png" alt=""></li>
+          <li><img src="../images/product2.png" alt=""></li>
+        </ul>
+      </div>
     </section>
 
     <!-- footer -->
