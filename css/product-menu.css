@@ -1,0 +1,117 @@
+section {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+p {
+  padding: 0rem;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+/* 搜尋數 */
+.search-results{
+    width: 100%;
+}
+.search-results h5{
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0rem;
+    font-weight: bold;
+    color: var(--bs-gray-700);
+    
+}
+.search-results img{
+    width: 100%;
+}
+.dog-silhouette{
+    width: 15%;
+}
+
+/* 商品選單 */
+.products-menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.products-menu li{
+    margin-right: auto;
+    margin-bottom: 40px;
+    background: var(--light-gray);
+    width: 45%;
+}
+.products-card img{
+    width: 100%;
+}
+.products-card p:nth-child(2){
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .products-card p:nth-child(3){
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
+  .products .content{
+    flex-direction: column;
+  }
+  /* 裝飾字 */
+  .decorative-words-img2{
+    width: 100%;
+  }
+  .decorative-words-info{
+    width: 100%;
+    background-image: url(../images/Productpage-decorative-words2.svg);
+    background-size: cover; /* 讓背景圖片覆蓋整個元素 */
+    background-repeat: no-repeat; /* 不重複背景圖片 */
+    text-align: center;
+    height: 400px;
+  }
+  .decorative-words-info p:nth-child(1){
+    padding: 10.5rem 0rem 0rem 0rem;
+    font-size: 2.5rem;
+    color: var(--white);
+  }
+  .decorative-words-info p:nth-child(2){
+    font-size: 2.5rem;
+    color: var(--white);
+  }
+/* 電腦版 */
+@media screen and (min-width: 1025px) {
+    /* 搜尋數 */
+    .search-results h5{
+        font-size: 1.5rem;
+        margin-left: 0.75rem;
+        margin-top: 2.5rem;
+        font-weight: bold;
+    }
+    .dog-silhouette{
+        width: 10%;
+    }
+    /* 商品選單 */
+    .products-menu{
+        padding-left: 55px;
+    }
+    .products-menu li{
+        margin-right: 70px;
+        width: 20%;
+    }
+    .products-card img{
+        width: 100%;
+    }
+}

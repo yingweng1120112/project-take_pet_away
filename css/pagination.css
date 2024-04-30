@@ -35,6 +35,9 @@
 .wp-pagenavi .extend {
 	margin-right: 15px;
 }
+.wp-pagenavi .last {
+	margin-left: 15px;
+}
 .wp-pagenavi .previouspostslink,
 .wp-pagenavi .nextpostslink {
 	display: none;
