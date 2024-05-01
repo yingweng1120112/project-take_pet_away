@@ -289,7 +289,7 @@ p{
     transform: scale(1.5);
   }
   .dog-palm2{
-    top: 75rem;
+    top: 83rem;
     left: 6.25rem;
     transform: rotate(75deg) scale(2);
   }
@@ -301,9 +301,10 @@ p{
     transform: rotate(330deg) scale(1);
   }
   .dog-palm4{
-    top: 125.5rem;
+    top: -15rem;
     left: 40.75rem;
     transform: rotate(0deg) scale(0.3);
+    z-index: 0;
   }
   .dog-palm5{
     position: absolute;
@@ -318,9 +319,10 @@ p{
     transform: scale(0.6);
   }
   .dog-footprints{
-    top: 69.375rem;
-    left: -43.75rem;
-    transform: scale(0.3);
+    top: -54rem;
+    left: -47rem;
+    transform: scale(0.2);
+    z-index: 0;
   }
   /* 寵物罐頭 */
   #can-card .mall-card {
@@ -346,12 +348,16 @@ p{
   #section4 > img:first-child {
     display: none;
   }
+  #section4{
+    position: relative;
+    z-index: 2
+  }
   .section4-bg2 {
     display: block;
     width: 100%;
     /* position: relative; */
     position: absolute;
-    top: 137rem;
+    top: 0rem;
     z-index: 1
   }
   .section4-text-left{
@@ -392,6 +398,7 @@ p{
   .section4-text3{
     font-size: 6.25rem;
     color: var(--white);
+    margin-top: 2rem;
   }
   .section4-text4{
     font-size: 3.125rem;
