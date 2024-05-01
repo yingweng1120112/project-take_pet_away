@@ -301,10 +301,9 @@ p{
     transform: rotate(330deg) scale(1);
   }
   .dog-palm4{
-    top: 112.5rem;
-    left: 43.75rem;
-    transform: rotate(260deg);
-    transform: scale(0.3);
+    top: 125.5rem;
+    left: 40.75rem;
+    transform: rotate(0deg) scale(0.3);
   }
   .dog-palm5{
     position: absolute;
