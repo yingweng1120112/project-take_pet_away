@@ -55,7 +55,7 @@
   width: 20%;
 }
 
-/* user edit */
+/* user mypet */
 
 .book {
   padding: 0;
@@ -69,35 +69,9 @@
   align-items: center;
   justify-content: center;
 }
-
-.bookItem {
-  width: 80%;
-  margin: 3rem 2rem 2rem 10rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-}
-.bookContainer h5 {
-  margin: 2rem;
-}
-
 .book {
   flex: 0 0 90%;
 }
-
-.btnItem {
-  display: flex;
-  justify-content: flex-end;
-}
-.btnConfirm {
-  margin: 0.5rem;
-  padding: 0.3rem 1.2rem;
-  font-size: var(--font-size-h3);
-  background-color: var(--khaki);
-  border-radius: 80px;
-}
-
 .rope {
   width: 3%;
   height: 100%;
