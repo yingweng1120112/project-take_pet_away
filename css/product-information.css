@@ -234,12 +234,12 @@ body section:nth-child(5){
 }
 .swiper-button-next {
   right: 20px;
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 
 .swiper-button-prev {
   left: 20px;
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 /* 電腦版 */
 @media screen and (min-width: 1025px) {
@@ -395,5 +395,12 @@ body section:nth-child(5){
   .swiper {
     width: 100%;
     height: 100%;
+  }
+  .swiper-button-next {
+    transform: rotate(0deg);
+  }
+  
+  .swiper-button-prev {
+    transform: rotate(0deg);
   }
 }
