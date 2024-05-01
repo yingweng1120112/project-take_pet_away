@@ -75,7 +75,7 @@
   margin: 3rem 2rem 2rem 10rem;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; 
   padding-bottom: 10px;
 }
 .bookContainer h5 {
@@ -97,6 +97,10 @@
   background-color: var(--khaki);
   border-radius: 80px;
 }
+
+/* .w-20 {
+  height: 100%;
+} */
 
 .rope {
   width: 3%;
