@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>購物車 - 填寫資料</title>
+    <title>購物車-填寫資料</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -51,154 +51,165 @@
       </div>
     </section>
 
-    <!-- 會員資料 和 送貨資料 -->
-    <section id="memberAndDelivery">
-      <!-- 會員資料 -->
-      <div class="member carList carList1">
-        <table>
-          <caption>
-            會員資料
-          </caption>
-          <tbody>
-            <tr>
-              <td>會員姓名</td>
-              <td><input value="王小明" readonly /></td>
-            </tr>
-            <tr>
-              <td>電子郵件</td>
-              <td><input value="a123456789@gmail.com" readonly /></td>
-            </tr>
-            <tr>
-              <td>電話號碼</td>
-              <td><input value="0912345678" readonly /></td>
-            </tr>
-            <tr>
-              <td>地址</td>
-              <td><input value="台南市中西區健康路一段1號" readonly /></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- 送貨資料 -->
-      <div class="carList carList2">
-        <table>
-          <caption>
-            送貨資料
-          </caption>
-          <tbody>
-            <tr>
-              <td>已選擇送貨方式：宅配</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa-solid fa-square-check"></i>
-                收件人資料與會員資料相同
-              </td>
-            </tr>
-            <td>
-              <div class="personwrite">
-                <div class="divleft">
-                  <div>電子郵件</div>
-                  <div>電話號碼</div>
-                  <div>寄送地址</div>
-                </div>
-                <div class="divright">
-                  <div>
-                    <input placeholder="請輸入名字（請填入真實姓名以利收件）" />
-                  </div>
-                  <div>
-                    <input placeholder="請輸入號碼（0912345678）" />
-                  </div>
+    <!-- 會員資料 -->
+    <div id="writemessage">
+      <div class="writemessageleft itemscroll">
+        <div>
+          <div class="carttitle carttopstyle1">
+            <div>會員資料</div>
+          </div>
+          <div class="cartbottomstyle">
+            <div>
+              <div>會員姓名</div>
+              <div><input value="王小明" readonly /></div>
+            </div>
+            <div>
+              <div>電子郵件</div>
+              <div><input value="a123456789@gmail.com" readonly /></div>
+            </div>
+            <div>
+              <div>電話號碼</div>
+              <div><input value="0912345678" readonly /></div>
+            </div>
+            <div>
+              <div>地址</div>
+              <div><input value="台南市中西區健康路一段1號" readonly /></div>
+            </div>
+          </div>
+        </div>
+        <!-- 送貨資料 -->
+        <div>
+          <div class="carttitle carttopstyle1">
+            <div>送貨資料</div>
+          </div>
+          <div class="cartbottomstyle">
+            <!--  -->
+            <div>
+              <div>送貨方式</div>
+              <div>
+                <select name="" id="">
+                  <option selected>請選擇配送方式</option>
+                  <option>宅配(滿499免運費)</option>
+                  <option>超商取貨(滿499免運費)</option>
+                </select>
+              </div>
+            </div>
+            <!--  -->
+            <div>
+              <i class="fa-solid fa-square-check"> 收件人資料與會員資料相同</i>
+            </div>
+            <!--  -->
+            <div>
+              <div>電子郵件</div>
+              <div>
+                <input placeholder="請輸入名字（請填入真實姓名以利收件）" />
+              </div>
+            </div>
+            <!--  -->
+            <div>
+              <div>電話號碼</div>
+              <div>
+                <input placeholder="請輸入號碼（0912345678）" />
+              </div>
+            </div>
+            <!--  -->
+            <div class="writeaddress">
+              <div>寄送地址</div>
+              <div>
+                <div class="writeaddressright">
                   <div>
                     <select name="" id="">
                       <option>縣市</option>
                     </select>
+                  </div>
+                  <div>
                     <select name="" id="">
                       <option>鄉鎮市區</option>
                     </select>
-                    <input placeholder="請輸入詳細地址" />
                   </div>
                 </div>
+                <div>
+                  <input placeholder="請輸入詳細地址" />
+                </div>
               </div>
-            </td>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- 下半部 -->
-    <section id="bottomsection">
-      <!-- 付款資料 和 訂單備註 -->
-      <div class="left">
-        <!-- 付款資料 -->
-        <div class="pay carList carList1">
-          <table>
-            <caption>
-              付款資料
-            </caption>
-            <tbody>
-              <tr>
-                <td>已選擇付款方式：貨到付款</td>
-              </tr>
-            </tbody>
-          </table>
+            </div>
+            <!--  -->
+            <div>
+              <div>訂單備註</div>
+              <div>
+                <textarea placeholder="請備註您的特殊需求"></textarea>
+              </div>
+            </div>
+            <!--  -->
+          </div>
         </div>
-        <!-- 訂單備註 -->
-        <div class="message carList carList2">
-          <table>
-            <caption>
-              送貨資料
-            </caption>
-            <tbody>
-              <tr>
-                <td><textarea placeholder="請備註您的特殊需求"></textarea></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <!-- 發票索取方式 -->
-      <div class="right">
-        <div class="bill carList carList1">
-          <table>
-            <caption>
-              發票索取方式
-            </caption>
-            <tbody>
-              <tr>
-                <td>發票類型</td>
-                <td>
+        <!-- 付款資料及發票 -->
+        <div>
+          <div class="carttitle carttopstyle1">
+            <div>付款資料</div>
+          </div>
+          <div class="cartbottomstyle">
+            <div class="writebill">
+              <div>
+                <div>付款方式</div>
+                <div>
                   <select name="" id="">
+                    <option selected>請選擇付款方式</option>
+                    <option>貨到付款</option>
+                    <option>Line Pay</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div>發票類型</div>
+                <div>
+                  <select name="" id="">
+                    <option selected>請選擇發票形式</option>
                     <option>紙本發票</option>
                     <option>手機載具</option>
                   </select>
-                </td>
-              </tr>
-              <tr>
-                <td>手機條碼</td>
-                <td>
-                  <input value="" placeholder="請輸入手機條碼（/ABC1234）" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                </div>
+              </div>
+              <div>
+                <input value="" placeholder="請輸入手機條碼（/ABC1234）" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <!-- 訂單資訊 -->
+      <div class="writemessageright">
+        <div class="carttitle carttopstyle1">
+          <div>訂單資訊</div>
+        </div>
+        <div class="cartbottomstyle">
+          <div>
+            <div>小計：</div>
+            <div>$270</div>
+          </div>
+          <div>
+            <div>運費：</div>
+            <div>$80</div>
+          </div>
+          <div>
+            <div>優惠：</div>
+            <div>$0</div>
+          </div>
+          <div>
+            <div>合計：</div>
+            <div>$350</div>
+          </div>
+          <div class="cartbutton">
+            <button><i class="fa-solid fa-caret-left"></i>回上一步</button>
+            <button>提交訂單<i class="fa-solid fa-caret-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- 按鈕 -->
-    <section id="button">
-      <div class="nextButton1">
-        <button>回上一步</button>
-      </div>
-      <div class="nextButton2">
-        <button>提交訂單</button>
-      </div>
-    </section>
     <!-- 背景樣式下 -->
     <section id="wall">
-      <img src="/images/wall2.png" alt="" />
+      <img src="/images/wall.png" alt="" />
     </section>
 
     <footer></footer>
