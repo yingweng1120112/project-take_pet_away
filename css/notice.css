@@ -1,16 +1,39 @@
 body{
-  overflow-x: hidden;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  overflow: hidden;
+  /* height: 100svh; */
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100vh);
+}
+
+header{
+  scroll-snap-align: start;
+}
+
+footer{
+  scroll-snap-align: start;
+}
+
+/* .banner{
+  scroll-snap-align: start;
+} */
+
+.roll{
   overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
 
 section{
   margin: 0;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: space-between;
   scroll-snap-align: start;
+  overflow-x: hidden;
   /* align-items: center; */
 }
 
@@ -27,8 +50,11 @@ section > h2{
 }
 
 .title{
-  /* width: 100%;
-  height: 1000px; */
+  height: 100svh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* scroll-snap-type: none; */
   padding: 0 10% 0 10%;
   flex-direction: column;
   justify-content: center;
@@ -41,11 +67,10 @@ section > h2{
   font-weight: 600;
 }
 
-
 .title > img {
   width: 60%;
   position: absolute;
-  top: 59%;
+  top: 20%;
   right: -8%;
 }
 
@@ -135,7 +160,7 @@ section > h2{
 
 .fix > div > ul{
   flex-direction: column;
-  list-style-image: #D1F4FF;
+  list-style-image: url(../images/icon_pet_ulli.png);
   /* text-align: justify; */
 }
 
