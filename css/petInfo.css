@@ -757,7 +757,7 @@ body{
   position: absolute;
   /* z-index: -1; */
   animation-name: paws2;
-  animation-duration: 5s;
+  animation-duration: 8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   transform: rotate(45deg);
@@ -774,7 +774,7 @@ body{
   to{
     left: 93%;
     /* top: 120%; */
-    transform: rotate(700deg);
+    transform: rotate(730deg);
   }
 }
 .paws3{
