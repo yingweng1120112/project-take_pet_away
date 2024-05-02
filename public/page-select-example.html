@@ -17,36 +17,7 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="/css/index-banner.css">
   <title>首頁</title>
-  <style>
-    .accordion-button {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-top-left-radius: 2rem;
-      border-top-right-radius: 2rem;
-    }
 
-    .accordion-body {
-      background-color: white;
-      border-bottom-left-radius: 2rem;
-      border-bottom-right-radius: 2rem;
-      border: 1px solid black;
-      /* 搜尋物件的邊線 方便查看 */
-    }
-
-    .accordion-button::after {
-      margin: 0;
-    }
-
-    .accordion-button:not(.collapsed) {
-      background-color: white;
-    }
-
-    .accordion {
-      --bs-accordion-btn-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
-      --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
-    }
-  </style>
 </head>
 
 <body class="commendbody">
@@ -229,25 +200,21 @@
         </div>
         <div class="select-item-b">
           <p class="select-title">價格區間</p>
-          <div style="display: flex; align-items: baseline">
-            <span style="margin: 0 10px">從</span>
+          <div class="price">
+            <span >從</span>
             <div class="mb-3">
               <input type="text" class="form-control" id="exampleFormControlInput1" />
             </div>
-            <span style="margin: 0 10px">-</span>
+            <span >~</span>
             <div class="mb-3">
               <input type="text" class="form-control" id="exampleFormControlInput1" />
             </div>
-            <span style="margin: 0 10px">元</span>
+            <span >元</span>
           </div>
           <p class="select-title">商品搜尋</p>
-          <div class="mb-3" style="display: flex; justify-content: center">
-            <input type="text" class="form-control" id="exampleFormControlInput1" style="
-                padding-right: 25px;
-                background: url(/images/search.svg) no-repeat right;
-                background-size: 20px;
-                width: 80%;
-              " />
+          <div class="mb-3 shop-select-out" >
+            <input type="text" class="form-control shop-select" id="exampleFormControlInput1"
+              />
           </div>
         </div>
       </div>

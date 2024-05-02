@@ -1,5 +1,9 @@
 
+
   /* banner */
+  p{
+    padding: 0;
+  }
   .banner {
     background-image: url(/images/banner.jpg);
     background-size: cover;
@@ -15,19 +19,21 @@
   }
   .banner > .middle {
     width: 20%;
+    background-color: dark;
   }
   .left > .menu-a {
     margin: 0;
     color: aliceblue;
-    font-size: 5rem;
+    font-size: 8rem;
     margin: 0 20px;
     line-height: 1.2;
   }
   .left > .menu-b {
     margin: 0;
     color: aliceblue;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.8;
+    
   }
 
 
@@ -67,12 +73,48 @@
     flex-direction: column;
     width: 20%;
   }
+  .shop-select-out{
+    display: flex; justify-content: center
+  }
   .shop-select{
     padding-right: 25px;
     background: url(/images/search.svg) no-repeat right;
     background-size: 20px;
     width: 80%;
   }
+
+
+  .accordion-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  .accordion-body {
+    background-color: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: 1px solid black;
+    /* 搜尋物件的邊線 方便查看 */
+  }
+  .accordion-button::after {
+    margin: 0;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: white;
+  }
+  .accordion {
+    --bs-accordion-btn-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
+    --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
+  }
+
+.price{
+  display: flex; align-items: baseline
+}
+.price > span{
+  margin: 0 10px
+}
 
   .cl-checkbox {
     position: relative;
