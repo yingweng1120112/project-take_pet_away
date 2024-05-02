@@ -125,19 +125,27 @@ header {
   height: 100%;
   font-size: 1.5rem;
   justify-content: center;
+  letter-spacing: 0.5rem;
 }
 
 .dropdown-menu {
   width: 100%;
   background-color: var(--dark-gray);
   text-align: center;
+  letter-spacing: 1rem;
+}
+.dropdown-menu .show{
+  /* width: 100%; */
 }
 
 .dropdown-item {
   font-size: 1.5rem;
   text-align: center;
+  /* letter-spacing: 3.5rem; */
 }
-
+.nav-icon{
+  width: 50%;
+}
 .btn-icon {
   width: 50%;
   height: 50%;
@@ -148,7 +156,6 @@ header {
 .btn-icon-menu .show {
   background-color: var(--dark-gray);
   text-align: center;
-
 }
 
 .btn-icon-item {
@@ -158,64 +165,78 @@ header {
 
 /* btn */
 .menu {
-	position: relative;
-	display:  inline-block;
-	width: 30px;
-	height: 30px;
-	margin: 15px;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
 }
 .menu span {
-	margin: 0 auto;
-	position: relative;
-	top: 12px;
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
 }
-.menu span:before, .menu span:after {
-	position: absolute;
-	content: '';
+.menu span:before,
+.menu span:after {
+  position: absolute;
+  content: "";
 }
-.menu span, .menu span:before, .menu span:after {
-	width: 30px;
-	height: 6px;
-	background-color: #000;
-	display: block;
+.menu span,
+.menu span:before,
+.menu span:after {
+  width: 30px;
+  height: 6px;
+  background-color: #000;
+  display: block;
 }
 .menu span:before {
-	margin-top: -12px;
+  margin-top: -12px;
 }
 .menu span:after {
-	margin-top: 12px;
+  margin-top: 12px;
 }
 /* btn */
 .menuBtn span {
-	-webkit-transition-duration: 0s; transition-duration: 0s;
-	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .menuBtn:hover span {
-	background-color: rgba(0,0,0,0.0);
-	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .menuBtn span:before {
-	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
-	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
 }
 .menuBtn:hover span:before {
-	margin-top: 0;
-	-webkit-transform: rotate(45deg); transform: rotate(45deg);
-	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
 }
 .menuBtn span:after {
-	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
-	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
 }
 .menuBtn:hover span:after {
-	margin-top: 0;
-	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
-	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
 }
-
-
 
 /* footer */
 footer {
