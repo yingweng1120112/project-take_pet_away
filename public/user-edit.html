@@ -16,7 +16,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/user-edit.css">
-  <title>首頁</title>
+  <title>user-edit</title>
   <style>
     .accordion-button {
       display: flex;
@@ -54,7 +54,7 @@
   <header class="header w-100">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="container-fluid">
-        <a class="navbar-brand " href="#"><img class="w-50" src="../images/logo-removebg-preview.png" /></a>
+        <a class="navbar-brand " href="./index.html"><img class="w-50" src="../images/logo-removebg-preview.png" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
           aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -205,7 +205,7 @@
     <div class="container d-flex">
       <div class="book d-flex w-80">
         <div class="rope w-20 ">
-          <img src="../images/user-rope.png" alt="" >
+          <img src="../images/user-rope.png" alt="">
         </div>
         <div class="bookInfo w-100 bg-light ">
           <div class="bookContainer">
@@ -256,60 +256,61 @@
       <div class="footerLogo">
         <img class="w-50" src="../images/logo-removebg-preview.png" alt="">
       </div>
-
       <div class="footerInfo">
         <!-- 認養資訊 -->
         <div class="footerItem flex-sm-column mt-2">
-          <h4>認養資訊</h4>
+          <h1>認養資訊</h1>
           <hr class="footerHr">
-          <ol>
-            <li><a class="dropdown-item" href="">心理測驗</a></li>
-            <li><a class="dropdown-item" href="">認養流程</a></li>
-            <li><a class="dropdown-item" href="">注意事項</a></li>
-          </ol>
-        </div>
-        <!-- 顧客服務 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h4>顧客服務</h4>
-          <hr class="footerHr">
-          <ol>
-            <li><a class="dropdown-item" href="">會員中心</a></li>
-            <li><a class="dropdown-item" href="">常見問題</a></li>
+          <ol class="flex-lg-column mt-2">
+            <li><a class="dropdown-item desc" href="">心理測驗</a></li>
+            <li><a class="dropdown-item desc" href="">認養流程</a></li>
+            <li><a class="dropdown-item desc" href="">注意事項</a></li>
           </ol>
         </div>
         <!-- 領養專區 -->
         <div class="footerItem flex-sm-column mt-2">
-          <h4>領養專區</h4>
+          <h1>領養專區</h1>
           <hr class="footerHr">
-          <ol>
-            <li><a class="dropdown-item" href="">收容資訊</a></li>
-            <li><a class="dropdown-item" href="">動物之家</a></li>
-            <li><a class="dropdown-item" href="">定期追蹤</a></li>
-          </ol>
-        </div>
-        <!-- 隱私政策 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h4>隱私政策</h4>
-          <hr class="footerHr">
-          <ol>
-            <li><a class="dropdown-item" href="">隱私條款</a></li>
+          <ol class="flex-lg-column mt-2">
+            <li><a class="dropdown-item desc" href="">收容資訊</a></li>
+            <li><a class="dropdown-item desc" href="">動物之家</a></li>
+            <li><a class="dropdown-item desc" href="">定期追蹤</a></li>
           </ol>
         </div>
         <!-- 聯絡我們 -->
         <div class="footerItem flex-sm-column mt-2">
-          <h4>聯絡我們</h4>
+          <h1>聯絡我們</h1>
           <hr class="footerHr">
-          <p class="desc">營業人名稱:袋寵物走股份有限公司</p>
-          <p class="desc">線上克服:週一~週五 : 08:00 - 17:00</p>
+          <p class="desc mt-2">營業人名稱:袋寵物走股份有限公司</p>
+          <p class="desc">線上客服:週一~週五 : 08:00 - 17:00</p>
           <p class="desc">電話: 06 253 3131</p>
           <p class="desc">信箱:xinpetfood@gmail.com</p>
           <p class="desc">地址:71005 台南市永康區南台街1號</p>
         </div>
-        <!-- 社群連結 -->
+        <!-- 顧客服務 -->
         <div class="footerItem flex-sm-column mt-2">
-          <h4>社群連結</h4>
+          <h1>顧客服務</h1>
           <hr class="footerHr">
-          <ol class="icon">
+          <ol class="flex-lg-column mt-2">
+            <li><a class="dropdown-item desc" href="">會員中心</a></li>
+            <li><a class="dropdown-item desc" href="">常見問題</a></li>
+          </ol>
+        </div>
+
+        <!-- 隱私政策 -->
+        <div class="footerItem flex-sm-column mt-2">
+          <h1>隱私政策</h1>
+          <hr class="footerHr">
+          <ol class="flex-lg-column mt-2">
+            <li><a class="dropdown-item desc" href="">隱私條款</a></li>
+          </ol>
+        </div>
+
+        <!-- 社群連結 -->
+        <div class="footerItem flex-sm-column mt-2 ">
+          <h1>社群連結</h1>
+          <hr class="footerHr">
+          <ol class="icon ">
             <li>
               <a href="https://www.facebook.com/profile.php?id=100090898966387" class="footerLink">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -342,26 +343,27 @@
 
         <!-- 贊助方案 -->
         <div class="footerItem  col-12 mt-2">
-          <h4>贊助方案</h4>
+          <h1>贊助方案</h1>
           <hr class="footerHr">
           <div class="fosponsor">
             <div class="sponsor">
               <img src="../images/footer_linepay.jpg" alt="">
               <img src="../images/footer_lineQR.jpg" alt="">
             </div>
-            <div>
-              <p class="desc">戶名:汪喵星球</p>
-              <p class="desc">銀行：喵汪銀行-熊熊分行</p>
-              <p class="desc">帳號：059-004-167249</p>
+            <div class="mt-4 text-left">
+              <p class="sponDesc">戶名：Take Pet Away</p>
+              <p class="sponDesc">銀行：喵汪銀行-熊熊分行</p>
+              <p class="sponDesc">帳號：059-004-167249</p>
             </div>
           </div>
           <hr>
         </div>
         <div class="copyright">
-          <p class="desc">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</p>
+          <h1 class="copyrightDesc">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</h1>
         </div>
 
       </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

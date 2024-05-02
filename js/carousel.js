@@ -1,31 +1,107 @@
-$(document).ready(function(){
-	var percent = 0,
-	interval = 30,//it takes about 6s, interval=20 takes about 4s
-	$bar = $('.transition-timer-carousel-progress-bar'),
-	$crsl = $('#myCarousel');
-	$('.carousel-indicators li, .carousel-control').click(function (){$bar.css({width:0.5+'%'});});
-	/*line above just for showing when controls are clicked the bar goes to 0.5% to make more friendly, 
-	if you want when clicked set bar empty, change on width:0.5 to width:0*/
-	$crsl.carousel({//initialize
-		interval: false,
-		pause: true
-	}).on('slide.bs.carousel', function (){percent = 0;});//This event fires immediately when the bootstrap slide instance method is invoked.
-	function progressBarCarousel() {
-		$bar.css({width:percent+'%'});
-		percent = percent +0.5;
-		if (percent>=100) {
-			percent=0;
-			$crsl.carousel('next');
-		}
-	}
-	var barInterval = setInterval(progressBarCarousel, interval);//set interval to progressBarCarousel function
-	if (!(/Mobi/.test(navigator.userAgent))) {//tests if it isn't mobile
-		$crsl.hover(function(){
-					clearInterval(barInterval);
-				},
-				function(){
-					barInterval = setInterval(progressBarCarousel, interval);
-				}
-		);
-	}
-});
+    // // TODO: 自動翻頁
+    // const btnPage1Ele = document.getElementById("btnPage1");
+    // const page1Ele = document.getElementById("page1");
+    // const btnPage2Ele = document.getElementById("btnPage2");
+    // const page2Ele = document.getElementById("page2");
+    // const btnPage3Ele = document.getElementById("btnPage3");
+    // const page3Ele = document.getElementById("page3");
+    // const indicatorsEle = document.getElementById("indicators");
+
+    // // 處理覆蓋
+    // let i = 1;
+
+    // // 每個按鈕加事件監聽器
+    // btnPage1Ele.addEventListener("click", function (event) {
+    //   if (i >= 4) {
+    //     i = 1;
+    //     console.log(`判斷T ${i}`);
+    //     page1Ele.style.zIndex = `${i}`;
+    //     page2Ele.style.zIndex = 0;
+    //     page3Ele.style.zIndex = 0;
+    //     indicatorsEle.style.zIndex = `${i}+1`;
+    //   } else {
+    //     console.log(`判斷F ${i}`);
+    //   }
+    //   // 重置 z-index 和 i
+    //   page1Ele.style.zIndex = `${i}`;
+    //   i++;
+    //   indicatorsEle.style.zIndex = `${i}+1`;
+    // });
+
+    // btnPage2Ele.addEventListener("click", function (event) {
+    //   if (i >= 4) {
+    //     i = 1;
+    //     console.log(`判斷T ${i}`);
+    //     page1Ele.style.zIndex = 0;
+    //     page2Ele.style.zIndex = `${i}`;
+    //     page3Ele.style.zIndex = 0;
+    //     indicatorsEle.style.zIndex = `${i}+1`;
+    //   } else {
+    //     console.log(`判斷F ${i}`);
+    //   }
+    //   // 重置 z-index 和 i
+    //   page2Ele.style.zIndex = `${i}`;
+    //   i++;
+    //   indicatorsEle.style.zIndex = `${i}+1`;
+    // });
+
+    // btnPage3Ele.addEventListener("click", function (event) {
+    //   if (i >= 4) {
+    //     i = 1;
+    //     console.log(`判斷T ${i}`);
+    //     page1Ele.style.zIndex = 0;
+    //     page2Ele.style.zIndex = 0;
+    //     page3Ele.style.zIndex = `${i}`;
+    //     indicatorsEle.style.zIndex = `${i}+1`;
+    //   } else {
+    //     console.log(`判斷F ${i}`);
+    //   }
+    //   // 重置 z-index 和 i
+    //   page3Ele.style.zIndex = `${i}`;
+    //   i++;
+    //   indicatorsEle.style.zIndex = `${i}+1`;
+    // });
+
+    // 初始化 Carousel 元件
+    // let myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleDark'), {
+    //   interval: 100 // 可以自定義輪播的時間間隔
+    // });
+
+    const btnPage1Ele = document.getElementById("btnPage1");
+    const page1Ele = document.getElementById("page1");
+    const btnPage2Ele = document.getElementById("btnPage2");
+    const page2Ele = document.getElementById("page2");
+    const btnPage3Ele = document.getElementById("btnPage3");
+    const page3Ele = document.getElementById("page3");
+    const indicatorsEle = document.getElementById("indicators");
+
+    let i = 1;
+
+    function transitionPage(pageElement) {
+      page1Ele.style.zIndex = 0;
+      page2Ele.style.zIndex = -1;
+      page3Ele.style.zIndex = -1;
+
+      pageElement.style.zIndex = i;
+      i++;
+    }
+
+    btnPage1Ele.addEventListener("click", function (event) {
+      transitionPage(page1Ele);
+    });
+
+    btnPage2Ele.addEventListener("click", function (event) {
+      transitionPage(page2Ele);
+    });
+
+    btnPage3Ele.addEventListener("click", function (event) {
+      transitionPage(page3Ele);
+    });
+
+    setInterval(function () {
+      if (i >= 4) {
+        i = 1;
+      }
+      transitionPage(document.querySelector('.carousel-item.active'));
+    }, 1000);
+
