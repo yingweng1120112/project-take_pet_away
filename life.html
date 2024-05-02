@@ -32,149 +32,11 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="/css/index-banner.css" />
-    <title>首頁</title>
-    <style>
-      .accordion-button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
-      }
+    <link rel="stylesheet" href="/css/petList.css" />
+    <link rel="stylesheet" href="/css/life.css" />
 
-      .accordion-body {
-        background-color: white;
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-        border: 1px solid #895e3c;
-        border-top: 0;
-        /* 搜尋物件的邊線 方便查看 */
-      }
-
-      .accordion-button::after {
-        margin: 0;
-      }
-
-      .accordion-button:not(.collapsed) {
-        background-color: white;
-      }
-
-      .accordion {
-        --bs-accordion-btn-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
-        --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1836 0.442585L29.3367 28.5046C29.6051 29.0367 29.2183 29.6649 28.6224 29.6649L1.29842 29.6649C0.702497 29.6649 0.31577 29.0367 0.584123 28.5046L14.7372 0.442584C14.8296 0.259356 15.0912 0.259357 15.1836 0.442585Z" fill="%234D5053"/></svg>');
-      }
-      .life-container {
-      }
-      .container-list {
-        height: auto;
-        margin: auto;
-        overflow: hidden;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-
-      .container-item {
-        width: 300px;
-        margin-right: 20px;
-        text-align: center;
-      }
-      .container-item > p {
-        padding: 0;
-      }
-      .wp-pagenavi {
-        margin: 40px auto;
-        font-size: 14px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #333;
-      }
-      .wp-pagenavi a {
-        color: #333;
-      }
-      .wp-pagenavi a:hover {
-        color: #77a0d1;
-      }
-      .wp-pagenavi span.current,
-      .wp-pagenavi a.page {
-        margin: 0 10px;
-        line-height: 2;
-        padding: 0 12px;
-        transition: 0.03s;
-        display: block;
-        border-bottom: 4px solid transparent;
-      }
-      .wp-pagenavi span.current {
-        border-bottom: 4px solid #77a0d1;
-      }
-      .wp-pagenavi a.page {
-        background: none;
-      }
-      .wp-pagenavi a.page:hover {
-        border-bottom: 4px solid #77a0d1;
-      }
-      .wp-pagenavi .first,
-      .wp-pagenavi .extend {
-        margin-right: 15px;
-      }
-      .wp-pagenavi .previouspostslink,
-      .wp-pagenavi .nextpostslink {
-        display: none;
-      }
-
-      .cta {
-        border: none;
-        background: none;
-        cursor: pointer;
-      }
-
-      .cta span {
-        padding-bottom: 7px;
-        letter-spacing: 4px;
-        font-size: 14px;
-        padding-right: 15px;
-        text-transform: uppercase;
-      }
-
-      .cta svg {
-        transform: translateX(-8px);
-        transition: all 0.3s ease;
-      }
-
-      .cta:hover svg {
-        transform: translateX(0);
-      }
-
-      .cta:active svg {
-        transform: scale(0.9);
-      }
-
-      .hover-underline-animation {
-        position: relative;
-        color: black;
-        padding-bottom: 20px;
-      }
-
-      .hover-underline-animation:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000000;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-      }
-
-      .cta:hover .hover-underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
-    </style>
+    <title> | TAKE AWAY</title>
+    <style></style>
   </head>
 
   <body class="commendbody">
@@ -393,8 +255,8 @@
             aria-expanded="true"
             aria-controls="collapseOne"
           >
-            <span class="middle-page-title">貓狗日誌</span>
-            <span>選擇寵物分類</span>
+            <span class="middle-page-title">日誌搜尋</span>
+            <span>選擇毛孩分類</span>
           </button>
         </div>
       </div>
@@ -464,7 +326,7 @@
               <span>女生</span>
             </label>
             <p class="select-title">毛孩搜尋</p>
-            <div class="mb-3" style="display: flex; justify-content: center">
+            <div class="mb-3 shop-select-out">
               <input
                 type="text"
                 class="form-control shop-select"
@@ -475,104 +337,208 @@
         </div>
       </div>
     </div>
-    <!-- container  -->
+
     <div class="life-container">
-      <div class="container-main" style="background-color: #9cccf3">
-        <h1 style="font-size: 4rem; color: white">
+      <img src="/images/bg2.svg" class="bg-1" />
+      <div class="container-main">
+        <h1 class="index-word">
           這裡是大家細心照料的<br />孩子們，要來看看嗎 ?
         </h1>
       </div>
-      <div class="container">
-        <div class="container-list">
-          <div class="card" style="width: 18rem">
-            <img src="./images/test-img.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+      <img src="/images/bg-cat-feet.svg" class="bg-cat-feet-a" />
+      <section id="pet-card">
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
             </div>
           </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
             <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
-          </div>
-          <div class="container-item">
-            <img src="./images/test-img.jpg" alt="" />
-            <p>卍煞氣A歐歐乂</p>
-            <p>歐告</p>
-            <p>今年約莫3歲</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
           </div>
         </div>
-      </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cat_chocolate2.jpg" alt="" />
+          <div>
+            <span>卍煞氣A歐歐乂</span>
+            <p>歐告</p>
+            <div class="pet-name">
+              <span>今年約莫3歲</span>
+              <img src="./images/icon_boy.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div class="wp-pagenavi" role="navigation">
         <a class="first" aria-label="First Page" href="#">« </a>
         <a class="previouspostslink" rel="prev">&lt;</a>
-        <a class="page smaller">3</a>
-        <a class="page smaller">4</a>
-        <span aria-current="page" class="current">5</span>
-        <a class="page larger">6</a>
-        <a class="page larger">7</a>
+        <a class="page smaller">1</a>
+        <a class="page smaller">2</a>
+        <span aria-current="page" class="current">3</span>
+        <a class="page larger">4</a>
+        <a class="page larger">5</a>
         <a class="nextpostslink" rel="next" aria-label="次のページ" href="#"
           >&gt;
         </a>
         <a class="last" aria-label="Last Page" href="#"> »</a>
       </div>
-      <div
-        class="container-main"
-        style="
-          background-color: #9cccf3;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          margin-bottom: 1rem;
-        "
-      >
-        <h1 style="font-size: 4rem; color: white">
+
+      <div class="container-main">
+        <img src="/images/bg2.svg" class="bg-2" />
+        <h1 class="index-word">
           有了狗狗和貓貓<br />那是不是就可以買一些他們的東西呢
         </h1>
-        <button
-          class="cta"
-          style="
-            padding: 1rem;
-            background-color: #d7b67a;
-            border: 0.5rem solid white;
-            border-radius: 2rem;
-          "
-        >
+        <button class="cta btn-more">
           <span class="hover-underline-animation"> 來去看看 </span>
           <svg
             id="arrow-horizontal"
@@ -591,6 +557,7 @@
         </button>
       </div>
     </div>
+
     <!-- shop  -->
     <div class="life-shop"></div>
     <!-- footer -->
