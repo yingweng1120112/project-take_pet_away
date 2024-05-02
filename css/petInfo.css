@@ -723,7 +723,7 @@ body{
 .paws1{
   position: absolute;
   /* z-index: -1; */
-  animation-name: paws;
+  animation-name: paws1;
   animation-duration: 10s;
   animation-direction: ease-in;
   animation-iteration-count: infinite;
@@ -732,7 +732,7 @@ body{
   top: 40%;
 }
 
-@keyframes paws{
+@keyframes paws1{
   from{
     left: 70%;
     top: 40%;
