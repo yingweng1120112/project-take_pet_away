@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>產品資訊</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/product-information.css" />
+    <link rel="stylesheet" href="../css/product-information copy.css" />
     <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/pagination.css" />
   </head>
@@ -331,49 +334,91 @@
       <img class="dog-footprints" src="../images/dog-footprints.svg" alt="" />
     </section>
     <!-- 我的評論 -->
-    <section>
+    <section class="comment">
       <div class="content">
-        <div class="product-my-comment">
-          <img src="../images/my-comment.svg" alt="" />
-          <hr />
-          <div class="my-comment-form">
-            <div class="mb-3 w-100">
-              <label for="exampleFormControlInput1" class="form-label fs-6">使用者:</label>
-              <input type="text" class="form-control border-bottom-1" id="exampleFormControlInput1" placeholder="user-name" value="小金黃" readonly>
+        <div class="accordion w-100" id="accordionExample">
+          <div class="product-my-comment accordion-item">
+            <div class="accordion-header w-100">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img src="../images/my-comment.svg" alt="" />
+              </button>
             </div>
-            <div class="mb-3 w-100">
-              <label for="exampleFormControlTextarea1" class="form-label fs-6">我的評論:</label>
-              <textarea class="form-control border-bottom-1" id="exampleFormControlTextarea1" rows="3">我們家很挑嘴的小土豆，原本只是抱著姑且一試的態度買看看，沒想到牠意外喜歡，會再回購。</textarea>
+            <hr />
+          </div>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show w-100"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="my-comment-form">
+                <div class="mb-3 w-100">
+                  <label for="exampleFormControlInput1" class="form-label fs-6"
+                    >使用者:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control border-bottom-1"
+                    id="exampleFormControlInput1"
+                    placeholder="user-name"
+                    value="小金黃"
+                    readonly
+                  />
+                </div>
+                <div class="mb-3 w-100">
+                  <label
+                    for="exampleFormControlTextarea1"
+                    class="form-label fs-6"
+                    >我的評論:</label
+                  >
+                  <textarea
+                    class="form-control border-bottom-1"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  >
+我們家很挑嘴的小土豆，原本只是抱著姑且一試的態度買看看，沒想到牠意外喜歡，會再回購。</textarea
+                  >
+                </div>
+              </div>
+              <button class="cta">
+                <span class="hover-underline-animation">Release</span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </button>
             </div>
           </div>
-          <hr>
-          <button class="cta">
-            <span class="hover-underline-animation"> Shop now </span>
-            <svg
-              id="arrow-horizontal"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="10"
-              viewBox="0 0 46 16"
-            >
-              <path
-                id="Path_10"
-                data-name="Path 10"
-                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                transform="translate(30)"
-              ></path>
-            </svg>
-          </button>
         </div>
       </div>
-      <img class="decorative-words-img" src="../images/Productpage-decorative-words.png" alt="">
+      <img
+        class="decorative-words-img"
+        src="../images/Productpage-decorative-words.png"
+        alt=""
+      />
     </section>
     <!-- 裝飾字 -->
     <section>
-        <div class="content decorative-words-info">
-          <p>Other Products</p>
-          <p>其他你也許有可能會喜歡的商品再看一眼吧 </p>
-        </div>
+      <div class="content decorative-words-info">
+        <p>Other Products</p>
+        <p>其他你也許有可能會喜歡的商品再看一眼吧</p>
       </div>
     </section>
     <!-- 相關商品 -->
@@ -382,47 +427,46 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="#" class="related-products-card">
-            <img src="../images/related-products.jpg" alt="">
+              <img src="../images/related-products.jpg" alt="" />
               <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
               <p>$207</p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="#" class="related-products-card">
-            <img src="../images/related-products.jpg" alt="">
+              <img src="../images/related-products.jpg" alt="" />
               <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
               <p>$207</p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="#" class="related-products-card">
-            <img src="../images/related-products.jpg" alt="">
+              <img src="../images/related-products.jpg" alt="" />
               <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
               <p>$207</p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="#" class="related-products-card">
-            <img src="../images/related-products.jpg" alt="">
+              <img src="../images/related-products.jpg" alt="" />
               <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
               <p>$207</p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="#" class="related-products-card">
-            <img src="../images/related-products.jpg" alt="">
+              <img src="../images/related-products.jpg" alt="" />
               <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
               <p>$207</p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="#" class="related-products-card">
-            <img src="../images/related-products.jpg" alt="">
+              <img src="../images/related-products.jpg" alt="" />
               <p>斑尼菲 無穀狗糧 鹿肉關節450克(狗飼料)</p>
               <p>$207</p>
             </a>
           </div>
-
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -452,27 +496,26 @@
         input.value = value + 1;
       });
 
-
-      var swiper = new Swiper('.swiper', {
-      slidesPerView: 3,
-      direction: getDirection(),
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-      },
-    });
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
 
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
 
-      return direction;
-    }
+        return direction;
+      }
     </script>
   </body>
 </html>
