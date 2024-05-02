@@ -27,8 +27,8 @@ footer{
 
 .roll{
   overflow-y: scroll;
-  height: 100vh;
-  scroll-snap-points-y: repeat(100vh);
+  height: 100svh;
+  scroll-snap-points-y: repeat(100svh);
   scroll-snap-type: y mandatory;
 }
 
