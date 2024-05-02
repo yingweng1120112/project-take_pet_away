@@ -392,12 +392,12 @@ section>h2 {
   .paws1 {
     position: absolute;
     /* z-index: -1; */
-    animation-duration: 1s;
+    animation-duration: 10s;
     transform: rotate(45deg);
     height: 80px;
     object-fit: contain;
     left: -5%;
-    top: 80%;
+    top: 85%;
   }
 
   @keyframes paws1 {
