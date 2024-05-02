@@ -63,6 +63,7 @@
 }
 .book h2 {
   background-color: var(--bean-paste);
+  color: var(--white);
   margin: 0;
   height: 5rem;
   display: flex;

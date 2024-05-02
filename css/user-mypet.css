@@ -63,6 +63,7 @@
 }
 .book h2 {
   background-color: var(--bean-paste);
+  color: var(--white);
   margin: 0;
   height: 5rem;
   display: flex;
@@ -74,8 +75,19 @@
 }
 .rope {
   width: 3%;
-  height: 100%;
+  height: 97%;
   margin-bottom: 3px;
   background-image: url("../images/user-rope.png");
   background-repeat: repeat-y;
+}
+.bookContainer {
+  border-radius: 5%;
+}
+.mypet{
+  width: 80%;
+}
+.mypet img,
+.petform {
+  width: 50%;
+  border-radius: 15%;
 }
