@@ -31,7 +31,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 6.25rem;
-  margin-top: -30px;
 }
 
 .card {
@@ -41,92 +40,47 @@
   --bs-card-border-width: 0px;
 }
 
-.card > #state-welcome{
+.card>.state {
+  visibility: hidden;
   opacity: 0;
-  transition: all .1s linear;
-  padding-bottom: 150%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: -150%;
-  /* border: 1px solid black; */
-}
-
-.card > #state-welcome:hover{
-  opacity: 1;
-}
-
-.card > #state-welcome > p{
-  /* border: 5px solid var(--deep-blue); */
-  border-radius: 10px;
-  background-color: var(--yellow);
-  color: white;
-  line-height: 45px;
+  transition: visibility 0s, opacity 0.3s linear;
+  font-size: 1.25rem;
+  line-height: 50px;
   letter-spacing: 5px;
+  text-align: center;
+  width: 80%;
+  font-weight: 600;
+  border-radius: 10px;
+  color: rgba(24, 39, 71, 0.5);
+  background-color: white;
   padding: 0 10%;
   box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px;
+  margin: 0 10%;
 }
 
-.card > #state-home{
-  opacity: 0;
-  transition: all .1s linear;
-  padding-bottom: 150%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: -150%;
-  /* border: 1px solid black; */
-}
-
-.card > #state-home:hover{
+.card:hover .state {
+  visibility: visible;
   opacity: 1;
 }
 
-.card > #state-home > p{
-  /* border: 5px solid var(--deep-blue); */
-  /* border-radius: 10px; */
-  /* background-color: var(--green); */
-  /* text-shadow: 4 4 10px ; */
-  text-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px;
-  color: rgba(24, 39, 71, 0.5);
-  /* color: white; */
-  line-height: 45px;
-  letter-spacing: 5px;
-  padding: 0 10%;
+.card>.welcome::before {
+  content: "歡迎帶我回家";
 }
 
-.card > #state-pause{
-  opacity: 0;
-  transition: all .1s linear;
-  padding-bottom: 150%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: -150%;
-  /* border: 1px solid black; */
-}
-
-.card > #state-pause:hover{
-  opacity: 1;
-}
-
-.card > #state-pause > p{
-  border: 5px solid var(--deep-blue);
-  border-radius: 10px;
-  background-color: #E54040;
-  color: white;
-  line-height: 45px;
-  letter-spacing: 5px;
-  padding: 0 10%;
+.card>.pause::before {
+  content: "先暫停認養哦";
 }
 
 .card>img {
-  height: 300px;
-  width: 300px;
+  height: 18.75rem;
+  width: 18.75rem;
   object-fit: cover;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px;
   margin-top: 10px;
 }
 
-.card > .fa-heart{
+.card>.fa-heart {
   z-index: 1;
   font-size: 3.25rem;
   margin-top: -10%;
@@ -138,7 +92,7 @@
   transition: all .1s linear;
 }
 
-.card > .fa-heart:hover {
+.card>.fa-heart:hover {
   color: var(--red);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
@@ -277,7 +231,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -300,6 +254,11 @@
   width: 20%;
   height: 80px;
   background-color: var(--khaki);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+#ending > button:hover{
+  background-color: var(--deep-blue);
 }
 
 #ending>button>span {
