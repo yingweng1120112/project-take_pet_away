@@ -3,27 +3,41 @@ body {
 }
 header {
   height: 80px;
-  background-color: #e4ceb5;
+  background-color: #a1876a;
+}
+#result{
+  background-color: rgb(238, 236, 236);
+}
+#testresult {
+  margin: 40px 10%;
+  height: 750px;
+  display: flex;
+  background-image: url(/images/resultbg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px red solid;
+
+}
+#testresult > div:nth-child(2) {
+  height: 80%;
+  display: flex;
+  margin: 100px 100px;
+  border: 3px rgb(212, 134, 248) solid;
+  width: 60%;
+
 }
 
-#hearttest {
-  margin: 0 10%;
-  height: 800px;
-  background-color: #bacdd1;
-  background-image: url(/images/hearttestbg.png);
-  background-size: contain;
-  opacity: 0.9;
-  display: flex;
-  justify-content: center;
-}
 .testtitle {
   width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-right: 40px;
-  margin-top: 80px;
+  margin-right: 110px;
+  margin-left: 0px;
+  border: 2px rgb(68, 175, 35) solid;
+
 }
 .testtitle > div {
   display: flex;
@@ -42,33 +56,23 @@ header {
   background-color: #f2ebd8;
   color: black;
 }
-.testcontent {
+/* 左側 */
+.result-left{
   width: 50%;
-  height: fit-content;
-  line-height: 3.5rem;
-  letter-spacing: 3px;
-  font-size: var(--font-size-h4);
-  font-weight: 600;
-  background-color: white;
-  opacity: 0.7;
-  padding: 15px 20px;
-  border-radius: 20px;
-  margin: auto 0;
+  height: 100%;
+  border: 2px blue solid;
 }
-.testcontent input {
-  border: none;
-  letter-spacing: 3px;
-  width: 250px;
-  border-bottom: 1px var(--deep-gray) solid;
-  outline: none;
-  background: none;
-  margin: 25px 0 10px 0;
+
+
+/* 右側 */
+.result-right{
+  width: 50%;
+  height: 100%;
+  border: 2px yellow solid;
+
 }
-/* 按鈕 */
-.testcontent > div:nth-child(3) {
-  display: flex;
-  justify-content: end;
-}
+
+
 .testcontent button {
   width: 200px;
   height: 50px;
