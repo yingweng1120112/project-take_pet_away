@@ -66,6 +66,19 @@ p {
   margin-top: 1rem;
   background: var(--khaki);
 }
+.product-info .cta:hover{
+  color: var(--white);
+  background: var(--deep-blue);
+}
+.product-info .cta:hover span{
+  color: var(--white);
+}
+.product-info .cta:hover svg{
+  fill: var(--white);
+}
+.cta:hover .hover-underline-animation:after{
+  background-color: var(--white);
+}
 .footprint-banner {
   background-image: url(../images/footprint-banner.svg);
   width: 100%;
@@ -158,6 +171,17 @@ hr {
   background: var(--khaki);
   margin-top: 1.2rem;
 }
+.accordion-body .cta:hover{
+  color: var(--white);
+  background: var(--deep-blue);
+}
+.accordion-body .cta:hover span{
+  color: var(--white);
+}
+.accordion-body .cta:hover svg{
+  fill: var(--white);
+}
+
 /* 背景狗掌區 */
 .dog-palm {
   position: absolute;

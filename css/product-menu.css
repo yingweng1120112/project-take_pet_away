@@ -50,6 +50,15 @@ p {
   background: var(--light-gray);
   width: 45%;
 }
+.products-menu li:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: var(--khaki);
+}
+.products-card {
+  display: flex;
+  flex-direction: column;
+}
 .products-card img {
   width: 100%;
 }
@@ -165,6 +174,19 @@ span {
   width: 80%;
   margin-top: 5px;
   background: var(--yellow);
+}
+.decorative-words-info .cta:hover{
+  color: var(--white);
+  background: var(--deep-blue);
+}
+.decorative-words-info .cta:hover span{
+  color: var(--white);
+}
+.decorative-words-info .cta:hover svg{
+  fill: var(--white);
+}
+.cta:hover .hover-underline-animation:after{
+  background-color: var(--white);
 }
 /* 推薦浪浪 */
 body section:nth-child(4) {
