@@ -5,6 +5,11 @@
   z-index: 2;
 }
 
+ul{
+  padding: 0;
+  margin: 0;
+}
+
 br{
   display: none;
 }
@@ -32,24 +37,19 @@ br{
 
 #pet-card {
   width: 80%;
-  /* display: flex; */
   display: grid;
-  /* justify-content: center; */
   justify-items: center;
-  /* align-items: center; */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 6.25rem;
 }
 
 .card {
-  display: grid;
-  flex-wrap: wrap;
   --bs-card-bg: none;
   --bs-card-border-width: 0px;
 }
 
-.card>.state {
+.state {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
@@ -57,13 +57,13 @@ br{
   line-height: 50px;
   letter-spacing: 5px;
   text-align: center;
-  width: 80%;
   font-weight: 600;
-  border-radius: 10px;
   color: rgba(24, 39, 71, 0.5);
   background-color: white;
-  padding: 0 10%;
   box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px;
+  border-radius: 10px;
+  width: 80%;
+  padding: 0 10%;
   margin: 0 10%;
 }
 
@@ -72,15 +72,15 @@ br{
   opacity: 1;
 }
 
-.card>.welcome::before {
+.welcome::before {
   content: "歡迎帶我回家";
 }
 
-.card>.pause::before {
+.pause::before {
   content: "先暫停認養哦";
 }
 
-.card>img {
+.card-img > img {
   height: 18.75rem;
   width: 18.75rem;
   object-fit: cover;
@@ -89,26 +89,27 @@ br{
   margin-top: 10px;
 }
 
-.card>.fa-heart {
+.card-img>.fa-heart {
   z-index: 1;
   font-size: 3.25rem;
   margin-top: -10%;
   margin-left: 85%;
   color: var(--beige);
-  height: 0;
+  height: 30px;
   width: 0;
   cursor: pointer;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   transition: all .1s linear;
 }
 
-.card>.fa-heart:hover {
+.card-img>.fa-heart:hover {
   color: var(--red);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
 .card>div {
   margin-top: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,7 +118,7 @@ br{
   color: rgba(24, 39, 71, 0.5);
 }
 
-.card>div>p {
+.pet-name>p{
   padding: 0;
   margin: 0;
   letter-spacing: 20px;
@@ -127,7 +128,7 @@ br{
   color: var(--brown);
 }
 
-.pet-name {
+.pet-desc {
   /* border: 1px solid black; */
   width: 100%;
   padding-left: 30px;
@@ -137,7 +138,7 @@ br{
   justify-content: space-between;
 }
 
-.pet-name>img {
+.pet-desc>img {
   height: 30px;
   width: 30px;
   object-fit: cover;
@@ -402,7 +403,6 @@ br{
   #title{
     background-size: 150%;
     background-position: 50% 80%;
-    margin-bottom: -30%;
   }
 
   #title>h1 {
@@ -410,51 +410,75 @@ br{
   }
 
   #pet-card{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 20px;
   }
 
-  .card > img{
+/* TODO: 變成橫的 */
+  .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-img > img{
     width: 130px;
     height: 130px;
     border-radius: 10px;
   }
 
-  .card>.fa-heart {
+  .card-img>.fa-heart {
     font-size: 2rem;
-    margin-top: -10%;
-    margin-left: 80%;
+    margin-left: 75%;
   }
 
-  .card > .state{
-    font-size: 1rem;
-    line-height: 40px;
-    letter-spacing: 1px;
-    margin: 0 5%;
-    padding: 0 0;
-    width: 90%;
+  .state{
+    font-size: 12px;
+    line-height: 30px;
+    border-radius: 5px;
+    /* width: 60%; */
+    padding: 0;
+    margin: 0;
   }
 
-  .card > div > p{
-    font-size: 1.25rem;
-  }
-
-  .card > div > span{
-    font-size: 14px;
+  .card>div {
+    margin-top: 0;
+    font-size: 12px;
+    align-items: flex-start;
   }
 
   .pet-name{
-    padding: 0 5%;
+    margin-top: 30px !important;
+    margin-left: 10px;
+    /* gap: 5px; */
   }
 
-  .pet-name > span {
-    font-size: 14px;
+  .pet-name>p{
+    letter-spacing: 1rem;
+    font-size: 1.25rem;
+    order: 1;
   }
 
-  .pet-name > img {
+  .pet-name>span{
+    order: 2;
+  }
+
+  .pet-desc{
+    padding: 0;
+    width: 80%;
+    order: 3;
+  }
+
+  .pet-desc > img{
     width: 20px;
     height: 20px;
+  }
+
+
+  .wp-pagenavi{
+    font-size: 12px;
   }
 
   .wp-pagenavi span.current {
@@ -492,5 +516,26 @@ br{
 
   #ending > button > span{
     font-size: 16px;
+  }
+
+  #marquee {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    /* margin-bottom: -50px; */
+    border: 1px solid red;
+  }
+
+  .marquee{
+    --gap: 2rem;
+  }
+
+  .marquee__content>li>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 0;
   }
 }
