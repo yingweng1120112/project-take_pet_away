@@ -30,117 +30,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="/css/index-banner.css" />
-    <title>首頁</title>
-    <style>
-      .container {
-        display: flex;
-        align-items: flex-start;
-      }
-      .a {
-        display: flex;
-        flex-direction: column;
-      }
-      .b {
-        display: flex;
-        text-align: left;
-      }
-      .c {
-        display: flex;
-        border-bottom: 1px solid black;
-      }
-      .d {
-        margin: 1rem;
-        display: flex;
-        flex-direction: column;
-      }
-      .e {
-        display: flex;
-        justify-content: space-between;
-      }
-      .f {
-        display: flex;
-        justify-content: flex-end;
-      }
-      h4 {
-        padding-top: 1rem;
-      }
-      h5 {
-        padding-top: 1rem;
-        line-height: 2.5rem;
-      }
-
-      .wp-pagenavi {
-        margin: 40px auto;
-        font-size: 14px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #333;
-      }
-      .wp-pagenavi a {
-        color: #333;
-      }
-      .wp-pagenavi a:hover {
-        color: #77a0d1;
-      }
-      .wp-pagenavi span.current,
-      .wp-pagenavi a.page {
-        margin: 0 10px;
-        line-height: 2;
-        padding: 0 12px;
-        transition: 0.03s;
-        display: block;
-        border-bottom: 4px solid transparent;
-      }
-      .wp-pagenavi span.current {
-        border-bottom: 4px solid #77a0d1;
-      }
-      .wp-pagenavi a.page {
-        background: none;
-      }
-      .wp-pagenavi a.page:hover {
-        border-bottom: 4px solid #77a0d1;
-      }
-      .wp-pagenavi .first,
-      .wp-pagenavi .extend {
-        margin-right: 15px;
-      }
-      .wp-pagenavi .previouspostslink,
-      .wp-pagenavi .nextpostslink {
-        display: none;
-      }
-      button {
-        background-color: #eee;
-        border: none;
-        padding: 1rem;
-        font-size: 1rem;
-        width: 10em;
-        border-radius: 1rem;
-        color: lightcoral;
-        box-shadow: 0 0.4rem #dfd9d9;
-        cursor: pointer;
-      }
-
-      button:active {
-        color: white;
-        box-shadow: 0 0.2rem #dfd9d9;
-        transform: translateY(0.2rem);
-      }
-
-      button:hover:not(:disabled) {
-        background: lightcoral;
-        color: white;
-        text-shadow: 0 0.1rem #bcb4b4;
-      }
-
-      button:disabled {
-        cursor: auto;
-        color: grey;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/blog.css" />
+    <title>毛孩日誌 | TAKE AWAY</title>
+    <style></style>
   </head>
 
   <body class="commendbody">
@@ -351,25 +246,27 @@
       </div>
       <div class="middle">
         <div class="middle-title">
-          <span class="middle-page-title">毛孩論壇</span>
-          <span>pet Forum</span>
+          <span class="middle-page-title">毛孩日誌</span>
+          <span>pet Diary</span>
         </div>
       </div>
     </div>
+    <!-- container -->
     <div class="container">
-      <div class="b">
-        <img src="./images/貓貓6 1.jpg" alt="" style="margin: 1rem" />
-        <div style="margin-top: 1rem">
-          <h1>
-            <span
-              style="
-                border-bottom: 1px solid black;
-                font-size: 3rem;
-                letter-spacing: 1rem;
-              "
-              >寵物資訊
-            </span>
-          </h1>
+      <div class="pet-info">
+        <div>
+          <div id="img-big">
+            <img src="./images/貓貓6 1.jpg" alt="" style="margin: 1rem" />
+          </div>
+          <div id="img-small">
+            <img src="https://placehold.jp/120x120.png" alt="" />
+            <img src="https://placehold.jp/120x120.png" alt="" />
+            <img src="https://placehold.jp/120x120.png" alt="" />
+            <img src="https://placehold.jp/120x120.png" alt="" />
+          </div>
+        </div>
+        <div class="info-line">
+          <span class="info-title">寵物資訊 </span>
           <h4>寵物名稱 : 斑斑</h4>
           <h4>品種 : 米克斯</h4>
           <h4>年紀 : 5歲</h4>
@@ -381,34 +278,44 @@
           </h5>
         </div>
       </div>
-      <img class="g" src="./images/Frame 51.svg" alt="" />
+      <img src="./images/Frame 51.svg" alt="" style="margin: 2rem 0" />
+      <!-- 上傳 -->
+      <div class="post">
+        <img src="./images/貓貓6 1.jpg" alt="" class="head-img" />
+        <div class="post-right" style="width: 100%">
+          <textarea
+            id="message"
+            name="message"
+            class="content-word"
+            style="resize: none"
+            placeholder="輸入你想分享的趣事"
+          ></textarea>
 
-      <div class="c">
-        <img src="./images/貓貓6 1.jpg" alt="" / style="margin: 1rem;
-        border-radius: 50%; width: 15%;">
-        <div class="d">
-          <p
-            style="padding: 1rem; background-color: white; border-radius: 3rem"
-          >
-            今天抓到一隻老鼠，我感到充滿成就和驕傲！追逐過程中，充滿了興奮和挑戰，最終的成功讓我感到無比的興奮。這不僅是一次獲得美食的冒險，更是對我的獵食本能的展示。我看到它躲藏的小角落，發揮了我的靈敏和技巧，最終成功地捕獲了它。現在，我可以自豪地展示我的成就給我的主人，展現我作為家中捕鼠專家的地位！
-          </p>
-          <div class="e">
-            <button>上傳圖片</button>
-            <button>發布訊息</button>
+          <div class="post-upload">
+            <div>
+              <label
+                for="file-upload"
+                class="button"
+                style="margin-right: 1rem"
+              >
+                <i class="fa-solid fa-image">圖片上傳</i>
+              </label>
+              <input id="file-upload" type="file" class="input-pic" multiple />
+            </div>
+            <input type="submit" acceptf="image/*" class="button" />
           </div>
+          <img id="show_image" src="" class="show-img" />
         </div>
       </div>
-      <div class="c">
-        <img src="./images/貓貓6 1.jpg" alt="" / style="margin: 1rem;
-        border-radius: 50%; width: 15%;">
-        <div class="d">
-          <p
-            style="padding: 1rem; background-color: white; border-radius: 3rem"
-          >
-            今天抓到一隻老鼠，我感到充滿成就和驕傲！追逐過程中，充滿了興奮和挑戰，最終的成功讓我感到無比的興奮。這不僅是一次獲得美食的冒險，更是對我的獵食本能的展示。我看到它躲藏的小角落，發揮了我的靈敏和技巧，最終成功地捕獲了它。現在，我可以自豪地展示我的成就給我的主人，展現我作為家中捕鼠專家的地位！
+      <!-- 貼文 -->
+      <div class="post">
+        <img src="./images/貓貓6 1.jpg" alt="" class="head-img" />
+        <div class="post-right">
+          <p class="content-word">
+            今天抓到一隻老鼠，我感到充滿成就和驕傲！追逐過程中，充滿了興奮和挑戰，最終的成功讓我感到無比的興奮。這不僅是一次獲得美食的冒險，更是對我的獵食本能的展示。我看到它躲藏的小角落，發揮了我的靈敏和技巧，最終成功地捕獲了它。現在，我可以自豪地展示我的成就給我的主人，展現我作為家中捕鼠專家的地位！今天抓到一隻老鼠，我感到充滿成就和驕傲！追逐過程中，充滿了興奮和挑戰，最終的成功讓我感到無比的興奮。這不僅是一次獲得美食的冒險，更是對我的獵食本能的展示。我看到它躲藏的小角落，發揮了我的靈敏和技巧，最終成功地捕獲了它。現在，我可以自豪地展示我的成就給我的主人，展現我作為家中捕鼠專家的地位！
           </p>
-          <div class="f">
-            <p style="margin: 0; padding: 0">2024/02/14 9:53pm</p>
+          <div class="post-time">
+            <p class="content-time">2024/02/14 9:53pm</p>
             <img src="/images/Edit_1.svg" alt="" />
           </div>
         </div>
@@ -567,5 +474,31 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="../js/index.js"></script>
+
+    <script>
+      // 預覽上傳圖片
+      var imageProc = function (input) {
+        if (input.files && input.files[0]) {
+          // 建立一個 FileReader 物件
+          var reader = new FileReader();
+          // 當檔案讀取完後，所要進行的動作
+          reader.onload = function (e) {
+            // 顯示圖片
+            $("#show_image")
+              .attr("src", e.target.result)
+              .css("height", "100px")
+              .css("width", "100px")
+              .css("border", "1px black solid");
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      };
+      $(document).ready(function () {
+        // 綁定事件
+        $("#file-upload").change(function () {
+          imageProc(this);
+        });
+      });
+    </script>
   </body>
 </html>

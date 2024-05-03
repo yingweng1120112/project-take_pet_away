@@ -1,0 +1,177 @@
+h4 {
+  padding-top: 1rem;
+}
+h5 {
+  padding-top: 1rem;
+  line-height: 2.5rem;
+}
+.container {
+  align-items: flex-start;
+}
+.pet-info {
+  display: flex;
+  text-align: left;
+  margin-top: 1rem;
+}
+.info-line{
+  margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 3px black solid;
+}
+.info-title{
+  border-bottom: 1px solid black;
+              font-size: 3rem;
+              letter-spacing: 1rem;
+              font-weight: bold;
+}
+
+.post {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.head-img{
+  margin: 1rem 0 0 1rem;
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+}
+.post-right {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-word{
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+textarea:focus {
+  outline: none;
+  border: 2px solid #D3AD9A;
+}
+.post-upload {
+  display: flex;
+  justify-content: space-between;
+}
+input[type="file"]::file-selector-button {
+  display: none;
+}
+
+.input-pic{
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10rem;
+  border-radius: 1rem;
+  color: black;
+}
+.show-img{
+  margin: 1rem 0 0 1rem;
+}
+.post-time {
+  display: flex;
+  justify-content: flex-end;
+}
+.content-time{
+  margin: 0;
+}
+
+
+
+
+.wp-pagenavi {
+  margin: 40px auto;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+.wp-pagenavi a {
+  color: #333;
+}
+.wp-pagenavi a:hover {
+  color: #77a0d1;
+}
+.wp-pagenavi span.current,
+.wp-pagenavi a.page {
+  margin: 0 10px;
+  line-height: 2;
+  padding: 0 12px;
+  transition: 0.03s;
+  display: block;
+  border-bottom: 4px solid transparent;
+}
+.wp-pagenavi span.current {
+  border-bottom: 4px solid #77a0d1;
+}
+.wp-pagenavi a.page {
+  background: none;
+}
+.wp-pagenavi a.page:hover {
+  border-bottom: 4px solid #77a0d1;
+}
+.wp-pagenavi .first,
+.wp-pagenavi .extend {
+  margin-right: 15px;
+}
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+  display: none;
+}
+.button {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: #d7b67a;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.button:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+.button:hover:not(:disabled) {
+  background: #d7b67a;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.button:disabled {
+  cursor: auto;
+  color: grey;
+}
+
+#pet-img {
+  width: 45%;
+}
+
+#img-big > img {
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+#img-small {
+  margin: 1rem;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+}
+
+#img-small > img {
+  border-radius: 10px;
+  object-fit: contain;
+  width: 20%;
+}
+
