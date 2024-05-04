@@ -40,7 +40,7 @@
   content: "";
   display: inline-block;
   box-sizing: border-box;
-  margin: 3px 11px 3px 1px;
+  margin: 3px 20px 3px 1px;
   border: solid 2px;
   /* Safari */
   border-color: rgba(0, 0, 0, 0.6);
@@ -56,8 +56,8 @@
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
-  left: 1px;
+  top: 4px;
+  left: 2px;
   width: 10px;
   height: 5px;
   border: solid 2px transparent;
@@ -424,10 +424,13 @@ body{
 
 #pet-health>ul>li {
   margin: 60px 0;
+  padding: 0;
   width: 20%;
   float: left;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
   text-align: left;
-  padding: 0;
 }
 
 .health-underline{
@@ -953,12 +956,11 @@ body{
   }
 
   #pet-health>h1 {
-    height: 60px;
     font-size: 24px;
-    line-height: 60px;
+    line-height: 70px;
     letter-spacing: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
 
   #pet-health>h1>img {
@@ -968,13 +970,33 @@ body{
   }
 
   #pet-health>ul>li {
-    margin: 10px 0;
+    margin: 5px 0;
     width: 50%;
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  .cl-checkbox>span::before {
+    margin: 3px 15px 3px 1px;
+    width: 13px;
+    height: 13px;
+    align-items: center;
+  }
+
+  .cl-checkbox>span::after {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 8px;
+    height: 5px;
+    border: solid 2px transparent;
+    border-right: none;
+    border-top: none;
   }
 
   .health-underline{
     height: 25px;
     background-position: 0% 50%;
   }
+
+
 }
