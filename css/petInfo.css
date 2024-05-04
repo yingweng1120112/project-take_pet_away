@@ -2,6 +2,7 @@
 .cl-checkbox {
   position: relative;
   display: inline-block;
+  pointer-events: none;
 }
 
 /* Input */
@@ -31,7 +32,7 @@
 .cl-checkbox>span {
   display: inline-block;
   width: 100%;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* Box */
@@ -321,7 +322,6 @@ body{
   align-items: center;
   text-align: center;
   color: white;
-  font-size: 24px;
   background-color: var(--khaki);
 }
 
@@ -426,7 +426,7 @@ body{
   /* align-items: center; */
   /* width: 20%; */
   background-color: var(--white);
-  margin: 100px;
+  margin: 20% 0;
   /* line-height: 150px; */
 }
 
@@ -831,4 +831,102 @@ body{
   object-fit: contain;
   right: -5%;
   top: 485%;
+}
+
+
+
+/* TODO: 手機版 */
+/* 手機版 */
+@media screen and (max-width: 414px) {
+  .paws1, .paws2, .paws3{
+    display: none;
+  }
+
+  #pet-desc{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 10% 0 10%;
+    margin: 0;
+    background-image: url("../images/background-petinfo-mobile.png");
+    background-size: 150%;
+    background-position: 60% 75%;
+  }
+
+  #pet-img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #img-big > img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  #img-small{
+    width: 100%;
+  }
+
+  #img-small > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  #pet-info{
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .pet-hashtag{
+    font-size: 20px;
+    height: 10px;
+  }
+
+  .pet-name > p{
+    font-size: 36px;
+  }
+
+  .pet-name>img {
+    width: 25px;
+    height: 25px;
+  }
+
+  #pet-info>ul>li {
+    width: 33%;
+    line-height: 60px;
+    font-size: 16px;
+    /* list-style-image: url(); */
+    padding-left: 5px;
+    background-size: 10px;
+    /* background-image: url("../images/icon_pet_ulli.png"); */
+  }
+
+  /* #pet-info>ul>li ::marker{
+    width: 10px !important;
+    height: 10px !important;
+    object-fit: contain;
+  } */
+
+  .pet-btn{
+    margin: 0;
+  }
+
+  .pet-btn>button {
+    border-radius: 50px;
+    line-height: 50px;
+  }
+
+  .pet-btn > button > span{
+    font-size: 14px;
+    padding-right: 5px;
+  }
+
+  .cta svg{
+    width: 20px;
+  }
+
 }
