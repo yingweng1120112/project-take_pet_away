@@ -70,26 +70,51 @@
   align-items: center;
   justify-content: center;
 }
-
-.bookItem {
-  width: 80%;
-  margin: 3rem 2rem 2rem 10rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
+.user {
+  border-bottom: 1px solid black;
+  margin: 1rem 6rem;
   padding-bottom: 10px;
 }
-.bookContainer h5 {
-  margin: 2rem;
+.bookItems{
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.bookItem {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin: 1rem 6rem;
+  padding-bottom: 10px;
 }
 
-.book {
-  flex: 0 0 90%;
+.bookContainer h5 {
+  margin: 1.5rem;
+  position: relative;
+}
+.rope {
+  width: 3%;
+  height: 88%;
+  background-image: url("../images/user-rope.png");
+  background-repeat: repeat-y;
+  position: absolute;
+  right: 99%;
+  z-index: 2;
+}
+.bookContainer {
+  border-radius: 30px;
+  position: relative;
+  overflow: visible;
+}
+.bookContainer h2 {
+  border-radius: 30px 30px 0 0;
 }
 
 .btnItem {
   display: flex;
   justify-content: flex-end;
+  z-index: 2;
 }
 .btnConfirm {
   margin: 0.5rem;
@@ -98,11 +123,16 @@
   background-color: var(--khaki);
   border-radius: 80px;
 }
-
-.rope {
-  width: 3%;
-  height: 100%;
-  margin-bottom: 3px;
-  background-image: url("../images/user-rope.png");
-  background-repeat: repeat-y;
+.bell {
+  position: absolute;
+  width: 18%;
+  left: 83%;
 }
+.feet {
+  position: absolute;
+  width: 20%;
+  right: 85%;
+  top: 70%;
+  z-index: 1;
+}
+
