@@ -92,12 +92,12 @@ header {
 }
 
 /* 數據 */
-.result-right .graph{
-/* border: 2px solid red; */
-width: 100%;
-height: 50%;
+.result-right .graph {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 50%;
 }
-.progress{
+.progress {
   position: relative;
   margin: 4px;
   float: left;
@@ -109,37 +109,40 @@ height: 50%;
   width: 150px;
   margin: 10px 35px;
 }
-.barOverflow{ /* Wraps the rotating .bar */
+.barOverflow {
+  /* Wraps the rotating .bar */
   position: relative;
   overflow: hidden;
-  width: 120px; height: 60px; /* Half circle (overflow) */
+  width: 120px;
+  height: 60px; /* Half circle (overflow) */
   margin: 10px auto -10px auto;
 }
-.graph .text{
+.graph .text {
   width: 100%;
   height: 60px;
   line-height: 30px;
-    margin-top: -30px;
+  margin-top: -30px;
 }
 .graph .text > div {
-font-size: var(--font-size-h4);
-font-weight: 500;
-color: #a8564f;
+  font-size: var(--font-size-h4);
+  font-weight: 500;
+  color: #a8564f;
 }
-.bar{
+.bar {
   position: absolute;
-  top: 0; left: 0;
-  width: 120px; height: 120px; /* full circle! */
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px; /* full circle! */
   border-radius: 50%;
   box-sizing: border-box;
-  border: 10px solid #eee;     /* half gray, */
-  border-bottom-color: #7c877d;  /* half azure */
+  border: 10px solid #eee; /* half gray, */
+  border-bottom-color: #7c877d; /* half azure */
   border-right-color: #7c877d;
 }
 
-
 /* 按鈕 */
-#testresult .button{
+#testresult .button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,7 +150,7 @@ color: #a8564f;
   width: 8%;
   height: 20%;
   /* border: yellow 2px solid; */
-  margin-top:600px;
+  margin-top: 600px;
 }
 #testresult .button > button {
   width: 100px;
@@ -185,4 +188,116 @@ color: #a8564f;
 /* footer */
 footer {
   height: 400px;
+}
+
+@media screen and (max-width: 414px) {
+  #testresult {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    align-items: center;
+    margin: 40px 0;
+    width: 100%;
+  }
+  .testtitle {
+    width: 250px;
+    height: fit-content;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+  .testtitle > div {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-h4);
+  }
+  #testresult > div:nth-child(2) {
+    width: 100%;
+  }
+  .result-left {
+    width: 30%;
+    height: fit-content;
+  }
+  #testresult > div:nth-child(2) {
+    margin: 45px 0px 0px 130px;
+  }
+  .result-right {
+    width: 42%;
+    margin-top: 0;
+    line-height: 20px;
+    letter-spacing: 2px;
+    height: 300px;
+  }
+  .result-right > div:nth-child(1) {
+    font-size: 12px;
+  }
+  .result-right > div:nth-child(2) {
+    font-size: var(--font-size-p);
+    font-weight: 500;
+    height: 23px;
+  }
+  .result-right > div:nth-child(3) {
+    font-size: 11px;
+  }
+  .result-right .graph {
+    position: relative;
+    left: -193px;
+    bottom: 60px;
+    width: 180px;
+    height: 66px;
+  }
+  .progress {
+    margin: 0;
+    width: 80px;
+    height: 30px !important;
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+  .barOverflow {
+    width: 40px;
+    height: 20px;
+  }
+  .graph .text {
+    margin-left: 23px;
+  }
+  .graph .text > div {
+    font-size: 8px;
+  }
+  .graph .text > span {
+    font-size: 8px;
+    position: relative;
+    bottom: 24px;
+    left: 8px;
+  }
+  .text > span::after {
+    content: "%";
+  }
+  .bar {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #eee;
+    border-bottom-color: #7c877d;
+    border-right-color: #7c877d;
+    position: relative;
+    left: -15px;
+  }
+  .barOverflow {
+    overflow: initial;
+  }
+  #testresult .button {
+    flex-direction: row;
+    width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    margin: -50px auto 0 auto;
+  }
+  #result > div {
+    overflow-x: hidden;
+  }
+  #testresult .button > button {
+    height: 30px;
+    font-size: 12px;
+    width: fit-content;
+  }
 }
