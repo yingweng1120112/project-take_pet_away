@@ -98,5 +98,14 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+//圖片放大播放
+  document.querySelectorAll('.pet-img img').forEach(image => {
+    image.onclick = () => {
+      document.querySelector('.popup-image').style.display = "block";
+      document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+  });
 
-  
+  document.querySelector('.popup-image a').onclick = () => {
+    document.querySelector('.popup-image').style.display = "none";
+  }

@@ -5,31 +5,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="./adout.css" />
+  <link rel="stylesheet" href="/css/adout.css" />
   <script src="https://kit.fontawesome.com/ec9d726866.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="adout">
     <div class="container">
-      <img src="/img/Group_8899-removebg-preview.png" alt="" class="foot" />
-      <img src="/img/Group_8899-removebg-preview.png" alt="" class="foot" />
+      <img src="./img/Group_8899-removebg-preview.png" alt="" class="foot" />
+      <img src="./img/Group_8899-removebg-preview.png" alt="" class="foot" />
       <div class="popup-image">
         <a><i class="fa-regular fa-circle-xmark"></i></a>
-        <img src="/img/Ellipse 169.jpg" alt="">
-        <img src="/img/image_60-removebg-preview.png" alt="" class="print" />
-        <img src="/img/Group_8899-removebg-preview.png" alt="" class="foot" />
-        <img src="/img/Group_8899-removebg-preview.png" alt="" class="myfoot" />
-        <img src="/img/Group_8899-removebg-preview.png" alt="" class="feet" />
+        <img src="./img/Ellipse 169.jpg" alt="">
+        <img src="./img/image_60-removebg-preview.png" alt="" class="print" />
+        <img src="./img/Group_8899-removebg-preview.png" alt="" class="foot" />
+        <img src="./img/Group_8899-removebg-preview.png" alt="" class="myfoot" />
+        <img src="./img/Group_8899-removebg-preview.png" alt="" class="feet" />
       </div>
       <!-- <img src="/img/image_60-removebg-preview.png" alt="" class="print2"> -->
       <section id="about-pet">
         <div class="pet-title ">
           <input type="checkbox" id="ch" class="input" />
-          <img src="/img/Group_8899-removebg-preview.png" alt="" class="pet-foot" />
-          <img src="/img/Group_8899-removebg-preview.png" alt="" class="pet-foot" />
+          <img src="./img/Group_8899-removebg-preview.png" alt="" class="pet-foot" />
+          <img src="./img/Group_8899-removebg-preview.png" alt="" class="pet-foot" />
           <div class="pet-photo">
-            <img src="/img/螢幕擷取畫面 2024-02-03 215120.png" alt="" />
+            <img src="./img/螢幕擷取畫面 2024-02-03 215120.png" alt="" />
           </div>
           <div class="pet-name">
             <h3>認養滷蛋</h3>
@@ -37,13 +37,13 @@
           </div>
           <div class="pet-img">
             <div class="image">
-              <img src="/img/pet-img(1).png" alt="" />
+              <img src="./img/pet-img(1).png" alt="" />
             </div>
             <div class="image">
-              <img src="/img/pet-img(2).png" alt="" />
+              <img src="./img/pet-img(2).png" alt="" />
             </div>
             <div class="image">
-              <img src="/img/pet-img(3).png" alt="" />
+              <img src="./img/pet-img(3).png" alt="" />
             </div>
           </div>
           <div class="extra">
@@ -93,7 +93,7 @@
             <div class="payment-img">
               <div class="money">
                 <button type="button" name="hun">
-                  <img src="/img/Ellipse 183.jpg" alt="" class="moneyImg" />
+                  <img src="./img/Ellipse 183.jpg" alt="" class="moneyImg" />
                 </button>
                 <br />
                 <h4>NTD</h4>
@@ -101,7 +101,7 @@
               </div>
               <div class="money">
                 <button type="button" name="five-hun">
-                  <img src="/img/Ellipse 182.jpg" alt="" class="moneyImg" />
+                  <img src="./img/Ellipse 182.jpg" alt="" class="moneyImg" />
                 </button>
                 <br />
                 <h4>NTD</h4>
@@ -109,7 +109,7 @@
               </div>
               <div class="money">
                 <button type="button" name="thou" placeholder="Email">
-                  <img src="/img/Ellipse 175.jpg" alt="" class="moneyImg" />
+                  <img src="./img/Ellipse 175.jpg" alt="" class="moneyImg" />
                 </button>
                 <br />
                 <h4>NTD</h4>
@@ -253,14 +253,14 @@
             <h5 class="fs-name">感謝認養</h5>
             <div class="thanks">
               <div class="thanks-img">
-                <img src="/img/pet-img(2).png" alt="" class="puppy" />
+                <img src="./img/pet-img(2).png" alt="" class="puppy" />
               </div>
               <div class="ml16-group">
                 <h3 class="ml16">謝謝乾爹乾媽</h3>
               </div>
             </div>
             <input type="button" name="previous" class="previous action-button third-previous" value="上一頁" />
-            <button type="submit" href="https://twitter.com/GoktepeAtakan" class="submit action-button third-submit"
+            <button type="submit" href="" class="submit action-button third-submit"
               target="_top">
               完成
             </button>
@@ -276,17 +276,8 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="./adout.js"></script>
-  <script>document.querySelectorAll('.pet-img img').forEach(image => {
-      image.onclick = () => {
-        document.querySelector('.popup-image').style.display = "block";
-        document.querySelector('.popup-image img').src = image.getAttribute('src');
-      }
-    });
+  <script src="/js/adout.js"></script>
 
-    document.querySelector('.popup-image a').onclick = () => {
-      document.querySelector('.popup-image').style.display = "none";
-    }</script>
 </body>
 
 </html>
