@@ -1,0 +1,497 @@
+/* 關於我們 */
+
+/* 手機版 */
+
+/* 袋走的願景 */
+.container_au {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.au_hope>h1 {
+    padding: 20px 0px;
+}
+
+.au_hope>h5 {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-top: 1px solid black;
+    line-height: 40px;
+}
+
+.au_hope2 {
+    display: flex;
+    justify-content: center;
+}
+
+.au_hope2>img {
+    width: 90%;
+    padding: 50px 0px;
+}
+
+/* 樣式btn */
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* 袋走的品牌介紹 */
+.container_au_tklogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.au_tklogo {
+    width: 80%;
+    text-align: center;
+}
+
+.au_tklogo>img {
+    width: 80%;
+}
+
+.au_tklogo>p {
+    text-align: left;
+    padding-top: 20px;
+}
+
+/* 袋走提供的服務 */
+.container_au_service {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom: 20px;
+}
+
+.au_service {
+    width: 80%;
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 六邊形 */
+.gallery {
+    --s: 150px;
+    /* control the size */
+    --g: 10px;
+    /* control the gap */
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+}
+
+.gallery>img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1.15;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .2s linear;
+}
+
+.gallery>img:hover {
+    /* transform: rotateY(90deg); */
+    filter: grayscale(0);
+    z-index: 1;
+    --_t: 1.2;
+}
+
+.gallery>img:nth-child(1) {
+    --_y: calc(-100% - var(--g))
+}
+
+.gallery>img:nth-child(7) {
+    --_y: calc(100% + var(--g))
+}
+
+.gallery>img:nth-child(3),
+.gallery>img:nth-child(5) {
+    --_x: calc(-75% - .87*var(--g))
+}
+
+.gallery>img:nth-child(4),
+.gallery>img:nth-child(6) {
+    --_x: calc(75% + .87*var(--g))
+}
+
+.gallery>img:nth-child(3),
+.gallery>img:nth-child(4) {
+    --_y: calc(-50% - .5*var(--g))
+}
+
+.gallery>img:nth-child(5),
+.gallery>img:nth-child(6) {
+    --_y: calc(50% + .5*var(--g))
+}
+
+/* 跳轉至領養專區banner */
+.container_au_banner {
+    background-image: url("../images/au_dogcat10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 50%;
+    width: 100%;
+    min-height: 500px;
+    /* text-align: right; */
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 樣式btn2 */
+.au_bannerbtn {
+    background-color: #427D9D;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #FFF;
+    box-shadow: 0 0.4rem #2f586e;
+    cursor: pointer;
+}
+
+.boxhidden {
+    display: none;
+}
+
+.au_bannerbox {
+    padding-top: 100px;
+}
+
+.au_bannerbtn:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.au_bannerbtn:hover:not(:disabled) {
+    background: #FFF;
+    color: #427D9D;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.au_bannerbtn:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+
+
+/* 電腦版 */
+@media screen and (min-width: 1025px) {
+
+    /* 袋走的願景 */
+    .container_au {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: #FFF;
+        justify-content: center;
+        padding: 50px 0px;
+    }
+
+    .au_hope {
+        /* width: 30%; */
+        /* display: inline; */
+        align-content: center;
+        padding: 0px 100px;
+    }
+
+    .au_hope>h1 {
+        padding-bottom: 20px;
+    }
+
+    .au_hope>h5 {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        border-top: 1px solid black;
+        line-height: 40px;
+    }
+
+    .au_hope2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .au_hope2>img {
+        width: 80%;
+        padding: 50px 0px;
+    }
+
+    /* 樣式btn */
+    .cta {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .cta span {
+        padding-bottom: 7px;
+        letter-spacing: 4px;
+        font-size: 14px;
+        padding-right: 15px;
+        text-transform: uppercase;
+    }
+
+    .cta svg {
+        transform: translateX(-8px);
+        transition: all 0.3s ease;
+    }
+
+    .cta:hover svg {
+        transform: translateX(0);
+    }
+
+    .cta:active svg {
+        transform: scale(0.9);
+    }
+
+    .hover-underline-animation {
+        position: relative;
+        color: black;
+        padding-bottom: 20px;
+    }
+
+    .hover-underline-animation:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .cta:hover .hover-underline-animation:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+
+    /* 袋走的品牌介紹 */
+    .container_au_tklogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px;
+    }
+
+    .au_tklogo {
+        width: 50%;
+        text-align: center;
+    }
+    .au_tklogo>img{
+        width: 40%;
+    }
+
+    .au_tklogo>p {
+        /* width: 60%; */
+        text-align: left;
+        padding-top: 20px;
+    }
+
+
+    /* 袋走提供的服務 */
+    .container_au_service {
+        width: 100%;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding-bottom: 20px;
+    }
+
+    .au_service {
+        width: 50%;
+        padding: 20px 0px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* 六邊形 */
+    .gallery {
+        --s: 150px;
+        /* control the size */
+        --g: 10px;
+        /* control the gap */
+        display: grid;
+        margin: calc(var(--s) + var(--g));
+    }
+
+    .gallery>img {
+        grid-area: 1/1;
+        width: var(--s);
+        aspect-ratio: 1.15;
+        object-fit: cover;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+        transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+        cursor: pointer;
+        filter: grayscale(80%);
+        transition: .2s linear;
+    }
+
+    .gallery>img:hover {
+        /* transform: rotateY(90deg); */
+        filter: grayscale(0);
+        z-index: 1;
+        --_t: 1.2;
+    }
+
+    .gallery>img:nth-child(1) {
+        --_y: calc(-100% - var(--g))
+    }
+
+    .gallery>img:nth-child(7) {
+        --_y: calc(100% + var(--g))
+    }
+
+    .gallery>img:nth-child(3),
+    .gallery>img:nth-child(5) {
+        --_x: calc(-75% - .87*var(--g))
+    }
+
+    .gallery>img:nth-child(4),
+    .gallery>img:nth-child(6) {
+        --_x: calc(75% + .87*var(--g))
+    }
+
+    .gallery>img:nth-child(3),
+    .gallery>img:nth-child(4) {
+        --_y: calc(-50% - .5*var(--g))
+    }
+
+    .gallery>img:nth-child(5),
+    .gallery>img:nth-child(6) {
+        --_y: calc(50% + .5*var(--g))
+    }
+
+
+    /* body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: #aabbfb;
+    } */
+
+
+    /* 跳轉至領養專區banner */
+    .container_au_banner {
+        background-image: url("../images/au_dogcat9.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-height: 500px;
+        /* text-align: right; */
+        /* background-attachment: fixed; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* 樣式btn2 */
+    .au_bannerbtn {
+        background-color: #427D9D;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 10em;
+        border-radius: 1rem;
+        color: #FFF;
+        box-shadow: 0 0.4rem #2f586e;
+        cursor: pointer;
+    }
+
+    .boxhidden {
+        display: flex;
+        visibility: hidden;
+    }
+
+    .au_bannerbox {
+        padding-top: 50px;
+    }
+
+    .au_bannerbtn:active {
+        color: white;
+        box-shadow: 0 0.2rem #dfd9d9;
+        transform: translateY(0.2rem);
+    }
+
+    .au_bannerbtn:hover:not(:disabled) {
+        background: #FFF;
+        color: #427D9D;
+        text-shadow: 0 0.1rem #bcb4b4;
+    }
+
+    .au_bannerbtn:disabled {
+        cursor: auto;
+        color: grey;
+    }
+}

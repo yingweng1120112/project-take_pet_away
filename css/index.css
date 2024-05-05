@@ -96,8 +96,15 @@ section {
 /* 手機版 */
 
 /* header */
+header {
+  height: auto;
+  /* background-color: var(--bean-paste); */
+}
 .navbar {
   background-color: var(--creamy-yellow);
+}
+.navbar-brand img {
+  width: 50%;
 }
 .collapse {
   display: block;
@@ -107,17 +114,128 @@ section {
   background: none;
   margin: 8px;
 }
-.navbar-toggler-icon {
-  background-color: var(--black);
+
+.nav-item {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 .dropdown-toggle {
-  justify-content: end;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  justify-content: center;
+  letter-spacing: 0.5rem;
 }
+
 .dropdown-menu {
+  width: 100%;
+  background-color: var(--dark-gray);
+  text-align: center;
+  letter-spacing: 1rem;
+}
+.dropdown-menu .show{
+  /* width: 100%; */
+}
+
+.dropdown-item {
+  font-size: 1.5rem;
+  text-align: center;
+  /* letter-spacing: 3.5rem; */
+}
+.nav-icon{
+  width: 50%;
+}
+.btn-icon {
+  width: 50%;
+  height: 50%;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.btn-icon-menu .show {
+  background-color: var(--dark-gray);
   text-align: center;
 }
-.dropdown-item {
+
+.btn-icon-item {
+  font-size: 2rem;
   text-align: center;
+}
+
+/* btn */
+.menu {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+.menu span {
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+}
+.menu span:before,
+.menu span:after {
+  position: absolute;
+  content: "";
+}
+.menu span,
+.menu span:before,
+.menu span:after {
+  width: 30px;
+  height: 6px;
+  background-color: #000;
+  display: block;
+}
+.menu span:before {
+  margin-top: -12px;
+}
+.menu span:after {
+  margin-top: 12px;
+}
+/* btn */
+.menuBtn span {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.menuBtn:hover span {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.menuBtn span:before {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
+}
+.menuBtn:hover span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
+}
+.menuBtn span:after {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
+}
+.menuBtn:hover span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
 }
 
 /* footer */
@@ -138,15 +256,13 @@ footer {
   margin: 0 auto;
 }
 footer img {
-  margin-top: 40px;
+  margin: 40px;
   width: 60%;
 }
 
 .footerInfo {
   width: 90%;
-  margin: 2rem;
   width: 80%;
-  margin-bottom: 10rem;
   display: flex;
   flex-flow: column wrap;
 }
@@ -165,6 +281,11 @@ footer img {
 .desc {
   font-size: var(--font-size-p);
   text-align: center;
+  padding: 0.3rem;
+}
+.sponDesc {
+  text-align: left;
+  font-size: var(--font-size-p);
   padding: 0.3rem;
 }
 .footerHr {
@@ -225,8 +346,8 @@ footer img {
   justify-content: space-between;
   align-items: center;
 }
-.sponsor > img{
-  width:40%;
+.sponsor > img {
+  width: 40%;
 }
 
 .footerItem:nth-child(7) img {
@@ -260,7 +381,7 @@ footer img {
   }
 
   p {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     padding: 1rem 0;
   }
   .container {
@@ -272,9 +393,10 @@ footer img {
   }
 
   /* header */
-  .nav-item{
+  .nav-item {
     justify-content: space-between;
   }
+
   /* banner */
   .banner {
     background-image: url(/images/banner.jpg);
@@ -337,28 +459,23 @@ footer img {
 
   .footerInfo {
     width: 80%;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-flow: row wrap;
   }
   .footerItem {
-    width: 28%;
+    width: 30%;
+    margin: 0.85em;
   }
   .footerItem:nth-child(7) {
     display: block;
     justify-content: center;
-    width: 100%;
+    width: 96.5%;
   }
   .fosponsor {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .sponsor {
-    justify-content: center;
-  }
-  .sponsor > img{
-    /* width:0%; */
   }
   .footerItem:nth-child(7) img {
     display: flex;
