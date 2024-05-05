@@ -1,6 +1,5 @@
-/* Marquee styles */
 .marquee {
-  --gap: 1rem;
+  --gap: 100px;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -85,7 +84,7 @@
   list-style: none;
 }
 
-h1 {
+.enable-animation > h1 {
   margin: 30px;
   padding-top: 20px;
   padding-right: 20px;
@@ -124,7 +123,7 @@ section>*+* {
 
 .card-desc {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 0 0 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -159,6 +158,15 @@ section>*+* {
 }
 
 .cta {
+  border: none;
+  cursor: pointer;
+  background-color: var(--khaki);
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.cta:hover {
   border: none;
   cursor: pointer;
   background-color: var(--khaki);
@@ -210,4 +218,71 @@ section>*+* {
 .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* TODO: 手機版 */
+/* 手機版 */
+@media screen and (max-width: 414px) {
+  .marquee {
+    --gap: 50px;
+  }
+
+  .enable-animation > h1 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: 10px;
+    padding-bottom: 5px;
+    margin: 30px 0 50px 0;
+  }
+
+  .pet-card>img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .card-desc {
+    width: 180px;
+    padding: 0 0 0 5%;
+  }
+
+  .card-desc > span {
+    font-size: 14px;
+  }
+
+  .card-desc>p {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 2rem;
+  }
+
+  .card-desc>div{
+    font-size: 14px;
+  }
+
+  .card-desc>div>img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .cta {
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+  }
+
+  .cta span {
+    padding-bottom: 7px;
+    padding-right: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  #arrow-horizontal{
+    width: 20px;
+  }
 }
