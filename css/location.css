@@ -168,12 +168,11 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 80%;
   height: 100%;
   margin-top: 0rem;
-
 }
 
 #save .foot {
@@ -189,6 +188,7 @@ section {
   order: 2;
   z-index: 3;
   align-items: center;
+  margin-top: 2rem;
 }
 
 #save .space-left-two {
@@ -207,6 +207,7 @@ section {
   line-height: 1.5rem;
   color: var(--reddish-brown);
   font-size: 0.9rem;
+  padding-top: 1.25rem;
 }
 
 #address {
@@ -510,6 +511,7 @@ section {
   #save .space-left-two {
     width: 50%;
     height: 80%;
+    margin: auto;
     display: flex;
     justify-content: center;
     border-radius: 2.5rem;
@@ -518,7 +520,7 @@ section {
   }
 
   #save .space-right {
-    width: 45%;
+    width: 40%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -572,6 +574,7 @@ section {
     line-height: 3rem;
     color: var(--reddish-brown);
     font-size: 1.125rem;
+    font-weight: bolder;
   }
 
   #address{
@@ -674,12 +677,14 @@ section {
 
   #address .address-right .socail {
     width: 50%;
-    height: 25%;
+    height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
-
+  #address .address-right .socail a{
+    width: 25%;
+  }
   #fond-us {
     background-color: white;
     height: 37rem;
