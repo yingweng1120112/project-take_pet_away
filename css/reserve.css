@@ -108,7 +108,7 @@ section {
   position: absolute;
   width: 8rem;
   top:42%;
-  left: 67%;
+  left: 69%;
   z-index: 4;
   transform: rotate(-80deg);
 }
@@ -203,7 +203,7 @@ display: none;
 
 /* styling of Input */
 #reserve .form-input .input {
-  color: #fff;
+  color: var(--black);
   font-size: 0.9rem;
   background-color: transparent;
   width: 100%;
