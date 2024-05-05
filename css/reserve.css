@@ -104,7 +104,7 @@ section {
   justify-content: space-between;
   position: relative;
 }
-#reserve .foot {
+.reserve .foot {
   position: absolute;
   width: 8rem;
   top:42%;
@@ -112,7 +112,7 @@ section {
   z-index: 4;
   transform: rotate(-80deg);
 }
-#reserve .print {
+.reserve .print {
   position: absolute;
   width: 9rem;
   top:85%;
@@ -126,7 +126,7 @@ section {
 .play{
   display: none;
 }
-#reserve .reserve-title {
+.reserve .reserve-title {
  width: 80%;
  display: flex;
  flex-direction: column;
@@ -135,21 +135,21 @@ section {
  line-height: 1.5rem;
  color: var(--border-color);
 }
-#reserve .reserve-title .lap-top {
+.reserve .reserve-title .lap-top {
   display: none;
  }
- #reserve .reserve-img{
+ .reserve .reserve-img{
   width: 80%;
   height: 20rem;
   position: relative;
   left:10%;
  }
- #reserve .reserve-img img{
+ .reserve .reserve-img img{
   width: 100%;
   height: 100%;
   border-radius: 3%;
  }
- #reserve .reserve-img .img-title{
+ .reserve .reserve-img .img-title{
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -160,7 +160,7 @@ section {
   top: 10px;
   color: var(--white);
  }
- #reserve .img-title .img-h1{
+ .reserve .img-title .img-h1{
   order: 2;
   width: 10%;
   height: 100%;
@@ -169,10 +169,10 @@ section {
   font-size: 1.25rem;
   line-height: 1.875rem;
  }
- #reserve .img-title .img-p{
+ .reserve .img-title .img-p{
 display: none;
  }
- #reserve .reserve-form{
+ .reserve .reserve-form{
   position: relative;
   height:25rem;  
   background-color: white;
@@ -182,7 +182,7 @@ display: none;
   align-items: center;
   box-shadow: 5px 8px 2px rgba(0, 0, 0, 0.2);
  }
- #reserve .input-group {
+ .reserve .input-group {
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -191,7 +191,7 @@ display: none;
   color: var(--reddish-brown);
 }
 
-#reserve .form-input {
+.reserve .form-input {
   --width-of-input: 200px;
   --border-height: 1px;
   --border-before-color: rgba(221, 221, 221, 0.39);
@@ -202,7 +202,7 @@ display: none;
 }
 
 /* styling of Input */
-#reserve .form-input .input {
+.reserve .form-input .input {
   color: var(--black);
   font-size: 0.9rem;
   background-color: transparent;
@@ -215,7 +215,7 @@ display: none;
 }
 
 /* styling of animated border */
-#reserve .form-input .input-border {
+.reserve .form-input .input-border {
   position: absolute;
   background: var(--border-after-color);
   width: 0%;
@@ -226,24 +226,24 @@ display: none;
 }
 
 /* Hover on Input */
-#reserve .form-input input:hover {
+.reserve .form-input input:hover {
   background: var(--input-hovered-color);
 }
 
-#reserve .form-input input:focus {
+.reserve .form-input input:focus {
   outline: none;
 }
 
 /* here is code of animated border */
-#reserve input:focus~.input-border {
+.reserve input:focus~.input-border {
   width: 100%;
 }
 
-input[type=date]:invalid::-webkit-datetime-edit {
+.reserve input[type=date]:invalid::-webkit-datetime-edit {
   color: black;
 }
 
-#reserve button {
+.reserve button {
   outline: none;
   color: #DAA06D;
   padding: 1em;
@@ -257,11 +257,11 @@ input[type=date]:invalid::-webkit-datetime-edit {
   z-index: 2;
 }
 
-button:active {
+.reserve button:active {
   transform: translateX(0.1em) translateY(0.1em);
   box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
 }
-#thanks {
+.thanks {
   width: 100%;
   height: 8rem;
   display: flex;
@@ -273,15 +273,15 @@ button:active {
   color: var(--border-color);
   background-color: white;
 }
-#thanks .thanks-h2{
+.thanks .thanks-h2{
   display: none;
   text-align: center;
 
 }
-#thanks .thanks-title{
+.thanks .thanks-title{
   text-align: center;
 }
-#thanks .thanks-h3{
+.thanks .thanks-h3{
 width: 100%;
 text-align: center;
 
@@ -306,12 +306,12 @@ text-align: center;
   .play{
     display: block;
   }
-  #reserve {
+  .reserve {
     width: 100%;
     height: 53rem;
   }
 
-  #reserve .container {
+  .reserve .container {
     width: 80%;
     height: 100%;
     margin: auto;
@@ -320,14 +320,14 @@ text-align: center;
     align-items: start;
   }
 
-  #reserve .foot {
+  .reserve .foot {
     position: absolute;
     width: 12.5rem;
     top: 3rem;
     left: 73rem;
     z-index: 4;
   }
-  #reserve .print {
+  .reserve .print {
     position: absolute;
     width: 12rem;
     top:78%;
@@ -335,7 +335,7 @@ text-align: center;
     z-index: 3;
     transform: rotate(0deg);
   }
-  #reserve .reserve-title {
+  .reserve .reserve-title {
     width: 40%;
     position: absolute;
     margin: 0px auto;
@@ -344,13 +344,13 @@ text-align: center;
     line-height: 1.8rem;
     color: var(--border-color);
   }
-  #reserve .reserve-title .lap-top {
+  .reserve .reserve-title .lap-top {
     display: block;
    }
-   #reserve .reserve-title .phone {
+   .reserve .reserve-title .phone {
     display: none;
    }
-  #reserve .reserve-inner {
+  .reserve .reserve-inner {
     display: block;
     width: 40%;
     position: absolute;
@@ -362,7 +362,7 @@ text-align: center;
     color: var(--border-color);
   }
 
-  #reserve .play {
+  .reserve .play {
     width: 35%;
     position: absolute;
     margin: auto;
@@ -374,7 +374,7 @@ text-align: center;
     color: var(--border-color);
   }
 
-  #reserve .reserve-img {
+  .reserve .reserve-img {
     width: 36%;
     height: 80%;
     margin: auto;
@@ -384,13 +384,13 @@ text-align: center;
     z-index: 0;
   }
 
-  #reserve .reserve-img img {
+  .reserve .reserve-img img {
     width: 100%;
     height: 100%;
     border-radius: 0%;
   }
 
-  #reserve .reserve-img .img-title {
+  .reserve .reserve-img .img-title {
     width: 80%;
     height: 10%;
     position: absolute;
@@ -403,13 +403,13 @@ text-align: center;
     letter-spacing: 1rem;
     margin: auto;
   }
-  #reserve .reserve-img .img-title .img-h1{
+  .reserve .reserve-img .img-title .img-h1{
     width: 100%;
     text-align: left;
     margin: 0;
     font-size: 1.5625rem
   }
-  #reserve .reserve-img .img-title p {
+  .reserve .reserve-img .img-title p {
     display: block;
     width: 100%;
     position: absolute;
@@ -421,7 +421,7 @@ text-align: center;
     margin: auto;
   }
 
-  #reserve .reserve-form {
+  .reserve .reserve-form {
     width: 36%;
     height: 80%;
     position: absolute;
@@ -434,7 +434,7 @@ text-align: center;
 
   }
 
-  #reserve .input-group {
+  .reserve .input-group {
     margin-top: 3.5rem;
     height: 70%;
     display: flex;
@@ -443,7 +443,7 @@ text-align: center;
     align-items: center;
     color: var(--reddish-brown);
   }
-  #reserve .form-input {
+  .reserve .form-input {
     --width-of-input: 200px;
     --border-height: 1px;
     --border-before-color: rgba(221, 221, 221, 0.39);
@@ -454,7 +454,7 @@ text-align: center;
   }
 
   /* styling of Input */
-  #reserve .form-input .input {
+  .reserve .form-input .input {
     color: #fff;
     font-size: 0.9rem;
     background-color: transparent;
@@ -467,7 +467,7 @@ text-align: center;
   }
 
   /* styling of animated border */
-  #reserve .form-input .input-border {
+  .reserve .form-input .input-border {
     position: absolute;
     background: var(--border-after-color);
     width: 0%;
@@ -478,24 +478,24 @@ text-align: center;
   }
 
   /* Hover on Input */
-  #reserve .form-input input:hover {
+  .reserve .form-input input:hover {
     background: var(--input-hovered-color);
   }
 
-  #reserve .form-input input:focus {
+  .reserve .form-input input:focus {
     outline: none;
   }
 
   /* here is code of animated border */
-  #reserve input:focus~.input-border {
+  .reserve input:focus~.input-border {
     width: 100%;
   }
 
-  input[type=date]:invalid::-webkit-datetime-edit {
+  .reserve input[type=date]:invalid::-webkit-datetime-edit {
     color: black;
   }
 
-  #reserve button {
+  .reserve button {
     outline: none;
     color: #DAA06D;
     padding: 1em;
@@ -509,12 +509,12 @@ text-align: center;
 
   }
 
-  button:active {
+  .reserve button:active {
     transform: translateX(0.1em) translateY(0.1em);
     box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
   }
 
-  #thanks {
+  .thanks {
     width: 100%;
     height: 7rem;
     display: flex;
@@ -524,10 +524,10 @@ text-align: center;
     color: var(--border-color);
     background-color: white;
   }
-  #thanks .thanks-h3{
+  .thanks .thanks-h3{
     display: none;
   }
-  #thanks .thanks-h2{
+  .thanks .thanks-h2{
     display: block;
   }
 }
