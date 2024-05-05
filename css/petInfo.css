@@ -203,6 +203,10 @@ body{
   overflow-x: hidden;
 }
 
+.br-mobile{
+  display: none;
+}
+
 #pet-desc {
   width: 100%;
   /* margin-top: 6.25rem; */
@@ -485,6 +489,7 @@ body{
   margin-bottom: 100px;
   font-size: 2.5rem;
   line-height: 50px;
+  text-align: center;
   color: white;
 }
 
@@ -842,6 +847,10 @@ body{
     display: none;
   }
 
+  .br-mobile{
+    display: block;
+  }
+
   #pet-desc{
     flex-direction: column;
     justify-content: center;
@@ -955,6 +964,10 @@ body{
     width: 80%;
   }
 
+  #pet-health {
+    margin: 50px 0;
+  }
+
   #pet-health>h1 {
     font-size: 24px;
     line-height: 70px;
@@ -998,4 +1011,32 @@ body{
     background-position: 0% 50%;
   }
 
+  #pet-habit {
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    padding: 450px 10% 500px 10%;
+    margin: -250px 0 -100px 0;
+    background-image: url(../images/bg-pet-habit-mobile.png);
+  }
+
+  #pet-habit>div>h1 {
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  #pet-habit>div>h2 {
+    margin: 0 0 30px 0;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  #pet-habit>div>p {
+    height: 300px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    align-items: flex-start;
+  }
 }
