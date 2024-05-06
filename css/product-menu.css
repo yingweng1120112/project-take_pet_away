@@ -75,8 +75,51 @@ p {
   padding-right: 15px;
   margin-bottom: 10px;
 }
+.products-card div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .products .content {
   flex-direction: column;
+}
+#arrow-horizontal{
+  height: 22px;
+  width: 47px;
+}
+.cart-btn{
+  background: none;
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+#arrow-horizontal{
+  fill: var(--deep-gray);
+}
+.cart-btn::before {
+  content: "加入購物車"; /* 設置偽元素的內容 */
+  position: absolute; /* 絕對定位，相對於父容器 */
+  top: -4px; /* 距離按鈕頂部的距離 */
+  left: 50%; /* 水平置中 */
+  transform: translateX(18%); /* 將偽元素水平置中 */
+  padding: 3px 8px; /* 文字框的內邊距 */
+  background-color: var(--deep-blue); /* 背景色 */
+  color: white; /* 文字顏色 */
+  border-radius: 4px; /* 圓角 */
+  opacity: 0; /* 初始透明度為0，不可見 */
+  transition: opacity 0.3s ease; /* 添加過渡效果 */
+  width: 100px;
+}
+.cart-btn:hover svg path {
+  fill: var(--deep-blue); /* 將SVG的填充颜色设置為文字框的背景颜色 */
+  transform: scale(1.05);
+}
+.cart-btn:hover svg{
+  transform: scale(1.05);
+}
+
+.cart-btn:hover::before {
+  opacity: 1; /* 當游標懸停時，將透明度設為1，顯示偽元素 */
 }
 /* 背景狗掌區 */
 .dog-palm{
@@ -253,6 +296,14 @@ body section:nth-child(4) {
   .products-card img {
     width: 100%;
   }
+  #arrow-horizontal{
+    height: 27px;
+  }
+  .cart-btn::before {
+    width: 120px;
+    padding: 5px 12px;
+  }
+  
   /* 背景狗掌區 */
 .dog-palm{
   position: absolute;
