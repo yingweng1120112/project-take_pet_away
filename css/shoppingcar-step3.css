@@ -1,9 +1,4 @@
-table {
-  caption-side: top;
-}
-section {
-  margin: 0 10%;
-}
+
 body {
   display: initial;
   background-color: white;
@@ -200,12 +195,12 @@ header {
   justify-content: space-between;
   width: 100%;
 }
-.cartbutton > button {
+.cartbutton > .buttonstyle {
   width: 200px;
 }
 
 /* 按鈕 */
-button {
+.buttonstyle {
   width: 30%;
   letter-spacing: 5px;
   font-size: var(--font-size-h4);
@@ -224,19 +219,19 @@ button {
   justify-content: flex-end;
 }
 
-button:active {
+.buttonstyle:active {
   color: white;
   box-shadow: 0 0.2rem #dfd9d9;
   transform: translateY(0.2rem);
 }
 
-button:hover:not(:disabled) {
+.buttonstyle:hover:not(:disabled) {
   background: var(--deep-gray);
   color: white;
   text-shadow: 0 0.05rem #bcb4b4;
 }
 
-button:disabled {
+.buttonstyle:disabled {
   cursor: auto;
   color: grey;
 }
@@ -381,7 +376,7 @@ footer {
   .cartbottomstyle > div:nth-child(-n + 4) {
     margin-bottom: 10px;
   }
-  .cartbutton > button {
+  .cartbutton > .buttonstyle {
     width: 35%;
     font-size: 12px;
     font-weight: 400;

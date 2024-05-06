@@ -1,9 +1,4 @@
-table {
-  caption-side: top;
-}
-section {
-  margin: 0 10%;
-}
+
 body {
   display: initial;
   background-color: white;
@@ -246,7 +241,7 @@ header {
 }
 
 /* 按鈕 */
-button {
+.buttonstyle {
   width: 30%;
   letter-spacing: 5px;
   font-size: var(--font-size-h4);
@@ -265,19 +260,19 @@ button {
   justify-content: flex-end;
 }
 
-button:active {
+.buttonstyle:active {
   color: white;
   box-shadow: 0 0.2rem #dfd9d9;
   transform: translateY(0.2rem);
 }
 
-button:hover:not(:disabled) {
+.buttonstyle:hover:not(:disabled) {
   background: var(--deep-gray);
   color: white;
   text-shadow: 0 0.05rem #bcb4b4;
 }
 
-button:disabled {
+.buttonstyle:disabled {
   cursor: auto;
   color: grey;
 }
@@ -434,7 +429,7 @@ footer {
     display: flex;
   }
 
-  button {
+  .buttonstyle {
     width: 25%;
     height: fit-content;
     letter-spacing: 3px;
