@@ -335,8 +335,7 @@
           <a
             class="previouspostslink"
             rel="prev"
-            aria-label="Following-page
-          "
+            aria-label="Following-page"
             href="#"
             >&lt;</a
           >
@@ -360,73 +359,70 @@
       <img class="dog-palm6" src="../images/dog-palm2.svg" alt="" />
       <img class="dog-footprints" src="../images/dog-footprints.svg" alt="" />
     </section>
-<!-- 裝飾字 -->
-<section>
-    <!-- <img class="decorative-words-img2" src="../images/Productpage-decorative-words2.svg" alt=""> -->
-    <div class="decorative-words-info">
-      <p>商品<span>Take Away</span>之前</p>
-      <p>也可以順路去看看我們令人喜愛的浪浪們 </p>
-      <button class="cta">
-        <span class="hover-underline-animation"> Go to
-        </span>
-        <svg
-          id="arrow-horizontal"
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="10"
-          viewBox="0 0 46 16"
-        >
-          <path
-            id="Path_10"
-            data-name="Path 10"
-            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-            transform="translate(30)"
-          ></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-</section>
-<!-- 推薦浪浪 -->
-<section>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href="#" class="related-products-card">
-        <img src="../images/recommended-dog1.jpg" alt="">
-        </a>
+    <!-- 裝飾字 -->
+    <section>
+      <!-- <img class="decorative-words-img2" src="../images/Productpage-decorative-words2.svg" alt=""> -->
+      <div class="decorative-words-info">
+        <p>商品<span>Take Away</span>之前</p>
+        <p>也可以順路去看看我們令人喜愛的浪浪們</p>
+        <button class="cta">
+          <span class="hover-underline-animation"> Go to </span>
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+          </svg>
+        </button>
       </div>
-      <div class="swiper-slide">
-        <a href="#" class="related-products-card">
-        <img src="../images/recommended-dog1.jpg" alt="">
-        </a>
+    </section>
+    <!-- 推薦浪浪 -->
+    <section>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+              <img src="../images/recommended-dog1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+              <img src="../images/recommended-dog1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+              <img src="../images/recommended-dog1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+              <img src="../images/recommended-dog1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+              <img src="../images/recommended-dog1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="related-products-card">
+              <img src="../images/recommended-dog1.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <div class="swiper-slide">
-        <a href="#" class="related-products-card">
-        <img src="../images/recommended-dog1.jpg" alt="">
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="#" class="related-products-card">
-        <img src="../images/recommended-dog1.jpg" alt="">
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="#" class="related-products-card">
-        <img src="../images/recommended-dog1.jpg" alt="">
-        </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="#" class="related-products-card">
-        <img src="../images/recommended-dog1.jpg" alt="">
-        </a>
-      </div>
-
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-</section>
+    </section>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/9b9b3d46e0.js"
@@ -435,26 +431,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       //推薦浪浪
-      var swiper = new Swiper('.swiper', {
-      slidesPerView: 3,
-      direction: getDirection(),
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-      },
-    });
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
 
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
 
-      return direction;
-    }
+        return direction;
+      }
     </script>
   </body>
 </html>
