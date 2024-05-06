@@ -235,15 +235,15 @@ body{
 
 #img-big>img {
   border-radius: 20px;
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
 }
 
 #img-small {
-  margin-top: .9375rem;
-  width: 550px;
-  /* width: 100%; */
+  margin-top: 20px;
+  /* width: 550px; */
+  width: 100%;
   object-fit: contain;
   display: flex;
   justify-content: space-between;
@@ -256,6 +256,14 @@ body{
   height: 120px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+
+#img-small>img:hover{
+  outline: 5px solid var(--white);
+}
+
+.img-click{
+  outline: 5px solid var(--white);
 }
 
 #pet-info {
@@ -1066,7 +1074,7 @@ body{
   }
 
   #pet-score {
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 30px 20px;
     border-radius: 20px;
   }
