@@ -156,6 +156,7 @@
 .cta svg {
   transform: translateX(-8px);
   transition: all 0.3s ease;
+  filter: invert(1);
 }
 
 .cta:hover svg {
@@ -546,6 +547,8 @@ body{
 
 #pet-skill>table>tbody>tr>td>label {
   margin: 30px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 /* 綜合評分 */
@@ -681,7 +684,9 @@ body{
   /* border: 1px solid black; */
   width: 25%;
   border-radius: 50px;
-  line-height: 4.375rem;
+  height: 4.375rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
@@ -692,14 +697,15 @@ body{
 .score-btn > button:hover {
   background-color: var(--deep-blue);
 }
-
+/* TODO: ? 下底線 */
 .score-btn > button > span{
   /* border: 1px solid black; */
   color: white;
   font-size: 20px;
+  /* padding-bottom: 0; */
 }
-/* TODO: ?位置 */
-.score-btn > button > img{
+
+.score-btn > button > span > img{
   align-items: center;
   text-align: center;
 }
@@ -818,7 +824,7 @@ body{
   height: 500px;
   object-fit: contain;
   left: -5%;
-  top: 410%;
+  top: 390%;
 }
 
 .background-paws2{
@@ -828,7 +834,7 @@ body{
   height: 550px;
   object-fit: contain;
   right: -5%;
-  top: 485%;
+  top: 475%;
 }
 
 
@@ -1064,6 +1070,7 @@ body{
 
   #pet-skill>table>tbody>tr>td>label {
     margin: 20px;
+    font-size: 16px;
   }
 
   #pet-score {
@@ -1124,16 +1131,18 @@ body{
     width: 100%;
     margin: 10px 0;
     line-height: 40px;
+    height: 50px;
   }
 
   .score-btn > button > span {
     font-size: 16px;
+    line-height: 20px;
   }
 
   .score-btn > button > img {
     height: 20px;
     width: 20px;
   }
+  /* TODO: 背景 */
 
-  /* FIXME: ? 置中 / svg顏色 圖片屬性 */
 }
