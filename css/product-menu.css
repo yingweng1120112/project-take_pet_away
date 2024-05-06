@@ -259,6 +259,7 @@ body section:nth-child(4) {
 .related-products-card {
   width: 70%;
   background: var(--beige);
+  border-radius: 3.125rem;
 }
 .related-products-card img {
   width: 100%;
