@@ -13,8 +13,140 @@
     <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/pagination.css" />
     <link rel="stylesheet" href="../css/product-menu.css" />
+    <link rel="stylesheet" href="/css/index-banner-finish.css" />
   </head>
   <body>
+    <!-- 搜尋欄 -->
+    <section>
+    <div class="banner">
+      <div class="left">
+        <p class="menu-a">MENU</p>
+        <p class="menu-b">商品一覽</p>
+      </div>
+      <div class="middle">
+        <div class="accordion" id="accordionExample">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <span class="middle-page-title">寵物商品</span>
+            <span>選擇商品</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse show"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <div class="select">
+          <div class="select-left">
+            <div class="select-item-a">
+              <p class="select-title">商品總類</p>
+              <label class="cl-checkbox">
+                <input checked="" type="checkbox" />
+                <span>寵物罐頭</span>
+              </label>
+              <label class="cl-checkbox">
+                <input checked="" type="checkbox" />
+                <span>寵物零食</span>
+              </label>
+              <label class="cl-checkbox">
+                <input checked="" type="checkbox" />
+                <span>寵物用品</span>
+              </label>
+              <label class="cl-checkbox">
+                <input checked="" type="checkbox" />
+                <span>寵物保健</span>
+              </label>
+              <label class="cl-checkbox">
+                <input checked="" type="checkbox" />
+                <span>心理測驗</span>
+              </label>
+            </div>
+            <div class="select-item-a">
+              <p class="select-title">適用物種</p>
+              <label class="cl-checkbox">
+                <input type="checkbox" />
+                <span>狗寶貝</span>
+              </label>
+              <label class="cl-checkbox">
+                <input checked="" type="checkbox" />
+                <span>貓寶貝</span>
+              </label>
+            </div>
+          </div>
+          <div class="select-right">
+            <div class="select-item-a">
+              <p class="select-title">排列方法</p>
+              <label class="cl-checkbox">
+                <input checked="" type="radio" name="a" />
+                <span>價格由低至高</span>
+              </label>
+              <label class="cl-checkbox">
+                <input checked="" type="radio" name="a" />
+                <span>價格由高至低</span>
+              </label>
+              <label class="cl-checkbox">
+                <input checked="" type="radio" name="a" />
+                <span>評價最高</span>
+              </label>
+            </div>
+            <div class="select-item-b">
+              <p class="select-title">價格區間</p>
+              <div class="price-input-container">
+                <div class="price-input">
+                  <div class="price-field">
+                    <span>從</span>
+                    <input type="number" class="min-input" value="0" />
+                    <span>~</span>
+                    <input type="number" class="max-input" value="5000" />
+                    <span>元</span>
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <div class="price-slider"></div>
+                </div>
+              </div>
+              <!-- Slider -->
+              <div class="range-input">
+                <input
+                  type="range"
+                  class="min-range"
+                  min="0"
+                  max="5000"
+                  value="0"
+                  step="1"
+                />
+                <input
+                  type="range"
+                  class="max-range"
+                  min="0"
+                  max="5000"
+                  value="5000"
+                  step="1"
+                />
+              </div>
+              <p class="select-title">商品搜尋</p>
+              <div class="mb-3 shop-select-out">
+                <input
+                  type="text"
+                  class="form-control shop-select"
+                  id="exampleFormControlInput1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
     <!-- 搜尋數 -->
     <section>
       <div class="content">
@@ -363,7 +495,7 @@
     <section>
       <!-- <img class="decorative-words-img2" src="../images/Productpage-decorative-words2.svg" alt=""> -->
       <div class="decorative-words-info">
-        <p>商品<span>Take Away</span>之前</p>
+        <p>商品<span class="emphasize">Take Away</span>之前</p>
         <p>也可以順路去看看我們令人喜愛的浪浪們</p>
         <button class="cta">
           <span class="hover-underline-animation"> Go to </span>
@@ -429,6 +561,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/banner.js"></script>
     <script>
       //推薦浪浪
       var swiper = new Swiper(".swiper", {

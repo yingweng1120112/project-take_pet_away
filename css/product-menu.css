@@ -1,7 +1,8 @@
 section {
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 0rem;
   width: 100%;
+  position: relative;
 }
 
 p {
@@ -169,7 +170,7 @@ p {
 }
 .dog-footprints{
   position: absolute;
-    top: 114rem;
+    top: 105rem;
     right: -3.8rem;
     z-index: 1;
     transform: scale(0.5);
@@ -210,7 +211,7 @@ p {
   font-size: 1.3rem;
   color: var(--white);
 }
-span {
+.decorative-words-info .emphasize {
   font-size: 2.5rem;
 }
 .decorative-words-info .cta {
@@ -232,7 +233,7 @@ span {
   background-color: var(--white);
 }
 /* 推薦浪浪 */
-body section:nth-child(4) {
+body section:nth-child(5) {
   background: var(--yellow);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
@@ -339,7 +340,7 @@ body section:nth-child(4) {
     transform: rotate(54deg) scale(0.5);
 }
 .dog-footprints {
-    top: 86rem;
+    top: 71rem;
     right: 18rem;
     transform: scale(1);
 }
@@ -358,7 +359,7 @@ body section:nth-child(4) {
     font-size: 2.5rem;
     margin-top: 0rem;
   }
-  span {
+  .decorative-words-info .emphasize {
     font-size: 5rem;
   }
   .decorative-words-info p:nth-child(2) {
