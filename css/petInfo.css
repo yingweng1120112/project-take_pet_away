@@ -254,6 +254,8 @@ body{
   object-fit: cover;
   width: 120px;
   height: 120px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 #pet-info {
@@ -697,23 +699,13 @@ body{
 .score-btn > button:hover {
   background-color: var(--deep-blue);
 }
-/* TODO: ? 下底線 */
+
 .score-btn > button > span{
   /* border: 1px solid black; */
   color: white;
   font-size: 20px;
   /* padding-bottom: 0; */
 }
-
-.score-btn > button > span > img{
-  align-items: center;
-  text-align: center;
-}
-
-/* .score-btn > button > #arrow-horizontal{
-  border: 1px solid black;
-  color: white;
-} */
 
 .hover-underline-animation {
   color: white;
@@ -1026,21 +1018,21 @@ body{
   }
 
   #pet-habit>div>h2 {
-    margin: 0 0 35px 0;
+    margin: 0 0 15px 0;
     font-size: 28px;
-    line-height: 35px;
+    line-height: 40px;
   }
 
   #pet-habit>div>p {
     height: 300px;
     font-size: 16px;
     letter-spacing: 2px;
-    line-height: 25px;
+    line-height: 30px;
     align-items: flex-start;
   }
 
   #pet-skill {
-    margin-top: 9.375rem;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     background-image: url(../images/bg-pet-story.png);
@@ -1074,7 +1066,7 @@ body{
   }
 
   #pet-score {
-    margin-top: 6.25rem;
+    margin-top: 80px;
     padding: 30px 20px;
     border-radius: 20px;
   }
@@ -1139,10 +1131,6 @@ body{
     line-height: 20px;
   }
 
-  .score-btn > button > img {
-    height: 20px;
-    width: 20px;
-  }
   /* TODO: 背景 */
 
 }
