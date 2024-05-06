@@ -13,17 +13,17 @@ header {
   background-color: #89837c;
 }
 /* 上花邊 */
-#roof {
+.roof {
   margin: 0;
 }
-#roof img {
+.roof img {
   max-width: 120%;
   max-height: 100%;
   overflow-x: auto;
 }
 
 /* 步驟 */
-#step {
+.step {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,30 +48,30 @@ header {
   height: 50%;
   margin-left: 3%;
 }
-#step .nextto {
+.step .nextto {
   display: flex;
 }
-#step .nextto:nth-child(2) h1 {
+.step .nextto:nth-child(2) h1 {
   color: var(--yellow);
   font-weight: 900;
   font-size: 60px;
 }
-#step .nextto:nth-child(odd) h1 {
+.step .nextto:nth-child(odd) h1 {
   color: var(--light-gray);
   font-weight: 900;
   font-size: 60px;
 }
-#step .nextto:nth-child(2) h2 {
+.step .nextto:nth-child(2) h2 {
   margin-top: 28px;
   color: var(--deep-gray);
 }
-#step .nextto:nth-child(odd) h2 {
+.step .nextto:nth-child(odd) h2 {
   color: var(--light-gray);
   margin-top: 28px;
 }
 
 /* 填寫資料 */
-#writemessage {
+.writemessage {
   display: flex;
   flex-direction: row;
   margin: 0px 10% 150px 10%;
@@ -282,10 +282,10 @@ button:disabled {
   color: grey;
 }
 /* 下花邊 */
-#wall {
+.wall {
   margin: 40px 0 0 0;
 }
-#wall img {
+.wall img {
   margin: 0;
   width: 100%;
   height: auto;
@@ -298,17 +298,17 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-  #roof {
+  .roof {
     overflow: hidden;
     width: 100%;
   }
-  #roof img {
+  .roof img {
     height: 75px;
     max-width: initial;
     overflow-x: hidden;
   }
   /* 步驟 */
-  #step {
+  .step {
     margin-bottom: 15px;
   }
   .stepbg {
@@ -318,19 +318,19 @@ footer {
     height: 90px;
     /* border: 1px red solid; */
   }
-  #step .nextto:nth-child(1) h1 {
+  .step .nextto:nth-child(1) h1 {
     font-size: 32px;
   }
-  #step .nextto:nth-child(n + 2) h1 {
+  .step .nextto:nth-child(n + 2) h1 {
     font-size: 32px;
   }
-  #step .nextto:nth-child(1) h2 {
+  .step .nextto:nth-child(1) h2 {
     margin-top: 0px;
     font-size: var(--font-size-p);
     height: 100%;
     margin-right: 6px;
   }
-  #step .nextto:nth-child(n + 2) h2 {
+  .step .nextto:nth-child(n + 2) h2 {
     margin-top: 0px;
     font-size: var(--font-size-p);
   }
@@ -339,7 +339,7 @@ footer {
     margin-left: 0;
   }
   /* 購物車 */
-  #writemessage {
+  .writemessage {
     flex-direction: column;
     margin: auto;
     width: 92%;
@@ -442,11 +442,11 @@ footer {
     font-weight: 400;
     box-shadow: 0 0.1rem #dfd9d9;
   }
-  #wall {
+  .wall {
     width: 100%;
     overflow: hidden;
   }
-  #wall img {
+  .wall img {
     width: 180%;
   }
 }

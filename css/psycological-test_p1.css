@@ -6,7 +6,7 @@ header {
   background-color: #e4ceb5;
 }
 
-#hearttest {
+.hearttest {
   margin: 0 10%;
   height: 800px;
   background-color: #bacdd1;
@@ -108,7 +108,7 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-  #hearttest {
+  .hearttest {
     display: flex;
     flex-direction: column;
     height: 750px;

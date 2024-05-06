@@ -5,10 +5,10 @@ header {
   height: 80px;
   background-color: var(--creamy-yellow);
 }
-#result {
+.result {
   background-color: #d9d5ca;
 }
-#testresult {
+.testresult {
   margin: 40px 10%;
   height: 750px;
   display: flex;
@@ -19,7 +19,7 @@ header {
   background-position: center;
   /* border: 3px red solid; */
 }
-#testresult > div:nth-child(2) {
+.testresult > div:nth-child(2) {
   height: 80%;
   display: flex;
   margin: 100px 0px;
@@ -142,7 +142,7 @@ header {
 }
 
 /* 按鈕 */
-#testresult .button {
+.testresult .button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -152,7 +152,7 @@ header {
   /* border: yellow 2px solid; */
   margin-top: 600px;
 }
-#testresult .button > button {
+.testresult .button > button {
   width: 100px;
   height: 50px;
   font-size: 16px;
@@ -169,19 +169,19 @@ header {
   overflow-wrap: break-word;
 }
 
-#testresult button:active {
+.testresult button:active {
   color: white;
   box-shadow: 0 0.2rem white;
   transform: translateY(0.2rem);
 }
 
-#testresult button:hover:not(:disabled) {
+.testresult button:hover:not(:disabled) {
   background: var(--deep-gray);
   color: white;
   text-shadow: 0 0.02rem #bcb4b4;
 }
 
-#testresult button:disabled {
+.testresult button:disabled {
   cursor: auto;
   color: grey;
 }
@@ -191,7 +191,7 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-  #testresult {
+  .testresult {
     display: flex;
     flex-direction: column;
     height: 420px;
@@ -212,14 +212,14 @@ footer {
     height: 50px;
     font-size: var(--font-size-h4);
   }
-  #testresult > div:nth-child(2) {
+  .testresult > div:nth-child(2) {
     width: 100%;
   }
   .result-left {
     width: 30%;
     height: fit-content;
   }
-  #testresult > div:nth-child(2) {
+  .testresult > div:nth-child(2) {
     margin: 45px 0px 0px 130px;
   }
   .result-right {
@@ -285,17 +285,17 @@ footer {
   .barOverflow {
     overflow: initial;
   }
-  #testresult .button {
+  .testresult .button {
     flex-direction: row;
     width: 230px;
     align-items: center;
     justify-content: space-between;
     margin: -50px auto 0 auto;
   }
-  #result > div {
+  .result > div {
     overflow-x: hidden;
   }
-  #testresult .button > button {
+  .testresult .button > button {
     height: 30px;
     font-size: 12px;
     width: fit-content;
