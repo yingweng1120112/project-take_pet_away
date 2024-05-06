@@ -89,6 +89,9 @@
     background: url(/images/search.svg) no-repeat right;
     background-size: 20px;
   }
+  .accordion-button >span{
+    display:none;
+  }
 
   .accordion-collapse{
     width:100%;
@@ -404,5 +407,10 @@
       --bs-accordion-btn-padding-x:1.25rem;
       --bs-accordion-btn-padding-y:1rem;
       }
-
+    .accordion-button >span{
+      display: block;
+    }
+    .accordion-button >p{
+      display: none;
+    }
   }
