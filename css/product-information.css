@@ -181,6 +181,9 @@ hr {
 .accordion-body .cta:hover svg{
   fill: var(--white);
 }
+.accordion-button:not(.collapsed){
+  background: var(--white);
+}
 
 /* 背景狗掌區 */
 .dog-palm {
