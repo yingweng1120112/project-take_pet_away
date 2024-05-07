@@ -19,7 +19,6 @@
   }
   .banner > .middle {
     width: 20%;
-    background-color: dark;
   }
   .left > .menu-a {
     margin: 0;
@@ -82,8 +81,12 @@
     background-size: 20px;
     width: 80%;
   }
-
-
+  .accordion-button >span{
+    display:none;
+  }
+  .accordion-collapse{
+    width:100%;
+  }
   .accordion-button {
     display: flex;
     flex-direction: column;
@@ -95,7 +98,7 @@
     background-color: white;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    border: 1px solid black;
+    border: 1px solid  var( --reddish-brown);
     /* 搜尋物件的邊線 方便查看 */
   }
   .accordion-button::after {
@@ -253,3 +256,9 @@
     border-color: transparent;
     background-color: currentColor;
   }
+  @media screen and (min-width: 1025px) {
+    .accordion-button >span{
+      display: block;
+    }
+  }
+  
