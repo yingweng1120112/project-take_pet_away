@@ -31,6 +31,7 @@
         overflow: hidden;
         position: relative;
         width: 900px;
+        /*1*/
         height: 550px;
         margin: 0 auto 100px;
         background: #fff;
@@ -39,9 +40,11 @@
     .form {
         position: relative;
         width: 640px;
+        /*1*/
         height: 100%;
         transition: transform 1.2s ease-in-out;
         padding: 50px 30px 0;
+        /*1*/
     }
 
     .sub-cont {
@@ -252,7 +255,7 @@
     .cont.s--signup .sign-in {
         transition-timing-function: ease-in-out;
         transition-duration: 1.2s;
-        transform: translate3d(640px, 0, 0);
+        transform: translate3d(320px, 0, 0);
     }
 
     .sign-up {
@@ -402,10 +405,12 @@
         margin-bottom: 10px;
         font-weight: normal;
     }
-    .img__text h6{
+
+    .img__text h6 {
         font-size: 12px;
         /* text-align: left; */
     }
+
     .img__text p {
         font-size: 12px;
         line-height: 1.5;
