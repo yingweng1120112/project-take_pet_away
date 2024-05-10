@@ -1,6 +1,9 @@
 .life-container {
   width: 100%;
-  overflow: hidden;
+  margin-top:74px;
+}
+.banner{
+  background-image: url(/images/banner-life.jpg);
 }
 .bg-1 {
   position: absolute;
@@ -13,7 +16,7 @@
 .bg-2 {
   position: absolute;
   z-index: -1;
-  top: -58%;
+  top: -45%;
   left:-20%;
   height: 700px;
   transform: rotate(-4deg);
@@ -24,19 +27,30 @@
   top: 50%;
   transform: rotate(5deg);
 }
+
 .content-word{
 color: white;
 margin:2rem 0;
-font-size: 1.9rem;
+font-size: 1.7rem;
 line-height: 3rem;
 }
-.container-main{
+.container-main-1{
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 1rem;
   padding: 0 10%;
+}
+.container-main-2{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 10%;
+  flex-direction: column;
+}
+.container-main-2  h1{
+  margin-right:10%;
 }
 .btn-more{
   padding: 1rem;
@@ -98,6 +112,7 @@ line-height: 3rem;
   font-size: 14px;
   text-transform: uppercase;
   padding-right: 0;
+  margin-left: 3px;
 }
 
 .cta svg {
@@ -192,6 +207,7 @@ line-height: 3rem;
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
+
 }
 
 .swiper-slide img {
@@ -200,19 +216,26 @@ line-height: 3rem;
   width:100%;
   object-fit: cover;
   border-radius: 20px;
+  margin: auto;
 }
 
 .shop-Carousel-pc{
   height: 300px; 
   background-color: #fecc5f;
+  padding: 0 2rem;
   display:none;
+
 }
 .shop-Carousel-phone{
   height: 300px; 
   background-color: #fecc5f;
+  padding: 0 1rem;
 }
 
 @media screen and (min-width: 1025px) {
+  .life-container {
+    margin:0;
+  }
   .bg-1 {
     height: 800px;
     width: 3500px;
@@ -229,8 +252,20 @@ line-height: 3rem;
     left: -20%;
     top: 40%;
   }
+  .banner-life-1{
+    background-image: url(/images/banner-life-1.jpg);
+    height: 308px;
+    display:flex;
+  }
+  .banner-life-2{
+    background-image: url(/images/banner-life-2.jpg);
+    height: 150px;
+  }
   #pet-card {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .container-main-2 {
+    flex-direction: row;
   }
   .content-word{
     font-size: 4rem;
