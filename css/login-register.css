@@ -27,7 +27,7 @@
         position: absolute;
         left: 640px;
         top: 0;
-        width: 360px;
+        width: 900px;
         height: 100%;
         padding-left: 260px;
         background: #fff;
@@ -61,19 +61,19 @@
     }
 
     .img:before {
-        content: "";
+        content: '';
         position: absolute;
         right: 0;
         top: 0;
         width: 900px;
         height: 100%;
-        background-image: url(/images/login-bg.jpg);
+        background-image: url('../images/login-bg.jpg');
         background-size: cover;
         transition: transform 1.2s ease-in-out;
     }
 
     .img:after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         top: 0;
@@ -135,7 +135,7 @@
     }
 
     .img__btn:after {
-        content: "";
+        content: '';
         z-index: 2;
         position: absolute;
         left: 0;
@@ -146,7 +146,7 @@
         border-radius: 30px;
     }
 
-    .img__btn span {
+    .spanbtn {
         position: absolute;
         left: 0;
         top: 0;
@@ -193,16 +193,13 @@
         display: block;
         width: 100%;
         margin-top: 5px;
-        padding-bottom: 5px;
-        font-size: 16px;
         border-top: none;
         border-left: none;
         border-right: none;
+        padding-bottom: 5px;
+        font-size: 16px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.4);
         text-align: center;
-        outline: none;
-        background: none;
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
     }
 
     .forgot-pass {
@@ -224,7 +221,7 @@
         color: #8fa1c7;
     }
 
-    .fb-btns {
+    .fb-btn span {
         font-weight: bold;
         color: #455a81;
     }
@@ -236,7 +233,7 @@
     .cont.s--signup .sign-in {
         transition-timing-function: ease-in-out;
         transition-duration: 1.2s;
-        transform: translate3d(320px, 0, 0);
+        transform: translate3d(640px, 0, 0);
     }
 
     .sign-up {
@@ -342,7 +339,7 @@
         top: 0;
         width: 360px;
         height: 100%;
-        background-image: url(/images/login-bg.jpg);
+        background-image: url(../images/login-bg.jpg);
         background-size: cover;
         transition: transform 1.2s ease-in-out;
     }
