@@ -218,6 +218,7 @@ br{
 .cta svg {
   transform: translateX(-8px);
   transition: all 0.3s ease;
+  filter: invert(1);
 }
 
 .cta:hover svg {
