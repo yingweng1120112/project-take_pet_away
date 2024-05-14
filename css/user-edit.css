@@ -7,6 +7,7 @@
   display: flex;
   align-items: flex-end;
 }
+
 .menu-a {
   margin: 0;
   color: aliceblue;
@@ -14,30 +15,36 @@
   margin: 0 20px;
   line-height: 1.2;
 }
+
 .menu-b {
   margin: 0;
   color: aliceblue;
   font-size: 2rem;
   line-height: 1.8;
 }
+
 .left {
   display: flex;
   align-items: flex-end;
   width: 40%;
 }
+
 .middle {
   width: 20%;
 }
+
 .page-title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
+
 .select {
   display: flex;
   padding: 1rem;
   justify-content: space-around;
 }
+
 .select-title {
   margin: 0;
   font-weight: bold;
@@ -45,10 +52,12 @@
   margin: 1rem 0;
   text-align: center;
 }
+
 .select-item-a {
   display: flex;
   flex-direction: column;
 }
+
 .select-item-b {
   display: flex;
   flex-direction: column;
@@ -59,21 +68,30 @@
 .bgfeet1 {
   position: absolute;
   width: 20%;
-  right: 84%;
-  top: 31%;
+  right: 80%;
+  top: 50%;
   z-index: -1;
 }
+
 .bgfeet2 {
   position: absolute;
   width: 20%;
-  left: 84%;
-  top: 80%;
+  left: 77%;
+  top: 140%;
   z-index: -1;
 }
+
 .book {
+  width: 100%;
   padding: 0;
   border-radius: solid 3px var(--black);
+  justify-content: center;
 }
+
+.bookInfo {
+  width: 70%;
+}
+
 .book h2 {
   background-color: var(--bean-paste);
   color: var(--white);
@@ -83,6 +101,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .user {
   width: 80%;
   display: flex;
@@ -91,29 +110,47 @@
   padding-bottom: 10px;
   align-items: center;
 }
+
+.stickers {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.stickers img {
+  width: 100%;
+  height: auto;
+}
+
 .bookItems {
   position: relative;
   z-index: 0;
   overflow: hidden;
 }
+
 .bookItem {
   width: 75%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
-  margin: 1rem 4rem;
+  margin: 1rem 0 0 4rem;
   padding-bottom: 10px;
 }
+
 .bookItem {
   display: flex;
 }
+
 .bookItem img {
   margin-right: 1rem;
 }
-.bookContainer h5 {
+
+.items h5 {
   margin: 1.5rem;
   position: relative;
 }
+
 .rope {
   width: 3%;
   height: 88%;
@@ -123,11 +160,13 @@
   right: 99%;
   z-index: 2;
 }
+
 .bookContainer {
   border-radius: 30px;
   position: relative;
   overflow: visible;
 }
+
 .bookContainer h2 {
   border-radius: 30px 30px 0 0;
 }
@@ -135,28 +174,34 @@
 .btnItem {
   display: flex;
   justify-content: flex-end;
+  margin: 1rem 2rem;
   z-index: 2;
 }
+
 .btnConfirm {
   margin: 0.5rem;
-  padding: 0.3rem 1.2rem;
-  font-size: var(--font-size-h3);
+  padding: 0.2rem 0.8rem;
+  font-size: var(--font-size-h4);
   background-color: var(--khaki);
   border-radius: 80px;
 }
+
 .text-danger {
   font-size: 10px;
   padding: 1rem;
   align-items: end;
 }
+
 .bookItem input {
   width: 280px;
 }
+
 .bell {
   position: absolute;
   width: 18%;
   left: 83%;
 }
+
 .feet {
   position: absolute;
   width: 20%;
@@ -164,6 +209,7 @@
   top: 80%;
   z-index: 1;
 }
+
 /* input */
 .group {
   position: relative;
@@ -194,8 +240,8 @@ label {
   transition: 0.2s ease all;
 }
 
-input:focus ~ label,
-input:valid ~ label {
+input:focus~label,
+input:valid~label {
   top: -20px;
   font-size: 14px;
   color: #5264ae;
@@ -226,8 +272,8 @@ input:valid ~ label {
   right: 50%;
 }
 
-input:focus ~ .bar:before,
-input:focus ~ .bar:after {
+input:focus~.bar:before,
+input:focus~.bar:after {
   width: 50%;
 }
 
@@ -241,7 +287,7 @@ input:focus ~ .bar:after {
   opacity: 0.5;
 }
 
-input:focus ~ .highlight {
+input:focus~.highlight {
   animation: inputHighlighter 0.3s ease;
 }
 
@@ -249,6 +295,7 @@ input:focus ~ .highlight {
   from {
     background: #5264ae;
   }
+
   to {
     width: 0;
     background: transparent;
@@ -261,24 +308,44 @@ input:focus ~ .highlight {
     height: 80%;
     right: 98%;
   }
+
+  .container {
+    width: 100%;
+  }
+
+  .book {
+    width: 100%;
+  }
+  .stickers {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .stickers img {
+    width: 100%;
+    height: auto;
+  }
   .bookItems {
     justify-content: center;
   }
+
   .user {
     margin: 10px;
     width: 95%;
     border-bottom: none;
   }
-  .user img {
-    width: 20%;
-    margin: 10px 0 10px 5px;
-  }
+
   .bookItem h6 {
     display: none;
   }
+
   .bookItem img {
     width: 10%;
     margin: 10px;
+  }
+  .items h5 {
+    font-size: var(--font-size-h6);
+    margin: 0.8rem;
   }
   .bookItem {
     margin: 15px 0 5px 15px;
@@ -286,39 +353,47 @@ input:focus ~ .highlight {
     text-align: left;
     border-bottom: none;
   }
+
   .bookItem input {
     width: 80%;
   }
+
   .btnItem {
     justify-content: center;
     margin: 10px;
   }
+
   .btnConfirm {
     margin: 0.1rem;
     padding: 0.3rem 0.4rem;
     font-size: var(--font-size-h6);
   }
+
   .bell {
     width: 35%;
-    left: 72%;
-    top: 5%;
+    left: 50%;
+    top: 7%;
   }
+
   .feet {
     width: 30%;
     right: 75%;
     top: 88%;
   }
-  .bar{
-    width: 190px;
+
+  .bar {
+    width: 164px;
   }
+
   .bgfeet1 {
     width: 50%;
     right: 65%;
     top: 52%;
   }
+
   .bgfeet2 {
-    width: 50%;
-    left: 53%;
+    width: 35%;
+    left: 64%;
     top: 130%;
   }
 }
