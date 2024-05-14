@@ -56,6 +56,21 @@
 }
 
 /* user order */
+.bgfeet1 {
+  position: absolute;
+  width: 20%;
+  right: 80%;
+  top: 50%;
+  z-index: -1;
+}
+
+.bgfeet2 {
+  position: absolute;
+  width: 20%;
+  left: 77%;
+  top: 140%;
+  z-index: -1;
+}
 section {
   width: 80%;
 }
@@ -75,8 +90,25 @@ section {
 }
 .bookContainer {
   background-color: var(--white);
+  position: relative;
+  overflow: visible;
 }
-
+.rope {
+  width: 3%;
+  height: 88%;
+  background-image: url("../images/user-rope.png");
+  background-repeat: repeat-y;
+  position: absolute;
+  right: 99%;
+  z-index: 2;
+}
+.feet {
+  position: absolute;
+  width: 20%;
+  right: 84%;
+  top: 80%;
+  z-index: 1;
+}
 .bookItem {
   height: auto;
   margin-left: 10rem;
