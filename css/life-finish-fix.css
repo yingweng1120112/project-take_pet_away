@@ -163,7 +163,7 @@ line-height: 3rem;
   grid-template-columns: none;
 }
 .container-a {
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -293,5 +293,8 @@ line-height: 3rem;
     object-fit: contain;
     border-radius: 20px;
     width:auto;
+  }
+  .container-a {
+    width: 80%;
   }
 }
