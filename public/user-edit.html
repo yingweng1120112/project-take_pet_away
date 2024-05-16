@@ -73,6 +73,9 @@
     <div class="accordion-body">
       <div class="select">
         <div class="select-item-a col-lg-2">
+          <h3 class="select-title">個人資料</h3>
+        </div>
+        <div class="select-item-a col-lg-2">
           <h3 class="select-title">購物車</h3>
         </div>
         <div class="select-item-a col-lg-2">
@@ -94,48 +97,92 @@
     </div>
   </div>
 
+
   <!-- user-edit -->
-  <section class="user mt-lg-5 w-100">
+  <section class="mt-5 w-100">
+    <img class="bgfeet1" src="../images/loading.png" alt="">
+    <img class="bgfeet2" src="../images/loading.png" alt="">
     <div class="container">
-      <div class="book d-flex w-100">
-        <div class="bookInfo w-100 d-flex">
-          <div class="rope"></div>
-          <div class="bookContainer w-100 h-auto bg-light">
+      <div class="book d-flex">
+        <div class="bookInfo d-flex">
+          <div class="bookContainer w-100 h-auto bg-light ">
             <h2>編輯資料</h2>
-            <div class="bookItem">
-              <img src="../images/user-photo.jpg" alt="">
-              <h5 class="">姓名：三明治</h5>
-              <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
-            </div>
-            <div class="bookItem">
-              <img src="../images/user-dog.jpg" alt="">
-              <h5>電話：0931111222</h5>
-              <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
-              <hr>
-            </div>
-            <div class="bookItem">
-              <img src="../images/user-dog.jpg" alt="">
-              <h5>生日：1999/03/03</h5>
-              <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
-            </div>
-            <div class="bookItem">
-              <img src="../images/user-dog.jpg" alt="">
-              <h5>密碼：************</h5>
-              <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
-            </div>
-            <div class="bookItem">
-              <img src="../images/user-dog.jpg" alt="">
-              <h5>確認密碼：************</h5>
-              <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
-            </div>
-            <div class="bookItem">
-              <img src="../images/user-dog.jpg" alt="">
-              <h5>地址：台南市白河區狸貓路人造人11號</h5>
-              <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
-            </div>
-            <div class="btnItem m-lg-5">
-              <button class="btnConfirm">確認修改</button>
-              <button class="btnConfirm">取消修改</button>
+            <div class="rope"></div>
+            <div class="bookItems d-block justify-content-center align-items-center ">
+              <form class="items">
+                <div class="user">
+                  <div class="stickers">
+                    <img src="../images/cat_cookie1.jpg" alt="Sticker">
+                  </div>
+                  <h5 class="userName">會員名稱：三明治</h5>
+                </div>
+                <img class="bell" src="../images/bell.png" alt="">
+                <div class="bookItem">
+                  <img src="../images/user-dog.png" alt="">
+                  <div class="group ">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>姓名</label>
+                  </div>
+                  <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
+                </div>
+                <div class="bookItem">
+                  <img src="../images/user-dog.png" alt="">
+                  <div class="group ">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>電話：</label>
+                  </div>
+                  <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
+                </div>
+                <div class="bookItem">
+                  <img src="../images/user-dog.png" alt="">
+                  <div class="group ">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>生日：</label>
+                  </div>
+                  <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
+                </div>
+                <div class="bookItem">
+                  <img src="../images/user-dog.png" alt="">
+                  <div class="group ">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>密碼：</label>
+                  </div>
+                  <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
+                </div>
+                <div class="bookItem">
+                  <img src="../images/user-dog.png" alt="">
+                  <div class="group ">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>確認密碼：</label>
+                  </div>
+                  <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
+                </div>
+                <div class="bookItem">
+                  <img src="../images/user-dog.png" alt="">
+                  <div class="group ">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>地址：</label>
+                  </div>
+                  <h6 class="text-danger">* 修改名稱不得使用特殊字元</h6>
+                </div>
+                <img class="feet" src="../images/loadfeet.png" alt="">
+              </form>
+              <div class="btnItem">
+                <button class="btnConfirm">確認修改</button>
+                <button class="btnConfirm">取消修改</button>
+              </div>
             </div>
           </div>
         </div>
@@ -144,120 +191,6 @@
   </section>
 
   <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="footerLogo">
-        <img class="w-50" src="../images/logo-removebg-preview.png" alt="">
-      </div>
-      <div class="footerInfo">
-        <!-- 認養資訊 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h1>認養資訊</h1>
-          <hr class="footerHr">
-          <ol class="flex-lg-column mt-2">
-            <li><a class="dropdown-item desc" href="">心理測驗</a></li>
-            <li><a class="dropdown-item desc" href="">認養流程</a></li>
-            <li><a class="dropdown-item desc" href="">注意事項</a></li>
-          </ol>
-        </div>
-        <!-- 領養專區 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h1>領養專區</h1>
-          <hr class="footerHr">
-          <ol class="flex-lg-column mt-2">
-            <li><a class="dropdown-item desc" href="">收容資訊</a></li>
-            <li><a class="dropdown-item desc" href="">動物之家</a></li>
-            <li><a class="dropdown-item desc" href="">定期追蹤</a></li>
-          </ol>
-        </div>
-        <!-- 聯絡我們 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h1>聯絡我們</h1>
-          <hr class="footerHr">
-          <p class="desc mt-2">營業人名稱:袋寵物走股份有限公司</p>
-          <p class="desc">線上客服:週一~週五 : 08:00 - 17:00</p>
-          <p class="desc">電話: 06 253 3131</p>
-          <p class="desc">信箱:xinpetfood@gmail.com</p>
-          <p class="desc">地址:71005 台南市永康區南台街1號</p>
-        </div>
-        <!-- 顧客服務 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h1>顧客服務</h1>
-          <hr class="footerHr">
-          <ol class="flex-lg-column mt-2">
-            <li><a class="dropdown-item desc" href="">會員中心</a></li>
-            <li><a class="dropdown-item desc" href="">常見問題</a></li>
-          </ol>
-        </div>
-
-        <!-- 隱私政策 -->
-        <div class="footerItem flex-sm-column mt-2">
-          <h1>隱私政策</h1>
-          <hr class="footerHr">
-          <ol class="flex-lg-column mt-2">
-            <li><a class="dropdown-item desc" href="">隱私條款</a></li>
-          </ol>
-        </div>
-
-        <!-- 社群連結 -->
-        <div class="footerItem flex-sm-column mt-2 ">
-          <h1>社群連結</h1>
-          <hr class="footerHr">
-          <ol class="icon ">
-            <li>
-              <a href="https://www.facebook.com/profile.php?id=100090898966387" class="footerLink">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                  <path
-                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/cookie_chocolate_0228/?hl=zh-tw" class="footerLink">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                  <path
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://store.line.me/stickershop/product/1043153/zh-Hant" class="footerLink">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                  <path
-                    d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z" />
-                </svg>
-              </a>
-            </li>
-          </ol>
-        </div>
-
-        <!-- 贊助方案 -->
-        <div class="footerItem  col-12 mt-2">
-          <h1>贊助方案</h1>
-          <hr class="footerHr">
-          <div class="fosponsor">
-            <div class="sponsor">
-              <img src="../images/footer_linepay.jpg" alt="">
-              <img src="../images/footer_lineQR.jpg" alt="">
-            </div>
-            <div class="mt-4 text-left">
-              <p class="sponDesc">戶名：Take Pet Away</p>
-              <p class="sponDesc">銀行：喵汪銀行-熊熊分行</p>
-              <p class="sponDesc">帳號：059-004-167249</p>
-            </div>
-          </div>
-          <hr>
-        </div>
-        <div class="copyright">
-          <h1 class="copyrightDesc">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</h1>
-        </div>
-
-      </div>
-    </div>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

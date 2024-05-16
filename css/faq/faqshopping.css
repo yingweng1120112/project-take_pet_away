@@ -5,7 +5,7 @@
 .container_faq {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     padding: 20px 0px;
 }
 
@@ -20,7 +20,7 @@
     background-color: #fff;
 }
 
-#searchBar {
+.searchBar {
     border: none;
     outline: none;
     font-size: 24px;
@@ -36,7 +36,7 @@
 .box_options {
     display: grid;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     padding: 20px;
     row-gap: 10px;
     column-gap: 10px;
@@ -49,6 +49,7 @@
     text-align: center;
     padding: 5px 0px;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px;
 }
 
 .faq_text:hover,
@@ -74,6 +75,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .container_ans {
@@ -128,8 +130,13 @@
 }
 
 /* 頁碼 */
+.faq_pagebox{
+    display: flex;
+    justify-content: center;
+}
 .faq_pagination {
     display: inline-block;
+    position: relative;
 }
 
 .faq_pagination a {
@@ -143,7 +150,7 @@
 .faq_pagination a.active {
     /* background-color: #4CAF50; */
     border-radius: 50%;
-    color: white;
+    color: black;
 }
 
 .faq_pagination a:hover:not(.active) {
@@ -153,64 +160,61 @@
 
 /* 問題回報、貓手互動 */
 .faq_res {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     padding: 20px 0px;
 }
 
 .img_res {
-    width: 50%;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    left: 20px
 }
 
 .img_res2 {
     width: 50%;
     z-index: -1;
-    position: absolute;
-    right: 10px;
-    /* bottom: 10px; */
-    /* animation-name: example; */
-    /* animation-duration: 4s; */
-    /* animation-delay: -2s; */
+    position: relative;
+    left: 150px;
+    top: 100px;
+    animation-name: catpaw;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
-.img_res2:hover {
-    width: 50%;
-    z-index: -1;
-    position: absolute;
-    right: -10px;
-}
-
-/* @keyframes example {
+@keyframes catpaw {
     0% {
-        left: 0px;
-        top: 0px;
+        left: 150px;
+        top: 100px;
     }
 
     25% {
-        left: 200px;
-        top: 0px;
+        left: 150px;
+        top: 150px;
     }
 
     50% {
-        left: 200px;
-        top: 200px;
+        left: -100px;
+        top: 50px;
     }
 
     75% {
-        left: 0px;
-        top: 200px;
+        left: 150px;
+        top: 150px;
     }
 
     100% {
-        left: 0px;
-        top: 0px;
+        left: 150px;
+        top: 100px;
     }
-} */
-
-footer {
-    z-index: 0;
 }
+
+/* footer {
+    z-index: 0;
+} */
 
 /* 電腦版 */
 @media screen and (min-width: 1025px) {
@@ -219,12 +223,13 @@ footer {
     .container_faq {
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 100%;
         padding: 20px 0px;
+        background-color: var(--bg-color);
     }
 
     .box_search {
-        width: 100%;
+        width: 60%;
         height: 80px;
         display: flex block;
         justify-content: center;
@@ -234,7 +239,7 @@ footer {
         background-color: #fff;
     }
 
-    #searchBar {
+    .searchBar {
         border: none;
         outline: none;
         font-size: 24px;
@@ -248,7 +253,7 @@ footer {
     .box_options {
         display: grid;
         justify-content: center;
-        width: 80%;
+        width: 100%;
         padding: 20px;
         row-gap: 20px;
         column-gap: 20px;
@@ -339,21 +344,56 @@ footer {
 
     /* 問題回報、貓手互動 */
     .faq_res {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    .img_res{
-        width: 100%;
-    }
 
-    .img_res2 {
-        width: 30%;
-        z-index: -1;
-        position: absolute;
-    }
-
-    footer {
+    /* footer {
         z-index: 0;
+    } */
+    .img_res {
+        width: 100%;
+        position: relative;
+        top: 250px;
+        left: 20px
+    }
+    
+    .img_res2 {
+        width: 100%;
+        z-index: -1;
+        position: relative;
+        left: 150px;
+        top: 300px;
+        animation-name: catpaw;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes catpaw {
+        0% {
+            left: 150px;
+            top: 300px;
+        }
+    
+        25% {
+            left: 150px;
+            top: 200px;
+        }
+    
+        50% {
+            left: -600px;
+            top: 200px;
+        }
+    
+        75% {
+            left: 150px;
+            top: 200px;
+        }
+    
+        100% {
+            left: 150px;
+            top: 300px;
+        }
     }
 }
