@@ -65,6 +65,11 @@
 }
 
 /* user edit */
+.section {
+  width: 100%;
+  margin-top: 50px;
+}
+
 .bgfeet1 {
   position: absolute;
   width: 20%;
@@ -77,11 +82,12 @@
   position: absolute;
   width: 20%;
   left: 77%;
-  top: 140%;
+  top: 90%;
   z-index: -1;
 }
 
 .book {
+  display: flex;
   width: 100%;
   padding: 0;
   border-radius: solid 3px var(--black);
@@ -89,7 +95,8 @@
 }
 
 .bookInfo {
-  width: 70%;
+  display: flex;
+  width: 65%;
 }
 
 .book h2 {
@@ -124,6 +131,9 @@
 }
 
 .bookItems {
+  display: block;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -162,6 +172,9 @@
 }
 
 .bookContainer {
+  width: 100%;
+  height: auto;
+  background: white;
   border-radius: 30px;
   position: relative;
   overflow: visible;
@@ -206,7 +219,7 @@
   position: absolute;
   width: 20%;
   right: 84%;
-  top: 80%;
+  top: 84%;
   z-index: 1;
 }
 
@@ -316,15 +329,17 @@ input:focus~.highlight {
   .book {
     width: 100%;
   }
+
   .stickers {
     width: 80px;
     height: 80px;
   }
-  
+
   .stickers img {
     width: 100%;
     height: auto;
   }
+
   .bookItems {
     justify-content: center;
   }
@@ -343,10 +358,12 @@ input:focus~.highlight {
     width: 10%;
     margin: 10px;
   }
+
   .items h5 {
     font-size: var(--font-size-h6);
     margin: 0.8rem;
   }
+
   .bookItem {
     margin: 15px 0 5px 15px;
     width: 100%;
