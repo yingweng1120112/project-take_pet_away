@@ -205,7 +205,7 @@
   align-items: end;
 }
 
-.bookItem input {
+.input {
   width: 280px;
 }
 
@@ -229,7 +229,7 @@
   margin: 10px;
 }
 
-input {
+.input {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -238,11 +238,11 @@ input {
   border-bottom: 1px solid #757575;
 }
 
-input:focus {
+.input:focus {
   outline: none;
 }
 
-label {
+.label {
   color: #999;
   font-size: 18px;
   font-weight: normal;
@@ -253,8 +253,8 @@ label {
   transition: 0.2s ease all;
 }
 
-input:focus~label,
-input:valid~label {
+.input:focus~.label,
+.input:valid~.label {
   top: -20px;
   font-size: 14px;
   color: #5264ae;
@@ -263,7 +263,7 @@ input:valid~label {
 .bar {
   position: relative;
   display: block;
-  width: 280px;
+  width: 300px;
 }
 
 .bar:before,
@@ -285,8 +285,8 @@ input:valid~label {
   right: 50%;
 }
 
-input:focus~.bar:before,
-input:focus~.bar:after {
+.input:focus~.bar:before,
+.input:focus~.bar:after {
   width: 50%;
 }
 
@@ -300,7 +300,7 @@ input:focus~.bar:after {
   opacity: 0.5;
 }
 
-input:focus~.highlight {
+.input:focus~.highlight {
   animation: inputHighlighter 0.3s ease;
 }
 
@@ -371,7 +371,7 @@ input:focus~.highlight {
     border-bottom: none;
   }
 
-  .bookItem input {
+  .input {
     width: 80%;
   }
 
