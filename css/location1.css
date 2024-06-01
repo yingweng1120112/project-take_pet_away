@@ -1,0 +1,206 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --beige: #fef9f2;
+  --brown: #967b4a;
+  --reddish-brown: #895e3c;
+  --khaki: #d7b67a;
+  --bean-paste: #d3ad9a;
+  --yellow: #fecc5f;
+  --light-yellow: #faeed1;
+  --deep-gray: #fdf7e4;
+  --gray: #ebebeb;
+  --dark-gray: #ebe6d4;
+  --bright-gary: #f5ebd9;
+  --light-gray: #dbd2c6;
+  --deep-gray: #89837c;
+  --light-pink: #fce9d4;
+  --creamy-yellow: #FDF7E4;
+  --red: #e73a05;
+  --light-blue: #b9d8ef;
+  --deep-blue: #292f36;
+  --dark-green: #018786;
+  --pink: #f29999;
+  --blue: #427d9d;
+  --green: #b6c12f;
+  --border-color: #895e3c;
+  --font-family: "Noto Sans TC", sans-serif;
+  --font-size-h1: 2rem;
+  /* h1 標題文字大小 ,32px*/
+  --font-size-h2: 1.8rem;
+  /* h2 標題文字大小,28.8px */
+  --font-size-h3: 1.5rem;
+  /* h3 標題文字大小,24px  */
+  --font-size-h4: 1.25rem;
+  /* h4 標題文字大小,20px */
+  --font-size-p: 16px;
+  /* 段落文字大小 */
+  --bg-color: #fdf7e4;
+}
+
+.carousel {
+  position: relative;
+  height: 37rem;
+  background-color: white;
+}
+
+.carousel .body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.carousel .swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.carousel .swiper-slide {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  margin: 4rem auto;
+}
+
+.carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 0.5rem solid var(--light-gray);
+}
+
+.carousel .swiper-slide .adopt-title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  height: 25%;
+  top: 45%;
+  left: 60%;
+}
+.carousel .heart{
+  font-size: 2rem;
+  letter-spacing: 2rem;
+  color: var(--red);
+  margin-bottom: 2rem;
+}
+.carousel .ml3{
+  display: flex;
+  font-weight: bolder;
+  font-size: 2rem;
+  letter-spacing: 2rem;
+}
+.carousel .ml3 .letter{
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.carousel .btn {
+  position: absolute;
+  top: 79%;
+  left: 82%;
+  background-color: var(--deep-gray);
+  padding: 14px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed  var(--deep-gray);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .4s;
+}
+.carousel .swiper-slide .btn:hover{
+  transition: .5s;
+  border: 2px dashed  var(--deep-gray);
+  background-color: white;
+}
+.carousel .btn span:last-child {
+  display: none;
+}
+.carousel .swiper-slide .btn a{
+  transition: .4s;
+  color: white;
+}
+.carousel .swiper-slide .btn:hover a{
+  transition: .4s;
+  color:  var(--deep-gray);
+}
+.btn:active {
+  background-color: #87dbd0;
+}
+.carousel .swiper-slide .btn:hover i{
+  transition: .4s;
+  color:  var(--deep-gray);
+}
+@media screen and (max-width: 414px) {
+  .carousel {
+    height: 12rem;
+    width: 100%;
+    margin: 0rem;
+  }
+
+  .carousel .body {
+    width: 100%;
+  }
+
+  .carousel .swiper {
+    width: 100%;
+  }
+  .carousel .swiper-slide {
+    margin: 0rem;
+  }
+  .carousel .swiper-slide img {
+    width: 100%;
+    border-radius: 0rem;
+  border: 0rem solid var(--light-gray);
+  }
+  .carousel .swiper-slide .adopt-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 25%;
+    top: 39%;
+    left: 42%;
+  }
+  .carousel .heart{
+    font-size:1rem;
+    letter-spacing: 0.5rem;
+    color: var(--red);
+    margin-bottom: 0.1rem;
+  }
+  .carousel .ml3{
+    display: flex;
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+  }
+  .carousel .ml3 .letter{
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  .carousel .btn {
+    top: 74%;
+    left: 70%;
+    width: 25%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0rem;
+  }
+  .carousel .swiper-slide .btn a{
+  font-size: 15px;
+  }
+}

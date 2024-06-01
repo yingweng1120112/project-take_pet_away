@@ -1,0 +1,205 @@
+/* banner */
+.banner {
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.menu-a {
+  margin: 0;
+  color: aliceblue;
+  font-size: 5rem;
+  margin: 0 20px;
+  line-height: 1.2;
+}
+.menu-b {
+  margin: 0;
+  color: aliceblue;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+.left {
+  display: flex;
+  align-items: flex-end;
+  width: 40%;
+}
+.middle {
+  width: 20%;
+}
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.select {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}
+.select-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 1rem 0;
+  text-align: center;
+}
+.select-item-a {
+  display: flex;
+  flex-direction: column;
+}
+.select-item-b {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+/* user order */
+.bgfeet1 {
+  position: absolute;
+  width: 20%;
+  right: 80%;
+  top: 50%;
+  z-index: -1;
+}
+
+.bgfeet2 {
+  position: absolute;
+  width: 20%;
+  left: 77%;
+  top: 140%;
+  z-index: -1;
+}
+section {
+  width: 80%;
+}
+.book {
+  width: 90%;
+  padding: 0;
+  border-radius: solid 3px var(--black);
+}
+.book h2 {
+  background-color: var(--bean-paste);
+  color: var(--white);
+  margin: 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookContainer {
+  background-color: var(--white);
+  position: relative;
+  overflow: visible;
+}
+.rope {
+  width: 3%;
+  height: 88%;
+  background-image: url("../images/user-rope.png");
+  background-repeat: repeat-y;
+  position: absolute;
+  right: 99%;
+  z-index: 2;
+}
+.feet {
+  position: absolute;
+  width: 20%;
+  right: 84%;
+  top: 80%;
+  z-index: 1;
+}
+.bookItem {
+  height: auto;
+  margin-left: 10rem;
+  display: flex;
+  align-items: center;
+}
+.bookContainer h5 {
+  margin: 100px;
+}
+
+.book {
+  flex: 0 0 90%;
+}
+.rope {
+  width: 3%;
+  height: 20%;
+  background-image: url("../images/user-rope.png");
+  background-repeat: repeat-y;
+  position: absolute;
+  z-index: 1;
+  left: 14.7%;
+}
+.bookContainer {
+  border-radius: 30px;
+}
+.bookContainer h2{
+  border-radius: 30px 30px 0 0;
+}
+
+.table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.table-group > tr > th,
+.table-group-divider > tr > th,
+.table-group-divider > tr > td {
+  color: var(--deep-gray);
+}
+
+.td-btn {
+  background-color: var(--light-yellow);
+  padding: 10px 30px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.td-btn > a {
+  color: var(--reddish-brown);
+}
+
+/* 換頁 */
+.wp-pagenavi {
+  margin: 40px auto;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+.wp-pagenavi a {
+  color: #333;
+}
+.wp-pagenavi a:hover {
+  color: #77a0d1;
+}
+.wp-pagenavi span.current,
+.wp-pagenavi a.page {
+  margin: 0 10px;
+  line-height: 2;
+  padding: 0 12px;
+  transition: 0.03s;
+  display: block;
+  border-bottom: 4px solid transparent;
+}
+.wp-pagenavi span.current {
+  border-bottom: 4px solid #77a0d1;
+}
+.wp-pagenavi a.page {
+  background: none;
+}
+.wp-pagenavi a.page:hover {
+  border-bottom: 4px solid #77a0d1;
+}
+.wp-pagenavi .first,
+.wp-pagenavi .extend {
+  margin-right: 15px;
+}
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+  display: none;
+}
